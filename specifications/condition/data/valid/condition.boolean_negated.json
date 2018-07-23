@@ -1,0 +1,7 @@
+{
+  "_id": "condition.boolean_negated",
+  "_type": "condition",
+  "identifier": "foo",
+  "operator": "isTrue",
+  "negated": true
+}

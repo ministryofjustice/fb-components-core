@@ -1,0 +1,7 @@
+{
+  "_id": "condition.defined_negated",
+  "_type": "condition",
+  "identifier": "foo",
+  "operator": "defined",
+  "negated": true
+}

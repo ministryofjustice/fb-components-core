@@ -1,0 +1,24 @@
+{
+  "name": "@ministryofjustice/fb-components-core",
+  "specifications": {
+    "$idRoot": "http://gov.uk/schema/v1.0.0",
+    "protected": [
+      "condition"
+    ]
+  },
+  "version": "0.0.18-alpha",
+  "description": "Form Builder core components",
+  "main": "index.js",
+  "scripts": {
+    "test": "test-specifications"
+  },
+  "devDependencies": {
+    "@ministryofjustice/fb-specification": "0.0.18-alpha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ministryofjustice/fb-components-core.git"
+  },
+  "author": "github@alex.fu2k.org",
+  "license": "MIT"
+}

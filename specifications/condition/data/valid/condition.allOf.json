@@ -1,0 +1,17 @@
+{
+  "_id": "condition.allOf",
+  "_type": "condition",
+  "allOfConditions": [
+    {
+      "identifier": "foo",
+      "operator": "is",
+      "value": "bar"
+    },
+    {
+      "identifier": "baz",
+      "operator": "is",
+      "value": "bar",
+      "negated": true
+    }
+  ]
+}

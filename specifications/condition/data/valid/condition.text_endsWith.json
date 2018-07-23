@@ -1,0 +1,7 @@
+{
+  "_id": "condition.text_endsWith",
+  "_type": "condition",
+  "identifier": "foo",
+  "operator": "endsWith",
+  "value": "bar"
+}

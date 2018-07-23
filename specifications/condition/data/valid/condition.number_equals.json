@@ -1,0 +1,7 @@
+{
+  "_id": "condition.number_equals",
+  "_type": "condition",
+  "identifier": "foo",
+  "operator": "equals",
+  "value": 10
+}

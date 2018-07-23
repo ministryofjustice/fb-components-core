@@ -1,0 +1,7 @@
+{
+  "_id": "condition.text_includes",
+  "_type": "condition",
+  "identifier": "foo",
+  "operator": "includes",
+  "value": "bar"
+}
