@@ -1,1 +1,10 @@
 {% extends "page.njk.html" %}
+
+{% block prePageContentHeading %}
+{{ callMacro('govukPanel', {
+  titleHtml: page.heading,
+  html: page.lede
+}) }}
+{% endblock %}
+
+{% block pageContentHeading %}{% endblock %}

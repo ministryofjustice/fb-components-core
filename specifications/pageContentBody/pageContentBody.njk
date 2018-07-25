@@ -1,0 +1,20 @@
+{% macro pageContentBody(page) %}
+{% if page.lede -%}
+{{ page.lede | safe }}
+{%- endif %}
+{% if page.body -%}
+{{ page.body | safe }}
+{%- endif %}
+{{- callBlocks(page.components) -}}
+{% if page.nextpage %}
+{% set buttonHtml = 'Continue' %}
+{% if page._type === 'page.start' %}
+  {% set buttonHtml = 'Start' %}
+  {% set buttonClass = 'govuk-button--start' %}
+{% endif %}
+{{ callMacro('govukButton', {
+  html: buttonHtml,
+  classes: buttonClass
+}) }}
+{% endif %}
+{% endmacro %}
