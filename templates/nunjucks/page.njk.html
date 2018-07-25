@@ -1,7 +1,5 @@
 {% extends "base.njk.html" %}
 
-{% from "error-summary/macro.njk" import govukErrorSummary %}
-
 {% block beforeContent %}
 {% if page.previouspage -%}
 {{ callMacro('govukBackLink', {
@@ -13,8 +11,7 @@
 
 {% block content %}
 {% if page._type === 'page.confirmation' %}
-{% from "panel/macro.njk" import govukPanel %}
-{{ govukPanel({
+{{ callMacro('govukPanel', {
   titleHtml: page.heading,
   html: page.lede
 }) }}
@@ -22,7 +19,7 @@
 
 
 {% if page.errorList %}
-{{ govukErrorSummary({
+{{ callMacro('govukErrorSummary', {
   titleHtml: page.errorTitle,
   errorList: page.errorList
 }) }}
@@ -54,8 +51,7 @@
   {% set buttonHtml = 'Start' %}
   {% set buttonClass = 'govuk-button--start' %}
 {% endif %}
-{% from "button/macro.njk" import govukButton %}
-{{ govukButton({
+{{ callMacro('govukButton', {
   html: buttonHtml,
   classes: buttonClass
 }) }}
