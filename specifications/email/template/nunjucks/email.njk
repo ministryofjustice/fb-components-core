@@ -1,0 +1,7 @@
+{%- macro email(data) %}
+{% set params = setError(data) %}
+{% set params = setLabel(params) %}
+{% set params = setInputWidthClass(params) %}
+{% set params = setObjectProperty(params, 'type', 'email') %}
+{{ callMacro('govukInput', params) }}
+{% endmacro -%}

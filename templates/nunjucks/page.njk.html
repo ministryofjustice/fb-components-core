@@ -31,12 +31,35 @@
 <div class="govuk-grid-column-{{ columns }}">
 
 {% block pageContentHeading %}
-{{ callMacro('pageContentHeading', page) }}
+{% if page.heading -%}
+{% set headingClass = 'govuk-heading-l' %}
+{% if page._type === 'page.start' %}{% set headingClass = 'govuk-heading-xl' %}{% endif %}
+<h1 class="{{ headingClass }}">{{ page.heading | safe }}</h1>
+{% endif %}
 {% endblock %}
 
 {% block pageContentBody %}
 <form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if not page._form %} class="govuk-prose-scope"{% endif %}>
-{{ callMacro('pageContentBody', page)}}
+{% if page.lede -%}
+{{ page.lede | safe }}
+{%- endif %}
+{% if page.body -%}
+{{ page.body | safe }}
+{%- endif %}
+{{- callBlocks(page.components) -}}
+{# {% if page.nextpage %} #}
+{% block pageContentAction %}
+{% set buttonHtml = 'Continue' %}
+{% if page._type === 'page.start' %}
+  {% set buttonHtml = 'Start' %}
+  {% set buttonClass = 'govuk-button--start' %}
+{% endif %}
+{{ callMacro('govukButton', {
+  html: buttonHtml,
+  classes: buttonClass
+}) }}
+{% endblock %}
+{# {% endif %} #}
 </form>
 {% endblock %}
 

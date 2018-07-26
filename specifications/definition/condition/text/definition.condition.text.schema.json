@@ -15,7 +15,8 @@
         "is",
         "startsWith",
         "endsWith",
-        "includes"
+        "includes",
+        "match"
       ]
     },
     "value": {
