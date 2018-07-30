@@ -19,6 +19,16 @@
     "_type": {
       "const": "button"
     },
+    "name": {
+      "title": "Name",
+      "description": "Button name",
+      "type": "string"
+    },
+    "value": {
+      "title": "Value",
+      "description": "Button value",
+      "type": "string"
+    },
     "html": {
       "title": "Text",
       "description": "Button text",

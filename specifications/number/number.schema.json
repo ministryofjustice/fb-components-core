@@ -8,6 +8,9 @@
     "_type": {
       "const": "number"
     },
+    "name": {
+      "inputType": "number"
+    },
     "widthClassInput": {
       "default": "10"
     }

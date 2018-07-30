@@ -8,6 +8,9 @@
     "_type": {
       "const": "date"
     },
+    "name": {
+      "inputType": "date"
+    },
     "dateType": {
       "title": "Date type",
       "type": "string",
