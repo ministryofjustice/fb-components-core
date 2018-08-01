@@ -1,0 +1,6 @@
+{
+  "_id": "error.required.radios.summary",
+  "_type": "string.error",
+  "description": "Input is required (radios) - summary",
+  "value": "Please choose one of the answers for “{control}”"
+}

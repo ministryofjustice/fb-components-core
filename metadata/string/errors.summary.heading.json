@@ -1,0 +1,6 @@
+{
+  "_id": "errors.summary.heading",
+  "_type": "string.error",
+  "description": "Errors summary heading",
+  "value": "There {errorCount, plural, 1 {was a problem} other {were problems}} on the page"
+}

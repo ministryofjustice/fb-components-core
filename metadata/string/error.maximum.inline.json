@@ -1,0 +1,6 @@
+{
+  "_id": "error.maximum.inline",
+  "_type": "string.error",
+  "description": "Input (number) is too large - inline",
+  "value": "Your answer must be less than or equal to {maximum}"
+}

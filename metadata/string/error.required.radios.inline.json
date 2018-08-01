@@ -1,0 +1,6 @@
+{
+  "_id": "error.required.radios.inline",
+  "_type": "string.error",
+  "description": "Input is required (radios) - inline",
+  "value": "Please choose one of the answers"
+}

@@ -1,0 +1,6 @@
+{
+  "_id": "error.pattern.inline",
+  "_type": "string.error",
+  "description": "Input (string) does not match pattern - inline",
+  "value": "Your answer does not match this pattern ({pattern})"
+}

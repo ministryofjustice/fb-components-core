@@ -1,7 +1,7 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/service",
-  "title": "Service",
-  "_name": "service",
+  "$id": "http://gov.uk/schema/v1.0.0/config/service",
+  "title": "Service configuration",
+  "_name": "config.service",
   "description": "Service configuration",
   "type": "object",
   "properties": {
@@ -9,12 +9,14 @@
       "const": "service"
     },
     "_type": {
-      "const": "service"
+      "const": "config.service"
     },
     "name": {
+      "title": "Service name",
       "type": "string"
     },
     "phase": {
+      "title": "Service phase",
       "type": "string",
       "enum": [
         "",
@@ -23,6 +25,7 @@
       ]
     },
     "phaseText": {
+      "title": "Service phase text",
       "type": "string"
     }
   },

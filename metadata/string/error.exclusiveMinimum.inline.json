@@ -1,0 +1,6 @@
+{
+  "_id": "error.exclusiveMinimum.inline",
+  "_type": "string.error",
+  "description": "Input (number) is too small (exclusive minimum) - inline",
+  "value": "Your answer must be greater than {minimum}"
+}

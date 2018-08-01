@@ -1,0 +1,6 @@
+{
+  "_id": "error.required.checkboxes.inline",
+  "_type": "string.error",
+  "description": "Input is required (checkboxes) - inline",
+  "value": "Please choose at least one of the options"
+}
