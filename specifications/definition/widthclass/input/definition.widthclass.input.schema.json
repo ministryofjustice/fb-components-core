@@ -4,6 +4,8 @@
   "title": "Input width class definition",
   "properties": {
     "widthClassInput": {
+      "title": "Input width",
+      "description": "Determines govuk width class to apply to input",
       "type": "string",
       "enumMap": "widthClassMap",
       "enum": [
@@ -15,6 +17,9 @@
         "one-half",
         "one-third",
         "one-quarter"
+      ],
+      "category": [
+        "htmlattributes"
       ]
     }
   },

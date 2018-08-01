@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/definition/nextpage",
   "_name": "definition.nextpage",
   "title": "Next page",
-  "description": "What page (if any), and under what condtions, to go to next",
+  "description": "What page (if any), and under what condtions, to go to next. Please use only if what you’re trying to achieve is impossible or extremely difficult to achieve using the page steps flow.",
   "type": "object",
   "oneOf": [
     {

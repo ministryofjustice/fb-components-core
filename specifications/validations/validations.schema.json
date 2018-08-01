@@ -8,10 +8,14 @@
       "type": "object",
       "properties": {
         "inline": {
+          "title": "Input error",
+          "description": "Error message to display next to input",
           "type": "string",
           "role": "errorString"
         },
         "summary": {
+          "title": "Summary error",
+          "description": "Error message to display in error summary header",
           "type": "string",
           "role": "errorString"
         }
@@ -27,7 +31,7 @@
       "default": true
     },
     "errorsRequired": {
-      "title": "Error strings for required",
+      "title": "Error messages for required",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -40,7 +44,7 @@
       "minimum": 0
     },
     "errorsMinLength": {
-      "title": "Error strings for minLength",
+      "title": "Error messages for minLength",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -53,7 +57,7 @@
       "minimum": 0
     },
     "errorsMaxLength": {
-      "title": "Error strings for maxLength",
+      "title": "Error messages for maxLength",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -65,7 +69,7 @@
       "type": "string"
     },
     "errorsPattern": {
-      "title": "Error strings for pattern",
+      "title": "Error messages for pattern",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -78,7 +82,7 @@
       "minimum": 0
     },
     "errorsMultipleOf": {
-      "title": "Error strings for multipleOf",
+      "title": "Error messages for multipleOf",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -91,7 +95,7 @@
       "minimum": 0
     },
     "errorsMaximum": {
-      "title": "Error strings for maximum",
+      "title": "Error messages for maximum",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -103,7 +107,7 @@
       "type": "boolean"
     },
     "errorsExclusiveMaximum": {
-      "title": "Error strings for exclusiveMaximum",
+      "title": "Error messages for exclusiveMaximum",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -116,7 +120,7 @@
       "minimum": 0
     },
     "errorsMinimum": {
-      "title": "Error strings for minimum",
+      "title": "Error messages for minimum",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -128,7 +132,7 @@
       "type": "boolean"
     },
     "errorsExclusiveMinimum": {
-      "title": "Error strings for exclusiveMinimum",
+      "title": "Error messages for exclusiveMinimum",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"

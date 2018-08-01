@@ -4,6 +4,8 @@
   "title": "Width class definition",
   "properties": {
     "widthClass": {
+      "title": "Width",
+      "description": "Determines govuk width class to apply",
       "type": "string",
       "enumMap": "widthClassMap",
       "enum": [
@@ -12,6 +14,9 @@
         "one-half",
         "one-third",
         "one-quarter"
+      ],
+      "category": [
+        "htmlattributes"
       ]
     }
   },
