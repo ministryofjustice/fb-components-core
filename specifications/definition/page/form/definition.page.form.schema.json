@@ -14,6 +14,16 @@
         "additional"
       ]
     },
+    "sectionHeading": {
+      "title": "Section heading",
+      "description": "Name of section",
+      "type": "string"
+    },
+    "stepsHeading": {
+      "title": "Steps heading",
+      "description": "Name of section to use on step pages (if any)",
+      "type": "string"
+    },
     "steps": {
       "title": "Steps",
       "description": "List of pages making up the sub-journey from the current page",

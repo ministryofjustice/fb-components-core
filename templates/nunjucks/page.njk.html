@@ -31,6 +31,9 @@
 <div class="govuk-grid-column-{{ columns }}">
 
 {% block pageContentHeading %}
+{% if page.sectionHeading -%}
+<p class="fb-sectionHeading">{{ page.sectionHeading | safe }}</p>
+{%- endif %}
 {% if page.heading -%}
 {% set headingClass = 'govuk-heading-l' %}
 {% if page._type === 'page.start' %}{% set headingClass = 'govuk-heading-xl' %}{% endif %}
