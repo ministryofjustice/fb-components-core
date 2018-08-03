@@ -1,0 +1,6 @@
+{
+  "_id": "error.type.number.inline",
+  "_type": "string.error",
+  "description": "Input (number) is not a number - inline",
+  "value": "Please enter a number"
+}
