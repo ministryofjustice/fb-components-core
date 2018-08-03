@@ -1,0 +1,50 @@
+{
+  "$id": "http://gov.uk/schema/v1.0.0/definition/repeatable",
+  "_name": "definition.repeatable",
+  "title": "Repeatable definition",
+  "type": "object",
+  "properties": {
+    "repeatable": {
+      "title": "Repeatable",
+      "description": "Whether the page/component should be repeatable",
+      "type": "boolean"
+    },
+    "repeatableMinimum": {
+      "title": "Minimum number",
+      "description": "Minimum number of times to repeat items",
+      "type": "number",
+      "minimum": 0,
+      "default": 1,
+      "category": ["repeatable"]
+    },
+    "repeatableMaximum": {
+      "title": "Maximum number",
+      "description": "Maximum number of times to repeat items",
+      "type": "number",
+      "minimum": 0,
+      "category": ["repeatable"]
+    },
+    "repeatableAdd": {
+      "title": "Add string",
+      "description": "Content used to denote add an item - defaults to ‘Add an item’",
+      "type": "string",
+      "default": "Add an item",
+      "category": ["repeatable"]
+    },
+    "repeatableDelete": {
+      "title": "Delete string",
+      "description": "Content used to denote delete an item - defaults to ‘Remove this item’",
+      "type": "string",
+      "default": "Remove this item",
+      "category": ["repeatable"]
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/model"
+    }
+  ],
+  "category": [
+    "definition"
+  ]
+}

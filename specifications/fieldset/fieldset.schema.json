@@ -25,7 +25,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/multiple"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/repeatable"
     },
     {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/grouping"

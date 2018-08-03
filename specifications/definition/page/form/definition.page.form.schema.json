@@ -41,7 +41,7 @@
       "$ref": "http://gov.uk/schema/v1.0.0/definition/page"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/multiple"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/repeatable"
     }
   ],
   "category": [
