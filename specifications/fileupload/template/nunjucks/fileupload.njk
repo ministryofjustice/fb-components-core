@@ -1,0 +1,8 @@
+{%- macro fileupload(data) %}
+{% set params = setError(data) %}
+{% set params = setLabel(params) %}
+{% set params = setInputWidthClass(params) %}
+{% set attributes = {multiple: params.multiple, accepts: params.accepts} %}
+{% set params = setObject(params, {attributes:attributes}) %}
+{{ callMacro('govukFileUpload', params) }}
+{% endmacro -%}

@@ -1,0 +1,26 @@
+{
+  "$id": "http://gov.uk/schema/v1.0.0/fileupload",
+  "_name": "fileupload",
+  "title": "File upload",
+  "description": "Component that provides a file upload input field",
+  "type": "object",
+  "properties": {
+    "_type": {
+      "const": "fileupload"
+    },
+    "multiple": {
+      "title": "Multiple files",
+      "description": "Whether multiple files can be uploaded",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/field"
+    },
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/widthclass/input"
+    }
+  ]
+}
