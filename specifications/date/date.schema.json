@@ -38,6 +38,11 @@
       "$ref": "http://gov.uk/schema/v1.0.0/definition/field"
     }
   ],
+  "composite": [
+    "day",
+    "month",
+    "year"
+  ],
   "definitions": {
     "dateTypeEnum": {
       "day-month-year": "Day / Month / Year",
