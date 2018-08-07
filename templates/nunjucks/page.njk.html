@@ -30,6 +30,7 @@
 {% endif %}
 <div class="govuk-grid-column-{{ columns }}">
 
+{% block pageContent %}
 {% block pageContentHeading %}
 {% if page.sectionHeading -%}
 <p class="fb-sectionHeading">{{ page.sectionHeading | safe }}</p>
@@ -49,7 +50,9 @@
 {% if page.body -%}
 {{ page.body | safe }}
 {%- endif %}
+{% block pageContentComponents %}
 {{- callBlocks(page.components) -}}
+{% endblock %}
 {# {% if page.nextpage %} #}
 {% block pageContentAction %}
 {% set buttonHtml = 'Continue' %}
@@ -64,6 +67,7 @@
 {% endblock %}
 {# {% endif %} #}
 </form>
+{% endblock %}
 {% endblock %}
 
 </div>
