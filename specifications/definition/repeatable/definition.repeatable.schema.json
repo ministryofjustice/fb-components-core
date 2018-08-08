@@ -24,18 +24,30 @@
       "minimum": 0,
       "category": ["repeatable"]
     },
+    "repeatableHeading": {
+      "title": "Heading",
+      "description": "Heading for repeatable items",
+      "type": "string",
+      "category": ["repeatable"]
+    },
+    "repeatableLede": {
+      "title": "Hint",
+      "description": "Hint for repeatable items",
+      "type": "string",
+      "category": ["repeatable"]
+    },
     "repeatableAdd": {
       "title": "Add string",
-      "description": "Content used to denote add an item - defaults to ‘Add an item’",
+      "description": "Content used to denote add an item - defaults to ‘Add another’",
       "type": "string",
-      "default": "Add an item",
+      "default": "Add another",
       "category": ["repeatable"]
     },
     "repeatableDelete": {
       "title": "Delete string",
-      "description": "Content used to denote delete an item - defaults to ‘Remove this item’",
+      "description": "Content used to denote delete an item - defaults to ‘Remove’",
       "type": "string",
-      "default": "Remove this item",
+      "default": "Remove",
       "category": ["repeatable"]
     }
   },

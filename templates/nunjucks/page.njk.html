@@ -74,3 +74,38 @@
 </div>
 </div>
 {% endblock %}{# end content #}
+
+{% block bodyEnd %}
+{{ super() }}
+<style type="text/css">
+.govuk-button p {
+  display: inline-block;
+  margin: 0;
+}
+.govuk-button.fb-action-secondary {
+  background: transparent;
+  color: 	#005ea5;
+  box-shadow: none;
+  padding-left: 0;
+  border-left: none;
+}
+.fb-action-secondary:hover {
+  background: transparent;
+  color: 	#2b8cc4;
+}
+
+.fb-action--add {
+}
+
+.fb-repeatable-item {
+  position: relative;
+}
+.fb-repeatable-item .fb-action--delete {
+  position: absolute;
+  top: 0.25rem;
+  right: 0;
+  font-size: 75%;
+  padding: 0;
+}
+</style>
+{% endblock %}

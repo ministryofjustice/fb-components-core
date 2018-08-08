@@ -1,5 +1,16 @@
 {%- macro group(data) %}
-<div class="fb-group">
+<div class="fb-group {{ data.classes }}">
+{% if data.heading %}
+<h2 class="govuk-heading-m">{{ data.heading | safe }}</h2>
+{% if data.lede %}
+<div class="govuk-prose-scope">
+<p>{{ data.lede | safe }}</p>
+</div>
+{% endif %}
+{% endif %}
 {{- callBlocks(data.components) -}}
+{% if data.add %}
+<p>{{ callMacro('govukButton', data.add) }}</p>
+{% endif %}
 </div>
 {% endmacro -%}
