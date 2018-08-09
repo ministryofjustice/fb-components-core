@@ -33,7 +33,7 @@
 {% block pageContent %}
 {% block pageContentHeading %}
 {% if page.sectionHeading -%}
-<p class="fb-sectionHeading">{{ page.sectionHeading | safe }}</p>
+<p class="govuk-caption-l fb-sectionHeading">{{ page.sectionHeading | safe }}</p>
 {%- endif %}
 {% if page.heading -%}
 {% set headingClass = 'govuk-heading-l' %}
@@ -48,7 +48,7 @@
 {% block pageContentBody %}
 <form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if not page._form %} class="govuk-prose-scope"{% endif %}>
 {% if page.body -%}
-{{ page.body | safe }}
+<div class="fb-body govuk-prose-scope">{{ page.body | safe }}</div>
 {%- endif %}
 {% block pageContentComponents %}
 {{- callBlocks(page.components) -}}
@@ -78,6 +78,9 @@
 {% block bodyEnd %}
 {{ super() }}
 <style type="text/css">
+.fb-sectionHeading {
+  margin-top: 0;
+}
 .govuk-button p {
   display: inline-block;
   margin: 0;
