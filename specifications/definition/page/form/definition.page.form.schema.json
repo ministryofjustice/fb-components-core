@@ -17,12 +17,18 @@
     "sectionHeading": {
       "title": "Section heading",
       "description": "Name of section",
-      "type": "string"
+      "type": "string",
+      "category": [
+        "content"
+      ]
     },
     "stepsHeading": {
       "title": "Steps heading",
       "description": "Name of section to use on step pages (if any)",
-      "type": "string"
+      "type": "string",
+      "category": [
+        "content"
+      ]
     },
     "steps": {
       "title": "Steps",

@@ -21,13 +21,19 @@
     "lede": {
       "title": "Lede",
       "description": "Paragraph that follows the heading",
-      "type": "string"
+      "type": "string",
+      "category": [
+        "content"
+      ]
     },
     "body": {
       "title": "Content",
       "description": "Free-form content after the heading and lede",
       "type": "string",
-      "multiline": true
+      "multiline": true,
+      "category": [
+        "content"
+      ]
     }
   },
   "allOf": [

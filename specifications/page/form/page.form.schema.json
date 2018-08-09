@@ -18,7 +18,10 @@
         "save",
         "confirm"
       ],
-      "default": "continue"
+      "default": "continue",
+      "category": [
+        "additional"
+      ]
     }
   },
   "allOf": [
