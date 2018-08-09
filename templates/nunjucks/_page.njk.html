@@ -1,0 +1,111 @@
+{% extends "base.njk.html" %}
+
+{% block beforeContent %}
+{% if page.previouspage -%}
+{{ callMacro('govukBackLink', {
+  "href": page.previouspage,
+  "text": "Back"
+}) }}
+{%- endif %}
+{% endblock %}
+
+{% block content %}
+
+{% block errorContent %}
+{% if page.errorList %}
+{{ callMacro('govukErrorSummary', {
+  titleHtml: page.errorTitle,
+  errorList: page.errorList
+}) }}
+{% endif %}
+{% endblock %}
+
+{% block prePageContentHeading %}{% endblock %}
+
+<div class="govuk-main-wrapper">
+<div class="govuk-grid-row">
+{% set columns = 'two-thirds' %}
+{% if page.columns %}
+{% set columns = page.columns %}
+{% endif %}
+<div class="govuk-grid-column-{{ columns }}">
+
+{% block pageContent %}
+{% block pageContentHeading %}
+{% if page.sectionHeading -%}
+<p class="fb-sectionHeading">{{ page.sectionHeading | safe }}</p>
+{%- endif %}
+{% if page.heading -%}
+{% set headingClass = 'govuk-heading-l' %}
+{% if page._type === 'page.start' %}{% set headingClass = 'govuk-heading-xl' %}{% endif %}
+<h1 class="{{ headingClass }}">{{ page.heading | safe }}</h1>
+{% endif %}
+{% if page.lede -%}
+<p class="govuk-body-l">{{ page.lede | safe }}</p>
+{%- endif %}
+{% endblock %}
+
+{% block pageContentBody %}
+<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if not page._form %} class="govuk-prose-scope"{% endif %}>
+{% if page.body -%}
+{{ page.body | safe }}
+{%- endif %}
+{% block pageContentComponents %}
+{{- callBlocks(page.components) -}}
+{% endblock %}
+{# {% if page.nextpage %} #}
+{% block pageContentAction %}
+{% set buttonHtml = 'Continue' %}
+{% if page._type === 'page.start' %}
+  {% set buttonHtml = 'Start' %}
+  {% set buttonClass = 'govuk-button--start' %}
+{% endif %}
+{{ callMacro('govukButton', {
+  html: buttonHtml,
+  classes: buttonClass
+}) }}
+{% endblock %}
+{# {% endif %} #}
+</form>
+{% endblock %}
+{% endblock %}
+
+</div>
+</div>
+</div>
+{% endblock %}{# end content #}
+
+{% block bodyEnd %}
+{{ super() }}
+<style type="text/css">
+.govuk-button p {
+  display: inline-block;
+  margin: 0;
+}
+.govuk-button.fb-action-secondary {
+  background: transparent;
+  color: 	#005ea5;
+  box-shadow: none;
+  padding-left: 0;
+  border-left: none;
+}
+.fb-action-secondary:hover {
+  background: transparent;
+  color: 	#2b8cc4;
+}
+
+.fb-action--add {
+}
+
+.fb-repeatable-item {
+  position: relative;
+}
+.fb-repeatable-item .fb-action--delete {
+  position: absolute;
+  top: 0.25rem;
+  right: 0;
+  font-size: 75%;
+  padding: 0;
+}
+</style>
+{% endblock %}
