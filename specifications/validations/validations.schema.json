@@ -31,7 +31,7 @@
       "default": true
     },
     "errorsRequired": {
-      "title": "Error messages for required",
+      "title": "Error messages for ‘Required’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -44,7 +44,7 @@
       "minimum": 0
     },
     "errorsMinLength": {
-      "title": "Error messages for minLength",
+      "title": "Error messages for ‘Minimum length’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -57,7 +57,7 @@
       "minimum": 0
     },
     "errorsMaxLength": {
-      "title": "Error messages for maxLength",
+      "title": "Error messages for ‘Maximum length’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -82,7 +82,7 @@
       "minimum": 0
     },
     "errorsMultipleOf": {
-      "title": "Error messages for multipleOf",
+      "title": "Error messages for ‘Multiple of’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -90,12 +90,12 @@
       ]
     },
     "maximum": {
-      "title": "Maximum",
+      "title": "Less than or equal to",
       "type": "number",
       "minimum": 0
     },
     "errorsMaximum": {
-      "title": "Error messages for maximum",
+      "title": "Error messages for ‘Less than or equal to’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -103,11 +103,11 @@
       ]
     },
     "exclusiveMaximum": {
-      "title": "Exclusive maximum",
+      "title": "Less than",
       "type": "boolean"
     },
     "errorsExclusiveMaximum": {
-      "title": "Error messages for exclusiveMaximum",
+      "title": "Error messages for ‘Less than",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -115,12 +115,12 @@
       ]
     },
     "minimum": {
-      "title": "Minimum",
+      "title": "More than or equal to",
       "type": "number",
       "minimum": 0
     },
     "errorsMinimum": {
-      "title": "Error messages for minimum",
+      "title": "Error messages for for ‘More than or equal to’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -128,11 +128,11 @@
       ]
     },
     "exclusiveMinimum": {
-      "title": "Exclusive minimum",
+      "title": "More than",
       "type": "boolean"
     },
     "errorsExclusiveMinimum": {
-      "title": "Error messages for exclusiveMinimum",
+      "title": "Error messages for ‘More than",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
