@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/hidden",
   "_name": "hidden",
   "title": "Hidden field",
-  "description": "Component that provides a hidden field",
+  "description": "Include a form value that is not displayed to users",
   "type": "object",
   "properties": {
     "_type": {

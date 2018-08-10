@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/inset",
   "_name": "inset",
   "title": "Inset text",
-  "description": "Component that provides inset text",
+  "description": "Differentiate a block of text from the content that surrounds it",
   "usage": "Use the inset text component to differentiate a block of text from the content that surrounds it",
   "type": "object",
   "properties": {

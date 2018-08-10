@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/table",
   "_name": "table",
   "title": "Table",
-  "description": "Component that provides a table",
+  "description": "Display information in rows and columns",
   "type": "object",
   "properties": {
     "_type": {

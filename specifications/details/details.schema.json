@@ -1,8 +1,8 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/details",
   "_name": "details",
-  "title": "Details",
-  "description": "Component for revealing content on user demand (progressive disclosure)",
+  "title": "Details (progressive disclosure)",
+  "description": "Let users reveal more detailed information only if they need it",
   "type": "object",
   "properties": {
     "_type": {

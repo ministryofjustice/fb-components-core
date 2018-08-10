@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/number",
   "_name": "number",
   "title": "Number",
-  "description": "Component that provides a number input field",
+  "description": "Let users enter a number",
   "type": "object",
   "properties": {
     "_type": {

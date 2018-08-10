@@ -1,8 +1,8 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/page/flashcard",
   "_name": "page.flashcard",
-  "title": "Flash card page",
-  "description": "Flash card page",
+  "title": "Flash card",
+  "description": "Display pre-amble information to users in a flash card",
   "type": "object",
   "properties": {
     "_type": {

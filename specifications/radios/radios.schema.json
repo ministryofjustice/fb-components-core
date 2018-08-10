@@ -2,13 +2,15 @@
   "$id": "http://gov.uk/schema/v1.0.0/radios",
   "_name": "radios",
   "title": "Radios",
-  "description": "Component that provides a radio fieldset",
+  "description": "Let users select one option from a list",
   "type": "object",
   "properties": {
     "_type": {
       "const": "radios"
     },
     "items": {
+      "title": "Options",
+      "description": "Radio group options",
       "type": "array",
       "items": {
         "$ref": "http://gov.uk/schema/v1.0.0/radio"

@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/content",
   "_name": "content",
   "title": "Content",
-  "description": "Component for creating content",
+  "description": "Display content",
   "type": "object",
   "category": [
     "content"

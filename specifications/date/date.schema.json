@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/date",
   "_name": "date",
   "title": "Date",
-  "description": "Component that provides a composite date input field",
+  "description": "Let users enter an exact date",
   "type": "object",
   "properties": {
     "_type": {

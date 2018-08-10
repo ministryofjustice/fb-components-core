@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/email",
   "_name": "email",
   "title": "Email",
-  "description": "Component that provides an email input field",
+  "description": "Let users enter an email address",
   "type": "object",
   "properties": {
     "_type": {

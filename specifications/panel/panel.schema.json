@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/panel",
   "_name": "panel",
   "title": "Panel",
-  "description": "Component to display important information when a transaction has been  completed.",
+  "description": "Display important information when a transaction has been completed",
   "type": "object",
   "properties": {
     "_type": {
