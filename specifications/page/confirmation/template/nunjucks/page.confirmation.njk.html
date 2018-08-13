@@ -2,8 +2,13 @@
 
 {% block prePageContentHeading %}
 {{ callMacro('govukPanel', {
+  headingLevel: 1,
   titleHtml: page.heading,
-  html: page.lede
+  html: page.lede,
+  attributes: {
+    'data-block-id': page._id,
+    'data-block-property': 'lede'
+  }
 }) }}
 {% endblock %}
 

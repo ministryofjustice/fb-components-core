@@ -33,22 +33,22 @@
 {% block pageContent %}
 {% block pageContentHeading %}
 {% if page.sectionHeading -%}
-<p class="govuk-caption-l fb-sectionHeading">{{ page.sectionHeading | safe }}</p>
+<p class="govuk-caption-l fb-sectionHeading" data-block-id="{{ page._id }}" data-block-property="sectionHeading">{{ page.sectionHeading | safe }}</p>
 {%- endif %}
 {% if page.heading -%}
 {% set headingClass = 'govuk-heading-l' %}
 {% if page._type === 'page.start' %}{% set headingClass = 'govuk-heading-xl' %}{% endif %}
-<h1 class="{{ headingClass }}">{{ page.heading | safe }}</h1>
+<h1 class="{{ headingClass }}" data-block-id="{{ page._id }}" data-block-property="heading">{{ page.heading | safe }}</h1>
 {% endif %}
 {% if page.lede -%}
-<p class="govuk-body-l">{{ page.lede | safe }}</p>
+<p class="govuk-body-l" data-block-id="{{ page._id }}" data-block-property="lede">{{ page.lede | safe }}</p>
 {%- endif %}
 {% endblock %}
 
 {% block pageContentBody %}
 <form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if not page._form %} class="govuk-prose-scope"{% endif %}>
 {% if page.body -%}
-<div class="fb-body govuk-prose-scope">{{ page.body | safe }}</div>
+<div class="fb-body govuk-prose-scope" data-block-id="{{ page._id }}" data-block-property="body">{{ page.body | safe }}</div>
 {%- endif %}
 {% block pageContentComponents %}
 {{- callBlocks(page.components) -}}
