@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/page/singlequestion",
   "_name": "page.singlequestion",
   "title": "Single question",
-  "description": "Let users answer a single question (which is used as the page heading)",
+  "description": "Let users answer a single question (can be repeatable)",
   "type": "object",
   "properties": {
     "_type": {

@@ -1,7 +1,7 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/page/form",
   "_name": "page.form",
-  "title": "Questions",
+  "title": "Basic form",
   "description": "Let users answer more than one question",
   "type": "object",
   "properties": {
