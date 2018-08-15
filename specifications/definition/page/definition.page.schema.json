@@ -20,7 +20,7 @@
     },
     "lede": {
       "title": "Lede",
-      "description": "Paragraph that follows the heading",
+      "description": "Introductory paragraph that follows the heading",
       "type": "string",
       "category": [
         "content"

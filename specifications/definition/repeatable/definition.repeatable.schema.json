@@ -25,14 +25,14 @@
       "category": ["repeatable"]
     },
     "repeatableHeading": {
-      "title": "Heading",
+      "title": "Repeatable heading",
       "description": "Heading for repeatable items",
       "type": "string",
       "category": ["repeatable"]
     },
     "repeatableLede": {
-      "title": "Hint",
-      "description": "Hint for repeatable items",
+      "title": "Repeatable lede",
+      "description": "Introductory paragraph that follows the heading for repeatable items",
       "type": "string",
       "category": ["repeatable"]
     },
