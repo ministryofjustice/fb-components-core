@@ -90,12 +90,12 @@
       ]
     },
     "maximum": {
-      "title": "Less than or equal to",
+      "title": "Maximum value",
       "type": "number",
       "minimum": 0
     },
     "errorsMaximum": {
-      "title": "Error messages for ‘Less than or equal to’",
+      "title": "Error messages for ‘Maximum value’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -103,11 +103,11 @@
       ]
     },
     "exclusiveMaximum": {
-      "title": "Less than",
+      "title": "Maximum value is exclusive",
       "type": "boolean"
     },
     "errorsExclusiveMaximum": {
-      "title": "Error messages for ‘Less than",
+      "title": "Error messages for ‘Maximum value is exclusive",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -115,12 +115,12 @@
       ]
     },
     "minimum": {
-      "title": "More than or equal to",
+      "title": "Minimum value",
       "type": "number",
       "minimum": 0
     },
     "errorsMinimum": {
-      "title": "Error messages for for ‘More than or equal to’",
+      "title": "Error messages for for ‘Minimum value’",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"
@@ -128,11 +128,11 @@
       ]
     },
     "exclusiveMinimum": {
-      "title": "More than",
+      "title": "Minimum value is exclusive",
       "type": "boolean"
     },
     "errorsExclusiveMinimum": {
-      "title": "Error messages for ‘More than",
+      "title": "Error messages for ‘Minimum value is exclusive",
       "allOf": [
         {
           "$ref": "#/definitions/errorStrings"

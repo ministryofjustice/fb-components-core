@@ -10,16 +10,14 @@
       "type": "boolean"
     },
     "repeatableMinimum": {
-      "title": "Minimum number",
-      "description": "Minimum number of times to repeat items",
+      "title": "Minimum number of times to repeat items",
       "type": "number",
       "minimum": 0,
       "default": 1,
       "category": ["repeatable"]
     },
     "repeatableMaximum": {
-      "title": "Maximum number",
-      "description": "Maximum number of times to repeat items",
+      "title": "Maximum number of times to repeat items",
       "type": "number",
       "minimum": 0,
       "category": ["repeatable"]
@@ -31,7 +29,7 @@
       "category": ["repeatable"]
     },
     "repeatableLede": {
-      "title": "Repeatable lede",
+      "title": "Repeatable section lede",
       "description": "Introductory paragraph that follows the heading for repeatable items",
       "type": "string",
       "category": ["repeatable"]
@@ -44,7 +42,7 @@
       "category": ["repeatable"]
     },
     "repeatableDelete": {
-      "title": "Delete string",
+      "title": "Remove string",
       "description": "Content used to denote delete an item - defaults to ‘Remove’",
       "type": "string",
       "default": "Remove",
