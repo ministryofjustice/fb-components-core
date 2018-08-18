@@ -1,11 +1,45 @@
 {% extends "page.njk.html" %}
 
+{% block styles %}
+{{ super() }}
+<link href="/assets/application.css" rel="stylesheet">
+{% endblock %}
+
 {% block pageContentHeading %}
 <h1 class="govuk-heading-l">Check your answers</h1>
 {% endblock %}
 
 {% block pageContentComponents %}
-<div class="govuk-prose-scope">
-<p>Sorry, the ‘Check your answers’ page does not work yet</p>
-</div>
+{% for block in page.answers %}
+{{ answers(block) }}
+{% endfor %}
 {% endblock %}
+
+
+{% macro answers(block) %}
+{% if block.heading %}
+{% set level = block.level %}
+{% set classSuffix = 'm' %}
+{% if level == 3 %}{% set classSuffix = 's' %}{% endif %}
+<h{{ level }} class="govuk-heading-{{ classSuffix }}">{{ block.heading | safe }}</h{{ level }}>
+{% endif %}
+{% if block.answers %}
+<dl class="app-check-your-answers app-check-your-answers--long">
+{% for question in block.answers %}
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      {{ question.question | safe }}
+    </dt>
+    <dd class="app-check-your-answers__answer">
+      {{ question.answer | safe }}
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="{{ question.changeUrl }}">
+        Change<span class="govuk-visually-hidden"> your answer for {{ question.question | safe }}</span>
+      </a>
+    </dd>
+  </div>
+{% endfor %}
+</dl>
+{% endif %}
+{% endmacro %}

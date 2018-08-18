@@ -46,7 +46,11 @@
 {% endblock %}
 
 {% block pageContentBody %}
-<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if not page._form %} class="govuk-prose-scope"{% endif %}>
+<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}>
+<p class="govuk-visually-hidden"><input type="submit"></p>
+{% if page.changepage %}
+<input type="hidden" name="changepage" value="{{ page.changepage }}">
+{% endif %}
 {% if page.body -%}
 <div class="fb-body govuk-prose-scope" data-block-id="{{ page._id }}" data-block-property="body">{{ page.body | safe }}</div>
 {%- endif %}
