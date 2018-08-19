@@ -3,10 +3,16 @@
 {% block styles %}
 {{ super() }}
 <link href="/assets/application.css" rel="stylesheet">
+<style>
+dl + .govuk-heading-s {
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+</style>
 {% endblock %}
 
 {% block pageContentHeading %}
-<h1 class="govuk-heading-l">Check your answers</h1>
+<h1 class="govuk-heading-l">Check your answers before sending your application</h1>
 {% endblock %}
 
 {% block pageContentComponents %}
@@ -20,7 +26,7 @@
 {% if block.heading %}
 {% set level = block.level %}
 {% set classSuffix = 'm' %}
-{% if level == 3 %}{% set classSuffix = 's' %}{% endif %}
+{% if level > 2 %}{% set classSuffix = 's' %}{% endif %}
 <h{{ level }} class="govuk-heading-{{ classSuffix }}">{{ block.heading | safe }}</h{{ level }}>
 {% endif %}
 {% if block.answers %}
