@@ -7,6 +7,22 @@
   "properties": {
     "_type": {
       "const": "page.summary"
+    },
+    "heading": {
+      "default": "Check your answers"
+    },
+    "sendHeading": {
+      "title": "Send heading",
+      "description": "Heading to display before accept and send button",
+      "type": "string",
+      "default": "Now send your application"
+    },
+    "sendBody": {
+      "title": "Send content",
+      "description": "Content to display before accept and send button",
+      "type": "string",
+      "multiline": true,
+      "default": "By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct."
     }
   },
   "allOf": [

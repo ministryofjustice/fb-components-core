@@ -63,10 +63,17 @@
 {% if page._type === 'page.start' %}
   {% set buttonHtml = 'Start' %}
   {% set buttonClass = 'govuk-button--start' %}
+  {% if not page.steps.length %}
+    {% set buttonHref = 'instance' %}
+  {% endif %}
+{% endif %}
+{% if page._type === 'page.summary' %}
+  {% set buttonHtml = 'Accept and send application' %}
 {% endif %}
 {{ callMacro('govukButton', {
   html: buttonHtml,
-  classes: buttonClass
+  classes: buttonClass,
+  href: buttonHref
 }) }}
 {% endblock %}
 {# {% endif %} #}

@@ -11,14 +11,13 @@ dl + .govuk-heading-s {
 </style>
 {% endblock %}
 
-{% block pageContentHeading %}
-<h1 class="govuk-heading-l">Check your answers before sending your application</h1>
-{% endblock %}
-
 {% block pageContentComponents %}
 {% for block in page.answers %}
 {{ answers(block) }}
 {% endfor %}
+
+<h2 class="govuk-heading-m">{{ page.sendHeading | safe }}</h2>
+{{ page.sendBody | safe }}
 {% endblock %}
 
 
