@@ -1,5 +1,16 @@
 {% extends "base.njk.html" %}
 
+{% block styles %}
+{{ super() }}
+<link href="/assets/app.css" rel="stylesheet">
+<style>
+dl + .govuk-heading-s {
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+</style>
+{% endblock %}
+
 {% block beforeContent %}
 {% if page.previouspage -%}
 {{ callMacro('govukBackLink', {
