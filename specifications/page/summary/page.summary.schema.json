@@ -22,7 +22,7 @@
       "description": "Content to display before accept and send button",
       "type": "string",
       "multiline": true,
-      "default": "By submitting this application you are confirming that, to the best of your knowledge, the details you are providing are correct."
+      "default": "By submitting this application you confirm that, to the best of your knowledge, the details you are providing are correct."
     }
   },
   "allOf": [

@@ -9,7 +9,7 @@
       "description": "Key to store user input for the control against",
       "type": "string",
       "category": [
-        "logic"
+        "userinput"
       ]
     },
     "modelProtect": {
@@ -18,7 +18,7 @@
       "type": "boolean",
       "default": false,
       "category": [
-        "logic"
+        "userinput"
       ]
     }
   },

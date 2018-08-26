@@ -7,6 +7,30 @@
 {% block styles %}{% endblock %}
 {% endblock %}
 
+{% block header %}
+  {% block govHeader %}
+    {{ govukHeader({
+      homepageUrl: '/',
+      serviceName: page.service.name,
+      serviceUrl: '/'
+      })
+    }}
+  {% endblock %}
+  {% block govPhase %}
+  {% if page.service.phase or page.service.phaseText %}
+  <div class="govuk-width-container">
+  {{ callMacro('govukPhaseBanner', {
+    html: page.service.phaseText,
+    tag: {
+      html: page.service.phase
+    }
+    })
+  }}
+  </div>
+  {% endif %}
+  {% endblock %}
+{% endblock %}
+
 {% block main %}
   <div class="govuk-width-container govuk-body-m">
     {% block beforeContent %}{% endblock %}

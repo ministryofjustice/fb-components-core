@@ -38,6 +38,11 @@
         "type": "string"
       }
     },
+    "enableSteps": {
+      "title": "Enable steps",
+      "description": "Allow current page to have steps",
+      "type": "boolean"
+    },
     "nextPage": {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/nextpage"
     }

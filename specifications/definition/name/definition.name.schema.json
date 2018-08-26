@@ -7,7 +7,11 @@
       "title": "Input name",
       "description": "Key against which user input for this input/control will be stored",
       "type": "string",
-      "processInput": true
+      "pattern": "^[a-zA-Z-_]+$",
+      "processInput": true,
+      "category": [
+        "userinput"
+      ]
     }
   }
 }
