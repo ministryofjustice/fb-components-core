@@ -13,6 +13,7 @@
       "title": "Text",
       "description": "Inset text content",
       "type": "string",
+      "content": true,
       "multiline": true
     }
   },

@@ -6,11 +6,13 @@
   "properties": {
     "label": {
       "title": "Label",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "hint": {
       "title": "Hint text",
-      "type": "string"
+      "type": "string",
+      "content": true
     }
   },
   "category": [

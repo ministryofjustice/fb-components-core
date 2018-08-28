@@ -32,7 +32,8 @@
     "html": {
       "title": "Text",
       "description": "Button text",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "href": {
       "title": "URL",

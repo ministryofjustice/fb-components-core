@@ -10,11 +10,13 @@
     },
     "heading": {
       "title": "Heading",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "title": {
       "title": "Title",
       "type": "string",
+      "content": true,
       "category": [
         "additional"
       ]
@@ -23,6 +25,7 @@
       "title": "Lede",
       "description": "Introductory paragraph that follows the heading",
       "type": "string",
+      "content": true,
       "category": [
         "content"
       ]
@@ -31,6 +34,7 @@
       "title": "Content",
       "description": "Free-form content after the heading and lede",
       "type": "string",
+      "content": true,
       "multiline": true,
       "category": [
         "content"

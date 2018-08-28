@@ -15,12 +15,14 @@
       "title": "Send heading",
       "description": "Heading to display before accept and send button",
       "type": "string",
+      "content": true,
       "default": "Now send your application"
     },
     "sendBody": {
       "title": "Send content",
       "description": "Content to display before accept and send button",
       "type": "string",
+      "content": true,
       "multiline": true,
       "default": "By submitting this application you confirm that, to the best of your knowledge, the details you are providing are correct."
     }

@@ -11,12 +11,14 @@
     "titleHtml": {
       "title": "Title",
       "description": "Text to use as panel’s title",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "html": {
       "title": "Content",
       "description": "Text to use as panel’s content",
       "type": "string",
+      "content": true,
       "multiline": true
     }
   },

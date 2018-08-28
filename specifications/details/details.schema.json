@@ -11,12 +11,14 @@
     "summary": {
       "title": "Summary",
       "description": "Text to use within the visible part of the details block",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "html": {
       "title": "Content",
       "description": "Text to use within the disclosed part of the details block",
       "type": "string",
+      "content": true,
       "multiline": true
     },
     "open": {

@@ -18,6 +18,7 @@
       "title": "Section heading",
       "description": "Name of section",
       "type": "string",
+      "content": true,
       "category": [
         "content"
       ]

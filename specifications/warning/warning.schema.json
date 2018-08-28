@@ -17,6 +17,7 @@
       "title": "Text",
       "description": "Warning text content",
       "type": "string",
+      "content": true,
       "multiline": true
     }
   },

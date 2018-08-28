@@ -10,11 +10,13 @@
   "properties": {
     "legend": {
       "title": "Legend",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "hint": {
       "title": "Hint text",
-      "type": "string"
+      "type": "string",
+      "content": true
     }
   },
   "required": [
