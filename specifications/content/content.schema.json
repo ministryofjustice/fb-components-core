@@ -13,7 +13,7 @@
     },
     "html": {
       "title": "Content",
-      "description": "Content to display",
+      "description": "Content to display - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
       "type": "string",
       "content": true,
       "multiline": true

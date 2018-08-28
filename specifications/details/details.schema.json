@@ -16,7 +16,7 @@
     },
     "html": {
       "title": "Content",
-      "description": "Text to use as the hidden/revealed part of the component",
+      "description": "Text to use as the hidden/revealed part of the component - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
       "type": "string",
       "content": true,
       "multiline": true

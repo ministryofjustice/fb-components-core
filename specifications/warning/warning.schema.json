@@ -15,8 +15,8 @@
       "type": "string"
     },
     "html": {
-      "title": "Text",
-      "description": "Warning text content",
+      "title": "Content",
+      "description": "Warning text content - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
       "type": "string",
       "content": true,
       "multiline": true

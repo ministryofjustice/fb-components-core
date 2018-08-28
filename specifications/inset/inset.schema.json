@@ -11,7 +11,7 @@
     },
     "html": {
       "title": "Text",
-      "description": "Inset text content",
+      "description": "Inset text content - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
       "type": "string",
       "content": true,
       "multiline": true
