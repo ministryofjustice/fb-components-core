@@ -13,6 +13,7 @@
     },
     "dateType": {
       "title": "Date type",
+      "description": "The format for entering dates",
       "type": "string",
       "enum": [
         "day-month-year",

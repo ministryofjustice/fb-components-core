@@ -14,12 +14,12 @@
     },
     "legend": {
       "title": "Legend",
-      "description": "Text to use in fieldset legend (legendHtml)",
+      "description": "Text to use in fieldset legend",
       "type": "string"
     },
     "hint": {
       "title": "Hint",
-      "description": "Hint text to use in fieldset legend (legendHintHtml)",
+      "description": "Text to help users answer a question - appears in grey under the legend",
       "type": "string"
     }
   },

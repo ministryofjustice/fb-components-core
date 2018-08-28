@@ -12,12 +12,18 @@
       "const": "section"
     },
     "heading": {
+      "title": "Heading",
+      "description": "Appears at the top of the section as the correct level H element",
       "type": "string"
     },
     "lede": {
+      "title": "First paragraph",
+      "description": "Introductory paragraph for the section",
       "type": "string"
     },
     "content": {
+      "title": "Content",
+      "description": "Display ‘flat’ content, such as text",
       "type": "string",
       "multiline": true
     }

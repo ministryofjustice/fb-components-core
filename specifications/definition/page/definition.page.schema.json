@@ -5,11 +5,13 @@
   "properties": {
     "url": {
       "title": "URL",
+      "description": "The page’s relative url - uses the page id unless you specify otherwise",
       "type": "string",
       "pattern": "^[\\w-_\/]+$"
     },
     "heading": {
       "title": "Heading",
+      "description": "The page’s top-level heading (H1) - appears at the top of the page",
       "type": "string",
       "content": true
     },
@@ -23,7 +25,7 @@
     },
     "lede": {
       "title": "Lede",
-      "description": "Introductory paragraph that follows the heading",
+      "description": "Comes after the heading (it‘s also known as the ‘lede’) - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
       "type": "string",
       "content": true,
       "category": [
@@ -32,7 +34,7 @@
     },
     "body": {
       "title": "Content",
-      "description": "Free-form content after the heading and lede",
+      "description": "Free-form content after the heading and first paragraph - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
       "type": "string",
       "content": true,
       "multiline": true,

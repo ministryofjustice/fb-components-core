@@ -11,6 +11,7 @@
     },
     "iconFallbackText": {
       "title": "Fallback text for the icon",
+      "description": "Alternative text for the icon - for example ‘warning’",
       "type": "string"
     },
     "html": {

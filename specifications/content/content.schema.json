@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/content",
   "_name": "content",
   "title": "Content",
-  "description": "Display content",
+  "description": "Display ‘flat’ content, such as text",
   "type": "object",
   "category": [
     "content"
@@ -12,6 +12,8 @@
       "const": "content"
     },
     "html": {
+      "title": "Content",
+      "description": "Content to display",
       "type": "string",
       "content": true,
       "multiline": true

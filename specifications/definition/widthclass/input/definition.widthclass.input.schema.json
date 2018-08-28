@@ -5,7 +5,7 @@
   "properties": {
     "widthClassInput": {
       "title": "Input width",
-      "description": "Determines govuk width class to apply to input",
+      "description": "The govuk width class to apply to input",
       "type": "string",
       "enumMap": "widthClassMap",
       "enum": [

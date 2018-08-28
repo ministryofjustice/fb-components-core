@@ -9,9 +9,13 @@
       "const": "option"
     },
     "text": {
+      "title": "Option text",
+      "description": "Text displayed to users for that option",
       "type": "string"
     },
     "value": {
+      "title": "Option value",
+      "description": "Value assigned when users select option",
       "type": "string"
     }
   },

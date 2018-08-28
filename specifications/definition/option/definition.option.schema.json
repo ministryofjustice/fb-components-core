@@ -5,6 +5,7 @@
   "properties": {
     "value": {
       "title": "Option value",
+      "description": "Value assigned when users select option",
       "type": "string"
     }
   },

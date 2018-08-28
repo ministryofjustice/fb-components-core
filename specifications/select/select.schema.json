@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/select",
   "_name": "select",
   "title": "Select",
-  "description": "Let users select one option from a list. NB. use as a last resort",
+  "description": "Let users select one option from a list (only use as a last resort, as some users find selects difficult to use)",
   "type": "object",
   "properties": {
     "_type": {
@@ -10,7 +10,7 @@
     },
     "items": {
       "title": "Options",
-      "description": "Select options",
+      "description": "Items that users can select",
       "type": "array",
       "items": {
         "$ref": "http://gov.uk/schema/v1.0.0/option"

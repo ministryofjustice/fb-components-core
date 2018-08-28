@@ -1,8 +1,8 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/details",
   "_name": "details",
-  "title": "Details (progressive disclosure)",
-  "description": "Let users reveal more detailed information only if they need it",
+  "title": "Hide/reveal",
+  "description": "Let users reveal more information only if they need it (it‘s also known as ‘Details’ in the Design System)",
   "type": "object",
   "properties": {
     "_type": {
@@ -10,20 +10,20 @@
     },
     "summary": {
       "title": "Summary",
-      "description": "Text to use within the visible part of the details block",
+      "description": "Text to use as the visible part of the component",
       "type": "string",
       "content": true
     },
     "html": {
       "title": "Content",
-      "description": "Text to use within the disclosed part of the details block",
+      "description": "Text to use as the hidden/revealed part of the component",
       "type": "string",
       "content": true,
       "multiline": true
     },
     "open": {
       "title": "Open",
-      "description": "Whether details block should be expanded when the page loads",
+      "description": "Whether the component’s content should be revealed when the page loads",
       "type": "boolean",
       "default": false
     }

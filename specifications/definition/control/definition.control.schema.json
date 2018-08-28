@@ -19,7 +19,7 @@
   "properties": {
     "disabled": {
       "title": "Disabled",
-      "description": "Whether or not the control should be disabled",
+      "description": "Whether the control should be disabled",
       "oneOf": [
         {
           "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean"

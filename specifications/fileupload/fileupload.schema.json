@@ -10,7 +10,7 @@
     },
     "multiple": {
       "title": "Multiple files",
-      "description": "Whether multiple files can be uploaded",
+      "description": "Whether users can upload more than one file",
       "type": "boolean",
       "default": false
     }

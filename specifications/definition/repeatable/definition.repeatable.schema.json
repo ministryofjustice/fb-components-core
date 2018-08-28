@@ -6,44 +6,46 @@
   "properties": {
     "repeatable": {
       "title": "Repeatable",
-      "description": "Whether the page/component should be repeatable",
+      "description": "Whether the page or component lets users ‘add another’ answer",
       "type": "boolean"
     },
     "repeatableMinimum": {
-      "title": "Minimum number of times to repeat items",
+      "title": "Minimum number of repeatable items",
+      "description": "For example, if users must give at least 3 answers, set this to 3 - the page will show 3 inputs when it loads",
       "type": "number",
       "minimum": 0,
       "default": 1,
       "category": ["repeatable"]
     },
     "repeatableMaximum": {
-      "title": "Maximum number of times to repeat items",
+      "title": "Maximum number of repeatable items",
+      "description": "For example, if users can give up to 5 answers, set this to 5",
       "type": "number",
       "minimum": 0,
       "category": ["repeatable"]
     },
     "repeatableHeading": {
-      "title": "Repeatable heading",
-      "description": "Heading for repeatable items",
+      "title": "Repeatable section heading",
+      "description": "Heading for repeatable items - appears once before the components",
       "type": "string",
       "category": ["repeatable"]
     },
     "repeatableLede": {
-      "title": "Repeatable section lede",
-      "description": "Introductory paragraph that follows the heading for repeatable items",
+      "title": "Repeatable section first paragraph",
+      "description": "Introductory paragraph - follows the heading",
       "type": "string",
       "category": ["repeatable"]
     },
     "repeatableAdd": {
-      "title": "Add string",
-      "description": "Content used to denote add an item - defaults to ‘Add another’",
+      "title": "Text to add another answer",
+      "description": "Specify the link text for users to add another answer - defaults to ‘Add another’",
       "type": "string",
       "default": "Add another",
       "category": ["repeatable"]
     },
     "repeatableDelete": {
-      "title": "Remove string",
-      "description": "Content used to denote delete an item - defaults to ‘Remove’",
+      "title": "Text to remove an answer",
+      "description": "Specify the link text for users to delete an answer - defaults to ‘Remove’",
       "type": "string",
       "default": "Remove",
       "category": ["repeatable"]

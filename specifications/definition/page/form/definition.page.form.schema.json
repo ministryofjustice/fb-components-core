@@ -33,7 +33,7 @@
     },
     "steps": {
       "title": "Steps",
-      "description": "List of pages making up the sub-journey from the current page",
+      "description": "The ‘child’ pages that follow from this ‘parent’ page",
       "type": "array",
       "items": {
         "type": "string"

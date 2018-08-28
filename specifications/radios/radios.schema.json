@@ -10,7 +10,7 @@
     },
     "items": {
       "title": "Options",
-      "description": "Radio group options",
+      "description": "Items that users can select",
       "type": "array",
       "items": {
         "$ref": "http://gov.uk/schema/v1.0.0/radio"

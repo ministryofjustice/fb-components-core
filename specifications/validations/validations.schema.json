@@ -9,13 +9,13 @@
       "properties": {
         "inline": {
           "title": "Input error",
-          "description": "Error message to display next to input",
+          "description": "Error message users see next to the input if their answer fails validation",
           "type": "string",
           "role": "errorString"
         },
         "summary": {
           "title": "Summary error",
-          "description": "Error message to display in error summary header",
+          "description": "Error message users see at the top of a page if their answer fails validation - write {control} to show the question in the message",
           "type": "string",
           "role": "errorString"
         }
@@ -23,6 +23,7 @@
     },
     "required": {
       "title": "Required",
+      "description": "Whether the user must answer a question",
       "oneOf": [
         {
           "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean"
@@ -40,6 +41,7 @@
     },
     "minLength": {
       "title": "Minimum length",
+      "description": "The minimum characters users must enter",
       "type": "number",
       "minimum": 0
     },
@@ -53,6 +55,7 @@
     },
     "maxLength": {
       "title": "Maximum length",
+      "description": "The maximum characters users can enter",
       "type": "number",
       "minimum": 0
     },
@@ -66,6 +69,7 @@
     },
     "pattern": {
       "title": "Pattern to match string against",
+      "description": "A regular expression for validating users’ answers",
       "type": "string"
     },
     "errorsPattern": {
@@ -78,6 +82,7 @@
     },
     "multipleOf": {
       "title": "Multiple of",
+      "description": "Whether users must enter a multiple of another number",
       "type": "number",
       "minimum": 0
     },
@@ -91,6 +96,7 @@
     },
     "maximum": {
       "title": "Maximum value",
+      "description": "The largest number that users can enter",
       "type": "number",
       "minimum": 0
     },
@@ -103,7 +109,8 @@
       ]
     },
     "exclusiveMaximum": {
-      "title": "Maximum value is exclusive",
+      "title": "Is maximum value exclusive?",
+      "description": "Excludes the maximum value from the range users can enter",
       "type": "boolean"
     },
     "errorsExclusiveMaximum": {
@@ -116,6 +123,7 @@
     },
     "minimum": {
       "title": "Minimum value",
+      "description": "The smallest number that users can enter",
       "type": "number",
       "minimum": 0
     },
@@ -128,7 +136,8 @@
       ]
     },
     "exclusiveMinimum": {
-      "title": "Minimum value is exclusive",
+      "title": "Is minimum value exclusive?",
+      "description": "Excludes the minimum value from the range users can enter",
       "type": "boolean"
     },
     "errorsExclusiveMinimum": {

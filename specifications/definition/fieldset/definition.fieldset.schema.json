@@ -10,11 +10,13 @@
   "properties": {
     "legend": {
       "title": "Legend",
+      "description": "Question or instruction to user - appears above the component. If component is repeatable, the legend appears next to the input, with the number added automatically (for example, child 1)",
       "type": "string",
       "content": true
     },
     "hint": {
       "title": "Hint text",
+      "description": "Text to help users answer a question - appears in grey under the legend (like this text)",
       "type": "string",
       "content": true
     }
