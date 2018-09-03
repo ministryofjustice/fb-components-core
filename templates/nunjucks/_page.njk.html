@@ -85,7 +85,9 @@ dl.app-check-your-answers + .govuk-heading-s {
   {% endif %}
 {% endif %}
 {% if page._type === 'page.summary' %}
+{% if not page.summaryOf %}
   {% set buttonHtml = 'Accept and send application' %}
+{% endif %}
 {% endif %}
 {{ callMacro('govukButton', {
   html: buttonHtml,
