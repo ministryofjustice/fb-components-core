@@ -11,6 +11,10 @@
     "heading": {
       "default": "Check your answers"
     },
+    "summaryOf": {
+      "title": "Summary of",
+      "description": "Page/section that summary summarises"
+    },
     "sendHeading": {
       "title": "Send heading",
       "description": "Heading to display before accept and send button",
