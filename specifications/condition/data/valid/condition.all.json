@@ -1,7 +1,7 @@
 {
-  "_id": "condition.allOf",
+  "_id": "condition.all",
   "_type": "condition",
-  "allOfConditions": [
+  "all": [
     {
       "identifier": "foo",
       "operator": "is",

@@ -1,10 +1,10 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/conditions/any",
-  "_name": "definition.conditions.any",
-  "title": "At least conditions met properties",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/conditions/exactly",
+  "_name": "definition.conditions.exactly",
+  "title": "Exactly conditions met properties",
   "properties": {
-    "any": {
-      "title": "At least X conditions met",
+    "exactly": {
+      "title": "Exactly X conditions met",
       "type": "array",
       "items": {
         "$ref": "http://gov.uk/schema/v1.0.0/condition"
@@ -18,7 +18,7 @@
     }
   },
   "required": [
-    "any"
+    "exactly"
   ],
   "category": [
     "definition"
