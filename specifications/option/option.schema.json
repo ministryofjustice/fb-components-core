@@ -11,7 +11,8 @@
     "text": {
       "title": "Option text",
       "description": "Text displayed to users for that option",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "value": {
       "title": "Option value",
