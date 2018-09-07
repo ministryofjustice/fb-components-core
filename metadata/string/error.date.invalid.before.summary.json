@@ -1,0 +1,6 @@
+{
+  "_id": "error.date.invalid.before.summary",
+  "_type": "string.error",
+  "description": "Input (date) should be before - summary",
+  "value": "Your answer for “{control}” is earlier than {targetValue}"
+}

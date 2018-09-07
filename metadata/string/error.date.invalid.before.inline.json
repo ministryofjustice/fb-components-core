@@ -1,0 +1,6 @@
+{
+  "_id": "error.date.invalid.before.inline",
+  "_type": "string.error",
+  "description": "Input (date) should be before - inline",
+  "value": "Date should be earlier than {targetValue}"
+}

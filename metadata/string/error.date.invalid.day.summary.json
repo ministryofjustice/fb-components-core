@@ -1,0 +1,6 @@
+{
+  "_id": "error.date.invalid.day.summary",
+  "_type": "string.error",
+  "description": "Day input (date) is invalid - summary",
+  "value": "Your answer for “{control}” is not valid"
+}

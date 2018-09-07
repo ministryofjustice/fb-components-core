@@ -22,21 +22,14 @@
         "year"
       ],
       "default": "day-month-year"
-    },
-    "validation": {
-      "properties": {
-        "formatMinimum": {
-          "$ref": "#/definitions/validDate"
-        },
-        "formatMaximum": {
-          "$ref": "#/definitions/validDate"
-        }
-      }
     }
   },
   "allOf": [
     {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/field"
+    },
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/validations#/definitions/dateBundle"
     }
   ],
   "composite": [
@@ -50,18 +43,6 @@
       "month-year": "Month / Year",
       "year": "Year",
       "day-month": "Day / Month"
-    },
-    "validDate": {
-      "oneOf": [
-        {
-          "type": "string",
-          "format": "date"
-        },
-        {
-          "type": "string",
-          "pattern": "^\\d+\\w$"
-        }
-      ]
     }
   }
 }

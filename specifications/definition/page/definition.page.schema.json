@@ -24,8 +24,8 @@
       ]
     },
     "lede": {
-      "title": "Lede",
-      "description": "Comes after the heading (it‘s also known as the ‘lede’) - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
+      "title": "First paragraph",
+      "description": "Introductory paragraph after the heading (it‘s also known as the ‘lede’) - use [markdown](https://www.gov.uk/guidance/how-to-publish-on-gov-uk/markdown) to format text or add hyperlinks",
       "type": "string",
       "content": true,
       "category": [
