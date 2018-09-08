@@ -7,6 +7,12 @@
   "properties": {
     "_type": {
       "const": "radio"
+    },
+    "hint": {
+      "title": "Hint text",
+      "description": "Text to help users understand an option - appears in grey under the label",
+      "type": "string",
+      "content": true
     }
   },
   "allOf": [
