@@ -16,6 +16,9 @@
       "description": "Text to help users understand an option - appears in grey under the label",
       "type": "string",
       "content": true
+    },
+    "conditionalComponent": {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/conditionalcomponent"
     }
   },
   "allOf": [
@@ -32,5 +35,15 @@
   "required": [
     "name",
     "label"
-  ]
+  ],
+  "transforms": {
+    "model": {
+      "propagation": "conditionalComponent"
+    }
+  },
+  "uiCategory": {
+    "main": [
+      "conditionalComponent"
+    ]
+  }
 }
