@@ -7,6 +7,11 @@
       "title": "Option value",
       "description": "Value assigned when users select option",
       "type": "string"
+    },
+    "hasDivider": {
+      "title": "Option divider",
+      "description": "Whether to display a textual divider before the option - defaults to ‘or’",
+      "type": "boolean"
     }
   },
   "allOf": [
