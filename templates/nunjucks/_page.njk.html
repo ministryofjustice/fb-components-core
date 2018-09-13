@@ -102,6 +102,11 @@ dl.app-check-your-answers + .govuk-heading-s {
 {% endblock %}
 
 </div>
+{% if page.asideComponents %}
+<div class="govuk-grid-column-one-third">
+{{- callBlocks(page.asideComponents) -}}
+</div>
+{% endif %}
 </div>
 </div>
 {% endblock %}{# end content #}
