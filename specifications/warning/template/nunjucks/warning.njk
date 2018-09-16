@@ -1,4 +1,4 @@
 {%- macro warning(data) %}
-{% set params = setError(data) %}
-{{ callMacro('govukWarningText', params) }}
+{% set data = setMainEditableInstanceProperty(data, 'html') %}
+{{ callMacro('govukWarningText', data) }}
 {% endmacro -%}
