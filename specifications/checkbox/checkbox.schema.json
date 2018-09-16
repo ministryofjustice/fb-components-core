@@ -11,6 +11,9 @@
     "value": {
       "default": "yes"
     },
+    "label": {
+      "skipOptional": true
+    },
     "hint": {
       "title": "Hint text",
       "description": "Text to help users understand an option - appears in grey under the label",
