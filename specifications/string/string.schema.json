@@ -1,7 +1,8 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/string",
-  "title": "String",
   "_name": "string",
+  "idSeed": "_id",
+  "title": "String",
   "description": "Content string",
   "type": "object",
   "properties": {

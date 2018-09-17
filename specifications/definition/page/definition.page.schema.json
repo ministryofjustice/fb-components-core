@@ -1,6 +1,7 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/definition/page",
   "_name": "definition.page",
+  "idSeed": "url",
   "title": "Page definition",
   "properties": {
     "url": {

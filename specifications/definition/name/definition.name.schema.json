@@ -1,6 +1,7 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/definition/name",
   "_name": "definition.name",
+  "idSeed": "name",
   "title": "Name definition",
   "properties": {
     "name": {
