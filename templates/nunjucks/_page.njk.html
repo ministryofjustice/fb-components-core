@@ -39,7 +39,7 @@ dl.app-check-your-answers + .govuk-heading-s {
 
 {% block prePageContentHeading %}{% endblock %}
 
-<div class="govuk-main-wrapper">
+<div class="govuk-main-wrapper fb-mode-{{page.EDITMODE}}" data-block-id="{{ page._id }}" data-block-type="page">
 <div class="govuk-grid-row">
 {% set columns = 'two-thirds' %}
 {% if page.columns %}

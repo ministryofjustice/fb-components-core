@@ -10,7 +10,7 @@
 {% endif %}
 {{- callBlocks(data.components) -}}
 {% if data.add %}
-<p>{{ callMacro('govukButton', data.add) }}</p>
+<p data-block-id="{{ data._$repeatableId }}" data-block-property="repeatableAdd">{{ callMacro('govukButton', data.add) }}</p>
 {% endif %}
 </div>
 {% endmacro -%}
