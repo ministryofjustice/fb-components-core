@@ -7,7 +7,6 @@
 {% set conditionalHTML = '' %}
 {% if item.conditionalComponent %}
 {% set conditionalHTML %}
-item.conditionalComponent - {{ item.conditionalComponent | json }}
 {{- callBlock(item.conditionalComponent) -}}
 {% endset %}
 {% set conditional = {html: conditionalHTML} %}
