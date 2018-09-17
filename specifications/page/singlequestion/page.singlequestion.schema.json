@@ -19,5 +19,10 @@
   ],
   "required": [
     "components"
+  ],
+  "surplusProperties": [
+    "heading",
+    "lede",
+    "body"
   ]
 }
