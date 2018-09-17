@@ -6,7 +6,7 @@
   "properties": {
     "url": {
       "title": "URL",
-      "description": "The page’s relative url - uses the page id unless you specify otherwise",
+      "description": "The page’s relative url",
       "type": "string",
       "pattern": "^[\\w-_\/]+$"
     },
