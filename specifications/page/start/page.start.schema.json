@@ -10,6 +10,11 @@
     },
     "enableSteps": {
       "const": true
+    },
+    "components": {
+      "accepts": [
+        "content"
+      ]
     }
   },
   "allOf": [

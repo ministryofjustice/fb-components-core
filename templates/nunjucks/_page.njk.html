@@ -102,7 +102,9 @@ dl.app-check-your-answers + .govuk-heading-s {
 {% if page.EDITMODE != 'edit' %}
 </form>
 {% endif %}
+{% if page.extraComponents %}
 {{- callComponents(page, 'extraComponents') -}}
+{% endif %}
 {% endblock %}
 {% endblock %}
 
