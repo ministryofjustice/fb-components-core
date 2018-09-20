@@ -5,15 +5,21 @@
   "properties": {
     "widthClass": {
       "title": "Width",
-      "description": "Determines govuk width class to apply",
+      "description": "How wide the component should be visually",
       "type": "string",
-      "enumMap": "widthClassMap",
+      "enumMap": {
+        "one-quarter": "One quarter",
+        "one-third": "One third",
+        "one-half": "One half",
+        "two-thirds": "Two thirds",
+        "three-quarters": "Three quarters"
+      },
       "enum": [
-        "three-quarters",
-        "two-thirds",
-        "one-half",
+        "one-quarter",
         "one-third",
-        "one-quarter"
+        "one-half",
+        "two-thirds",
+        "three-quarters"
       ],
       "category": [
         "htmlattributes"

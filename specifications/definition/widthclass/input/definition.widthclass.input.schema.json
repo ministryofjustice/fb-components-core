@@ -5,18 +5,35 @@
   "properties": {
     "widthClassInput": {
       "title": "Input width",
-      "description": "The govuk width class to apply to input",
+      "description": "How wide the input should be visually",
       "type": "string",
-      "enumMap": "widthClassMap",
+      "enumMap": {
+        "2": "2 characters",
+        "3": "3 characters",
+        "4": "4 characters",
+        "5": "5 characters",
+        "10": "10 characters",
+        "20": "20 characters",
+        "30": "30 characters",
+        "one-quarter": "One quarter",
+        "one-third": "One third",
+        "one-half": "One half",
+        "two-thirds": "Two thirds",
+        "three-quarters": "Three quarters"
+      },
       "enum": [
+        "2",
+        "3",
+        "4",
+        "5",
         "10",
         "20",
         "30",
-        "three-quarters",
-        "two-thirds",
-        "one-half",
+        "one-quarter",
         "one-third",
-        "one-quarter"
+        "one-half",
+        "two-thirds",
+        "three-quarters"
       ],
       "category": [
         "htmlattributes"
