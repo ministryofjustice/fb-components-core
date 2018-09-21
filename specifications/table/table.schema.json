@@ -26,7 +26,10 @@
     "rows": {
       "type": "array",
       "items": {
-        "$ref": "#/definitions/cell"
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/cell"
+        }
       }
     }
   },
@@ -61,12 +64,7 @@
           "type": "number",
           "minimum": 1
         }
-      },
-      "allOf": [
-        {
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/data"
-        }
-      ]
+      }
     }
   },
   "category": [
