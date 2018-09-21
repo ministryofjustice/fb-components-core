@@ -3,7 +3,6 @@
   "_name": "definition.nextpage",
   "title": "Next page",
   "description": "What page (or pages) to go to next, and under what conditions. Only use if what you’re trying to achieve is impossible or extremely difficult using page steps",
-  "type": "object",
   "oneOf": [
     {
       "type": "string"
