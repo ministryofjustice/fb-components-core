@@ -1,0 +1,30 @@
+{
+  "_id": "amounts",
+  "_type": "table",
+  "caption": "Dates and amounts",
+  "firstCellIsHeader": true,
+  "head": [
+    {
+      "_id": "amountsDate",
+      "_type": "cell",
+      "html": "Date"
+    },
+    {
+      "_id": "amountsAmount",
+      "_type": "cell",
+      "html": "Amount"
+    }
+  ],
+  "rows": [
+    {
+      "_id": "amountsDate1",
+      "_type": "cell",
+      "html": "First 6 weeks"
+    },
+    {
+      "_id": "amountsAmount",
+      "_type": "cell",
+      "html": "£109.80 per week"
+    }
+  ]
+}
