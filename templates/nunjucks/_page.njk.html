@@ -83,7 +83,7 @@ dl.app-check-your-answers + .govuk-heading-s {
   {% set buttonHtml = 'Start' %}
   {% set buttonClass = 'govuk-button--start' %}
   {% if not page.steps.length %}
-    {% set buttonHref = 'instance' %}
+    {% set buttonHref = '/edit' %}
   {% endif %}
 {% endif %}
 {% if page._type === 'page.summary' %}

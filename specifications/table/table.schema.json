@@ -51,7 +51,8 @@
           "const": "cell"
         },
         "html": {
-          "type": "string"
+          "type": "string",
+          "content": true
         },
         "format": {
           "type": "string"
