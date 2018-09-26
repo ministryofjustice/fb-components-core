@@ -7,6 +7,16 @@
   "properties": {
     "_type": {
       "const": "group"
+    },
+    "heading": {
+      "type": "string",
+      "title": "Heading",
+      "content": true
+    },
+    "lede": {
+      "type": "string",
+      "title": "First paragraph",
+      "content": true
     }
   },
   "allOf": [
