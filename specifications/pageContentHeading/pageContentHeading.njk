@@ -1,0 +1,7 @@
+{% macro pageContentHeading(page) %}
+{% if page.heading -%}
+{% set headingClass = 'govuk-heading-l' %}
+{% if page._type === 'page.start' %}{% set headingClass = 'govuk-heading-xl' %}{% endif %}
+<h1 class="{{ headingClass }}">{{ page.heading | safe }}</h1>
+{% endif %}
+{% endmacro %}

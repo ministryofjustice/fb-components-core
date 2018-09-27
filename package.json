@@ -6,14 +6,14 @@
       "condition"
     ]
   },
-  "version": "0.0.18-alpha",
+  "version": "0.0.20-alpha",
   "description": "Form Builder core components",
   "main": "index.js",
   "scripts": {
     "test": "test-specifications"
   },
   "devDependencies": {
-    "@ministryofjustice/fb-specification": "0.0.18-alpha"
+    "@ministryofjustice/fb-specification": "0.1.0-alpha"
   },
   "repository": {
     "type": "git",

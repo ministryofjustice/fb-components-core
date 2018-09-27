@@ -1,6 +1,4 @@
-{% extends "templates/base.html" %}
-
-{% from "error-summary/macro.njk" import govukErrorSummary %}
+{% extends "base.njk.html" %}
 
 {% block beforeContent %}
 {% if page.previouspage -%}
@@ -12,57 +10,37 @@
 {% endblock %}
 
 {% block content %}
-{% if page._type === 'page.confirmation' %}
-{% from "panel/macro.njk" import govukPanel %}
-{{ govukPanel({
-  titleHtml: page.heading,
-  html: page.lede
-}) }}
-{% endif %}
 
-
+{% block errorContent %}
 {% if page.errorList %}
-{{ govukErrorSummary({
+{{ callMacro('govukErrorSummary', {
   titleHtml: page.errorTitle,
   errorList: page.errorList
 }) }}
 {% endif %}
+{% endblock %}
+
+{% block prePageContentHeading %}{% endblock %}
+
 <div class="govuk-main-wrapper">
 <div class="govuk-grid-row">
-
-<div class="govuk-grid-column-two-thirds">
-
-
-{# {{ JSON(page, null, 2) | safe}} #}
-<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if not page._form %} class="govuk-prose-scope"{% endif %}>
-
-{% if page._type !== 'page.singlequestion' %}{% if page._type !== 'page.confirmation' %}
-{% set headingClass = 'govuk-heading-l' %}
-{% if page._type === 'page.start' %}{% set headingClass = 'govuk-heading-xl' %}{% endif %}
-<h1 class="{{ headingClass }}">{{ page.heading | safe }}</h1>
-{% endif %}{% endif %}
-{% if page.lede -%}
-{{ page.lede | safe }}
-{%- endif %}
-{% if page.body -%}
-{{ page.body | safe }}
-{%- endif %}
-{{- callBlocks(page.components) -}}
-{% if page.nextpage %}
-{% set buttonHtml = 'Continue' %}
-{% if page._type === 'page.start' %}
-  {% set buttonHtml = 'Start' %}
-  {% set buttonClass = 'govuk-button--start' %}
+{% set columns = 'two-thirds' %}
+{% if page.columns %}
+{% set columns = page.columns %}
 {% endif %}
-{% from "button/macro.njk" import govukButton %}
-{{ govukButton({
-  html: buttonHtml,
-  classes: buttonClass
-}) }}
-{% endif %}
-</form>
+<div class="govuk-grid-column-{{ columns }}">
 
-</div>
-</div>
-</div>
+{% block pageContentHeading %}
+{{ callMacro('pageContentHeading', page) }}
 {% endblock %}
+
+{% block pageContentBody %}
+<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if not page._form %} class="govuk-prose-scope"{% endif %}>
+{{ callMacro('pageContentBody', page)}}
+</form>
+{% endblock %}
+
+</div>
+</div>
+</div>
+{% endblock %}{# end content #}
