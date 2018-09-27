@@ -2,5 +2,5 @@
   "_id": "error.type.number.summary",
   "_type": "string.error",
   "description": "Input (number) is not a number - summary",
-  "value": "Please enter a number for “{control}”"
+  "value": "Enter a number for {control}"
 }

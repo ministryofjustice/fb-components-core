@@ -2,5 +2,5 @@
   "_id": "error.date.invalid.year.summary",
   "_type": "string.error",
   "description": "Year input (date) is invalid - summary",
-  "value": "Your answer for “{control}” is not valid"
+  "value": "Your answer for {control} is not valid"
 }

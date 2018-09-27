@@ -23,7 +23,7 @@
     },
     "attributes": {
       "title": "Attributes",
-      "description": "Additional HTML attributes to apply to instance - please enter the attributes as JSON",
+      "description": "Additional HTML attributes to apply to instance - Enter the attributes as JSON",
       "type": "object",
       "category": [
         "htmlattributes"

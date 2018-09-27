@@ -2,5 +2,5 @@
   "_id": "error.required.summary",
   "_type": "string.error",
   "description": "Input is required - summary",
-  "value": "Please answer the question “{control}”"
+  "value": "Enter an answer for {control}"
 }

@@ -2,5 +2,5 @@
   "_id": "error.date.invalid.inline",
   "_type": "string.error",
   "description": "Input (date) is invalid - inline",
-  "value": "Please enter a valid date"
+  "value": "Enter a valid date"
 }

@@ -2,5 +2,5 @@
   "_id": "error.maximum.summary",
   "_type": "string.error",
   "description": "Input (number) is too large - summary",
-  "value": "Your answer for “{control}” is greater than or equal to the maximum allowed {maximum}"
+  "value": "Your answer for {control} is greater than or equal to the maximum allowed ({maximum})"
 }

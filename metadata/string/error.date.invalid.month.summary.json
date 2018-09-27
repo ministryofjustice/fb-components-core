@@ -2,5 +2,5 @@
   "_id": "error.date.invalid.month.summary",
   "_type": "string.error",
   "description": "Month input (date) is invalid - summary",
-  "value": "Your answer for “{control}” is not valid"
+  "value": "Your answer for {control} is not valid"
 }
