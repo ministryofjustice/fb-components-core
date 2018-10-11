@@ -39,7 +39,7 @@ dl.app-check-your-answers + .govuk-heading-s {
 
 {% block prePageContentHeading %}{% endblock %}
 
-<div class="govuk-main-wrapper fb-mode-{{page.EDITMODE}}" data-block-id="{{ page._id }}" data-block-type="page">
+<div class="govuk-main-wrapper fb-mode-{{page.EDITMODE}}" data-block-id="{{ page._id }}" data-block-type="page"{% if page.enableSteps or page.steps.length %} data-block-steps="yes"{% endif %} data-block-pagetype="{{ page._type }}">
 <div class="govuk-grid-row">
 {% set columns = 'two-thirds' %}
 {% if page.columns %}
@@ -49,8 +49,10 @@ dl.app-check-your-answers + .govuk-heading-s {
 
 {% block pageContent %}
 {% block pageContentHeading %}
+{% if page._type !== 'page.start' -%}
 {% if page.sectionHeading -%}
 <p class="govuk-caption-l fb-sectionHeading" data-block-id="{{ page._id }}" data-block-property="sectionHeading">{{ page.sectionHeading | safe }}</p>
+{%- endif %}
 {%- endif %}
 {% if page.heading -%}
 {% set headingClass = 'govuk-heading-l' %}

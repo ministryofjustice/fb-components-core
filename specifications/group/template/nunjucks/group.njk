@@ -22,5 +22,11 @@
 {% if data.add %}
 <p class="fb-group-add" data-block-id="{{ data._$repeatableId }}" data-block-property="repeatableAdd">{{ callMacro('govukButton', data.add) }}</p>
 {% endif %}
+{% if data.repeatableMaximum %}
+<div class="repeatableMinMax">
+<p class="fb-group-repeatableSetting fb-group-repeatableMinimum" data-block-id="{{ data._$repeatableId }}" data-block-property="repeatableMinimum">Minimum {{ data.repeatableMinimum }}</p>
+<p class="fb-group-repeatableSetting fb-group-repeatableMaximum" data-block-id="{{ data._$repeatableId }}" data-block-property="repeatableMaximum">Maximum {{ data.repeatableMaximum }}</p>
+</div>
+{% endif %}
 </div>
 {% endmacro -%}

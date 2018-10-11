@@ -4,7 +4,7 @@
   "title": "Block definition",
   "properties": {
     "show": {
-      "title": "Show",
+      "title": "Visibility",
       "category": [
         "logic"
       ],

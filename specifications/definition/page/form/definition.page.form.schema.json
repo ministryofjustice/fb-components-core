@@ -47,6 +47,19 @@
       "description": "Allow current page to have steps",
       "type": "boolean"
     },
+    "showSteps": {
+      "title": "Steps visibility",
+      "category": [
+        "logic"
+      ],
+      "description": "Whether to show or hide the page’s steps",
+      "oneOf": [
+        {
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean"
+        }
+      ],
+      "default": true
+    },
     "nextPage": {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/nextpage"
     }
