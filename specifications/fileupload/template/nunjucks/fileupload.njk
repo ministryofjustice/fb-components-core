@@ -2,7 +2,13 @@
 {% set params = setError(data) %}
 {% set params = setLabel(params) %}
 {% set params = setInputWidthClass(params) %}
-{% set attributes = {multiple: params.multiple, accepts: params.accepts} %}
+{% set attributes = {} %}
+{% if params.multiple %}
+{% set attributes = setObject(attributes, {multiple:'multiple'}) %}
+{% endif %}
+{% if params.accepts %}
+{% set attributes = setObject(attributes, {accepts: params.accepts}) %}
+{% endif %}
 {% set params = setObject(params, {attributes:attributes}) %}
 {{ callMacro('govukFileUpload', params) }}
 {% endmacro -%}
