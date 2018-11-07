@@ -27,6 +27,15 @@
     "phaseText": {
       "title": "Service phase text",
       "type": "string"
+    },
+    "code": {
+      "title": "Service code",
+      "type": "string"
+    },
+    "defaultCCAddress": {
+      "title": "User email address field",
+      "description": "Name of field used as email address to send user a copy of submission details",
+      "type": "string"
     }
   },
   "allOf": [
