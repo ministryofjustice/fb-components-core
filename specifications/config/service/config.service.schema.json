@@ -36,6 +36,16 @@
       "title": "User email address field",
       "description": "Name of field used as email address to send user a copy of submission details",
       "type": "string"
+    },
+    "emailUser": {
+      "title": "User email template",
+      "type": "string",
+      "multiline": true
+    },
+    "emailTeam": {
+      "title": "Service team email template",
+      "type": "string",
+      "multiline": true
     }
   },
   "allOf": [
