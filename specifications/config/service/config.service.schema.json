@@ -37,12 +37,20 @@
       "description": "Name of field used as email address to send user a copy of submission details",
       "type": "string"
     },
-    "emailUser": {
-      "title": "User email template",
+    "emailCitizenSubject": {
+      "title": "Citizen email subject",
+      "type": "string"
+    },
+    "emailCitizenTemplate": {
+      "title": "Citizen email template",
       "type": "string",
       "multiline": true
     },
-    "emailTeam": {
+    "emailTeamSubject": {
+      "title": "Service team email subject",
+      "type": "string"
+    },
+    "emailTeamTemplate": {
       "title": "Service team email template",
       "type": "string",
       "multiline": true
