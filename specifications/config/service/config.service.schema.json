@@ -32,25 +32,30 @@
       "title": "Service code",
       "type": "string"
     },
-    "defaultCCAddress": {
-      "title": "User email address field",
-      "description": "Name of field used as email address to send user a copy of submission details",
+    "emailInputNameUser": {
+      "title": "CC email address field",
+      "description": "Name of input used as email address to send user a copy of submission details",
       "type": "string"
     },
-    "emailCitizenSubject": {
-      "title": "Citizen email subject",
+    "emailSubjectUser": {
+      "title": "CC email subject",
       "type": "string"
     },
-    "emailCitizenTemplate": {
-      "title": "Citizen email template",
+    "emailTemplateUser": {
+      "title": "CC email template",
       "type": "string",
       "multiline": true
     },
-    "emailTeamSubject": {
+    "emailInputNameTeam": {
+      "title": "Service team email address field",
+      "description": "Name of input used as email address to send submission details to service team - overrides any value set as SERVICETEAM_EMAIL",
+      "type": "string"
+    },
+    "emailSubjectTeam": {
       "title": "Service team email subject",
       "type": "string"
     },
-    "emailTeamTemplate": {
+    "emailTemplateTeam": {
       "title": "Service team email template",
       "type": "string",
       "multiline": true
