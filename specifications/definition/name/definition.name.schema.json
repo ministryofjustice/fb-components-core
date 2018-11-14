@@ -6,9 +6,9 @@
   "properties": {
     "name": {
       "title": "Input name",
-      "description": "Key against which user input for this input/control will be stored",
+      "description": "Used by system to identify user's answer - also used as the component's HTML name property.",
       "type": "string",
-      "pattern": "^[a-zA-Z-_]+$",
+      "pattern": "^[a-zA-Z0-9-_]+$",
       "processInput": true,
       "category": [
         "userinput"

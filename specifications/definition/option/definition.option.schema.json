@@ -5,7 +5,7 @@
   "properties": {
     "value": {
       "title": "Option value",
-      "description": "Value assigned when users select option",
+      "description": "Value captured by system when users choose this option",
       "type": "string"
     },
     "hasDivider": {
