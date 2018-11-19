@@ -6,7 +6,7 @@
   "properties": {
     "url": {
       "title": "URL",
-      "description": "The page’s relative url",
+      "description": "The page’s relative url - it must not contain any spaces",
       "type": "string",
       "pattern": "^[\\w-_\/]+$"
     },

@@ -32,6 +32,11 @@
       "title": "Form code",
       "type": "string"
     },
+    "title": {
+      "title": "Form title",
+      "description": "Used as form’s title when generating PDF output",
+      "type": "string"
+    },
     "emailInputNameUser": {
       "title": "CC email address field",
       "description": "Name of input used as email address to send user a copy of submission details",
