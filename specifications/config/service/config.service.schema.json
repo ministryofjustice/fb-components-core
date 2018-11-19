@@ -1,8 +1,8 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/config/service",
-  "title": "Service configuration",
+  "title": "Form configuration",
   "_name": "config.service",
-  "description": "Service configuration",
+  "description": "Form configuration",
   "type": "object",
   "properties": {
     "_id": {
@@ -12,11 +12,11 @@
       "const": "config.service"
     },
     "name": {
-      "title": "Service name",
+      "title": "Form name",
       "type": "string"
     },
     "phase": {
-      "title": "Service phase",
+      "title": "Form phase",
       "type": "string",
       "enum": [
         "",
@@ -25,11 +25,11 @@
       ]
     },
     "phaseText": {
-      "title": "Service phase text",
+      "title": "Form phase text",
       "type": "string"
     },
     "code": {
-      "title": "Service code",
+      "title": "Form code",
       "type": "string"
     },
     "emailInputNameUser": {
@@ -47,16 +47,16 @@
       "multiline": true
     },
     "emailInputNameTeam": {
-      "title": "Service team email address field",
-      "description": "Name of input used as email address to send submission details to service team - overrides any value set as SERVICETEAM_EMAIL",
+      "title": "Form team email address field",
+      "description": "Name of input used as email address to send submission details to form team - overrides any value set as SERVICETEAM_EMAIL",
       "type": "string"
     },
     "emailSubjectTeam": {
-      "title": "Service team email subject",
+      "title": "Form team email subject",
       "type": "string"
     },
     "emailTemplateTeam": {
-      "title": "Service team email template",
+      "title": "Form team email template",
       "type": "string",
       "multiline": true
     }
