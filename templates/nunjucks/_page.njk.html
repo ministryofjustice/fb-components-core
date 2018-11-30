@@ -17,6 +17,19 @@ dl.app-check-your-answers + .govuk-heading-s {
 </style>
 {% endblock %}
 
+{% block skipLink %}
+{{ super() }}
+{% block cookiesMessage %}
+{% if page.cookieMessage %}
+<div id="global-cookie-message">
+<p class="CookieMessage govuk-body-s govuk-width-container">
+<span data-block-name="CookieMessage">{{ page.cookieMessage | safe }}</a></span>
+</p>
+</div>
+{% endif %}
+{% endblock %}
+{% endblock %}
+
 {% block beforeContent %}
 {% if page.previouspage -%}
 {{ callMacro('govukBackLink', {
@@ -123,6 +136,11 @@ dl.app-check-your-answers + .govuk-heading-s {
 {% block bodyEnd %}
 {{ super() }}
 <style type="text/css">
+#global-cookie-message {
+  background-color: #d5e8f3;
+  padding: 10px 0;
+}
+
 .fb-sectionHeading {
   margin-top: 0;
 }

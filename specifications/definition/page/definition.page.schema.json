@@ -42,6 +42,15 @@
       "category": [
         "content"
       ]
+    },
+    "cookieMessage": {
+      "title": "Cookie message",
+      "description": "Set dynamically - exists here to enable formatting of value",
+      "type": "string",
+      "content": true,
+      "category": [
+        "dynamic"
+      ]
     }
   },
   "allOf": [
