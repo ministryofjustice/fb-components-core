@@ -17,7 +17,7 @@
     }}
   {% endblock %}
   {% block govPhase %}
-  {% if page.service.phase or page.service.phaseText %}
+  {% if page.service.phase !== 'none' %}
   <div class="govuk-width-container">
   {{ callMacro('govukPhaseBanner', {
     html: page.service.phaseText,

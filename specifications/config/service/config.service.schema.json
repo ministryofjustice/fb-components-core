@@ -19,10 +19,11 @@
       "title": "Form phase",
       "type": "string",
       "enum": [
-        "",
+        "none",
         "alpha",
         "beta"
-      ]
+      ],
+      "default": "alpha"
     },
     "phaseText": {
       "title": "Form phase text",
@@ -50,11 +51,6 @@
       "title": "CC email template",
       "type": "string",
       "multiline": true
-    },
-    "emailInputNameTeam": {
-      "title": "Form team email address field",
-      "description": "Name of input used as email address to send submission details to form team - overrides any value set as SERVICETEAM_EMAIL",
-      "type": "string"
     },
     "emailSubjectTeam": {
       "title": "Form team email subject",
