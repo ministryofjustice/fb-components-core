@@ -1,0 +1,1 @@
+A generic exit page to provide users with an explanation of why they cannot proceed during the service flow or as standalone pages.
