@@ -1,11 +1,15 @@
 {% extends "page/summary/template/nunjucks/page.summary.njk.html" %}
 
+{% block header %}{% endblock %}
+{% block beforeContent %}{% endblock %}
+
 {% block bodyEnd %}
 {{ super() }}
 <style>
 :empty {
   display: none;
 }
+.govuk-phase-banner,
 .govuk-header,
 .govuk-footer {
   display: none;

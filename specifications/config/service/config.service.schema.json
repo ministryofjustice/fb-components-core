@@ -31,11 +31,17 @@
     },
     "code": {
       "title": "Form code",
+      "description": "Code used for form (eg. C100)",
       "type": "string"
     },
-    "title": {
-      "title": "Form title",
-      "description": "Used as form’s title when generating PDF output",
+    "pdfHeading": {
+      "title": "PDF heading",
+      "description": "Used as form’s heading when generating PDF output",
+      "type": "string"
+    },
+    "pdfSubHeading": {
+      "title": "PDF subheading",
+      "description": "Used as form’s subheading when generating PDF output",
       "type": "string"
     },
     "emailInputNameUser": {
