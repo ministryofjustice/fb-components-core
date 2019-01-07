@@ -13,7 +13,8 @@
     },
     "name": {
       "title": "Form name",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "phase": {
       "title": "Form phase",
@@ -27,7 +28,8 @@
     },
     "phaseText": {
       "title": "Form phase text",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "code": {
       "title": "Form code",

@@ -10,9 +10,9 @@
 {% block header %}
   {% block govHeader %}
     {{ govukHeader({
-      homepageUrl: '/',
+      homepageUrl: page.service.homepageUrl,
       serviceName: page.service.name,
-      serviceUrl: '/'
+      serviceUrl: page.service.serviceUrl
       })
     }}
   {% endblock %}
