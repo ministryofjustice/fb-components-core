@@ -34,7 +34,7 @@ dl.app-check-your-answers + .govuk-heading-s {
 {% if page.previouspage -%}
 {{ callMacro('govukBackLink', {
   "href": page.previouspage,
-  "text": "Back"
+  "text": page.backLink
 }) }}
 {%- endif %}
 {% endblock %}

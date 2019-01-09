@@ -1,0 +1,6 @@
+{
+  "_id": "link.back",
+  "_type": "string",
+  "description": "Text displayed to allow user to return to previous pagr",
+  "value": "Back"
+}
