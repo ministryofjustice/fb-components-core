@@ -2,5 +2,6 @@
   "_id": "error.required.inline",
   "_type": "string.error",
   "description": "Input is required - inline",
-  "value": "Enter an answer for {control}"
+  "value": "Enter an answer for {control}",
+  "value:cy": "Rhowch ateb i {control}"
 }

@@ -1,0 +1,7 @@
+{
+  "_id": "button.continue.page.summary",
+  "_type": "string",
+  "description": "Continue button text for summary page",
+  "value": "Accept and send application",
+  "value:cy": "Derbyn ac anfon cais"
+}

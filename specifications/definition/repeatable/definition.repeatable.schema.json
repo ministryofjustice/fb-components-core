@@ -40,14 +40,12 @@
       "title": "Text to add another answer",
       "description": "Specify the link text for users to add another answer - defaults to ‘Add another’",
       "type": "string",
-      "default": "Add another",
       "category": ["repeatable"]
     },
     "repeatableDelete": {
       "title": "Text to remove an answer",
       "description": "Specify the link text for users to delete an answer - defaults to ‘Remove’",
       "type": "string",
-      "default": "Remove",
       "category": ["repeatable"]
     }
   },

@@ -92,8 +92,17 @@ dl.app-check-your-answers + .govuk-heading-s {
 {{- callComponents(page, 'components') -}}
 {% endblock %}
 {# {% if page.nextpage %} #}
+{#
+button.continue.page.start
+button.continue.page.form
+button.continue.page.content
+button.continue.page.summary
+button.continue
+button.saveContinue
+button.invokeSaveContinue
+#}
 {% block pageContentAction %}
-{% set buttonHtml = 'Continue' %}
+{# {% set buttonHtml = 'Continue' %}
 {% if page._type === 'page.start' %}
   {% set buttonHtml = 'Start' %}
   {% set buttonClass = 'govuk-button--start' %}
@@ -105,13 +114,10 @@ dl.app-check-your-answers + .govuk-heading-s {
 {% if not page.summaryOf %}
   {% set buttonHtml = 'Accept and send application' %}
 {% endif %}
+{% endif %} #}
+{% if page.buttonContinue %}
+{{ callBlock(page.buttonContinue) }}
 {% endif %}
-{{ callBlock({
-  _type: 'button',
-  html: buttonHtml,
-  classes: buttonClass,
-  href: buttonHref
-}) }}
 {% endblock %}
 {# {% endif %} #}
 {% if page.EDITMODE != 'edit' %}
