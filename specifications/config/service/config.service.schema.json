@@ -31,6 +31,17 @@
       "type": "string",
       "content": true
     },
+    "languageDefault": {
+      "title": "Default language",
+      "description": "Default language used for form (en)",
+      "type": "string",
+      "default": "en"
+    },
+    "languages": {
+      "title": "Languages",
+      "description": "Languages form is available in",
+      "type": "array"
+    },
     "code": {
       "title": "Form code",
       "description": "Code used for form (eg. C100)",
