@@ -2,5 +2,5 @@
   "_id": "error.date.invalid.after.inline",
   "_type": "string.error",
   "description": "Input (date) should be after - inline",
-  "value": "Date should be later than {targetValue}"
+  "value": "Date should be after {targetValue}"
 }
