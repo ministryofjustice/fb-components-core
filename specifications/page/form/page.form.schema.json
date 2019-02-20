@@ -16,7 +16,9 @@
         "continue",
         "saveContinue",
         "save",
-        "confirm"
+        "confirm",
+        "send.email",
+        "send.sms"
       ],
       "default": "continue",
       "category": [

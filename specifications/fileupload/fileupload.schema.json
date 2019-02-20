@@ -13,6 +13,19 @@
       "description": "Whether users can upload more than one file",
       "type": "boolean",
       "default": false
+    },
+    "accept": {
+      "title": "Accepted types",
+      "description": "Which file types to accept",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "maxSize": {
+      "title": "Maximum size",
+      "description": "Maximum file size as human readable string or bytes",
+      "type": "string"
     }
   },
   "allOf": [
