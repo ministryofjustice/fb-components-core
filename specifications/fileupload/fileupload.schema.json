@@ -8,11 +8,16 @@
     "_type": {
       "const": "fileupload"
     },
-    "multiple": {
-      "title": "Multiple files",
-      "description": "Whether users can upload more than one file",
-      "type": "boolean",
-      "default": false
+    "maxFiles": {
+      "title": "Maximum number of files",
+      "description": "Maximum number of files a user can upload",
+      "type": "number",
+      "default": 1
+    },
+    "minFiles": {
+      "title": "Minimum number of files",
+      "description": "Minimum number of files a user can upload - 1 if required, 0 if not required",
+      "type": "number"
     },
     "accept": {
       "title": "Accepted types",
