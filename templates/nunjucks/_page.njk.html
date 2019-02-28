@@ -79,7 +79,7 @@ dl.app-check-your-answers + .govuk-heading-s {
 
 {% block pageContentBody %}
 {% if page.EDITMODE != 'edit' %}
-<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}>
+<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if page.encType %} enctype="multipart/form-data"{% endif %}>
 <p class="govuk-visually-hidden"><input type="submit"></p>
 {% endif %}
 {% if page.changepage %}
