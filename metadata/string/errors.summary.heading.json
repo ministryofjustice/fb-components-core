@@ -3,5 +3,5 @@
   "_type": "string.error",
   "description": "Errors summary heading",
   "value": "There {errorCount, plural, 1 {was a problem} other {were problems}} on the page",
-  "value:cy": "Croso y cynreerru {errorCount, plural, 1 {was a problem} other {were problems}} on the page"
+  "value:cy": "Roedd yna broblemau {errorCount, plural, 1 {broblem} other {broblemau}} ar y dudalen"
 }
