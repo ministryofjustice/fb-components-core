@@ -1,0 +1,6 @@
+{
+  "_id": "error.fileupload.LIMIT_FILE_SIZE.summary",
+  "_type": "string.error",
+  "description": "Uploaded file is too large - summary",
+  "value": "{filename} was not successfully uploaded as it was too large"
+}
