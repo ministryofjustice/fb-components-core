@@ -1,0 +1,10 @@
+{
+  "_id": "componentId",
+  "_type": "config.meta",
+  "items": [{
+    "_id": "linkId",
+    "_type": "link",
+    "text": "Text"
+  }],
+  "$comment": "Document this data"
+}

@@ -1,0 +1,48 @@
+{
+  "_id": "componentId",
+  "_type": "config.navigation",
+  "navigation": [{
+    "_id": "navId",
+    "_type": "config.navigation.list",
+    "title": "Nav links",
+    "columns": 2,
+    "items": [{
+      "_id": "linkId",
+      "_type": "link",
+      "text": "Text",
+      "href": "Href"
+    },{
+      "_id": "linkId2",
+      "_type": "link",
+      "text": "Text 2",
+      "href": "Href"
+    },{
+      "_id": "linkId3",
+      "_type": "link",
+      "text": "Text 3",
+      "href": "Href"
+    }]
+  },{
+    "_id": "navId2",
+    "_type": "config.navigation.list",
+    "title": "Nav links 2",
+    "columns": 2,
+    "items": [{
+      "_id": "linkIdB",
+      "_type": "link",
+      "text": "Text B",
+      "href": "Href"
+    },{
+      "_id": "linkIdB2",
+      "_type": "link",
+      "text": "Text B 2",
+      "href": "Href"
+    },{
+      "_id": "linkIdB3",
+      "_type": "link",
+      "text": "Text B 3",
+      "href": "Href"
+    }]
+  }],
+  "$comment": "Document this data"
+}
