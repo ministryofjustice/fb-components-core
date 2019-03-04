@@ -188,3 +188,13 @@ button.invokeSaveContinue
 }
 </style>
 {% endblock %}
+
+{% block footer %}
+{% if page.MODE == 'live' %}{% set showFooter = true %}{% endif %}
+{% if page.MODE == 'preview' %}{% set showFooter = true %}{% endif %}
+{% if showFooter %}
+{% if page.footer %}
+{{ govukFooter(page.footer) }}
+{% endif %}
+{% endif %}
+{% endblock %}

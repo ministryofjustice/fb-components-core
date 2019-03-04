@@ -1,0 +1,35 @@
+{
+  "$id": "http://gov.uk/schema/v1.0.0/link",
+  "_name": "link",
+  "title": "Link",
+  "type": "object",
+  "properties": {
+    "_type": {
+      "const": "link"
+    },
+    "text": {
+      "title": "Link text",
+      "description": "Link text to display",
+      "type": "string",
+      "content": true
+    },
+    "href": {
+      "title": "Link url",
+      "description": "Page Id or absolute url",
+      "type": "string",
+      "url": true
+    }
+  },
+  "required": [
+    "text",
+    "href"
+  ],
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/block"
+    }
+  ],
+  "category": [
+    "definition"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "_id": "componentId",
+  "_type": "definition.linklist",
+  "title": "Link list title",
+  "items": [{
+    "_id": "linkId",
+    "_type": "link",
+    "href": "Href"
+  }],
+  "$comment": "Document this data"
+}
