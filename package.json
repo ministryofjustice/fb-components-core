@@ -6,11 +6,14 @@
       "condition"
     ]
   },
-  "version": "0.0.122-alpha",
+  "version": "0.0.123-alpha",
   "description": "Form Builder core components",
   "main": "index.js",
   "scripts": {
     "test": "test-specifications"
+  },
+  "dependencies": {
+    "govuk-frontend": "2.8.0"
   },
   "devDependencies": {
     "@ministryofjustice/fb-specification": "^0.1.5-alpha",
@@ -21,6 +24,5 @@
     "url": "https://github.com/ministryofjustice/fb-components-core.git"
   },
   "author": "github@alex.fu2k.org",
-  "license": "MIT",
-  "dependencies": {}
+  "license": "MIT"
 }

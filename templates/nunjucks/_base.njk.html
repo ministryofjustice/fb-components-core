@@ -1,7 +1,7 @@
 {% extends "template.njk" %}
 
 {% block head %}
-<link rel="stylesheet" href="/assets/govuk-frontend-0.0.31-alpha.min.css">
+
 <link rel="stylesheet" href="/assets/govuk-frontend-{{govuk_frontend_version}}.min.css">
 <!--[if lt IE 9]>
 <link rel="stylesheet" href="/assets/govuk-frontend-ie8-{{govuk_frontend_version}}.min.css">
@@ -57,7 +57,7 @@
 {% endif %}
 {% endif %}
 {% endblock %}
-{# <script src="/assets/govuk-frontend-{{govuk_frontend_version}}.min.js"></script> #}
-<script src="/assets/govuk-frontend-design-system.min.js"></script>
+<script src="/assets/govuk-frontend-{{govuk_frontend_version}}.min.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
 {% block scripts %}{% endblock %}
 {% endblock %}
