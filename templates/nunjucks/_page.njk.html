@@ -1,22 +1,5 @@
 {% extends "base.njk.html" %}
 
-{% block styles %}
-{{ super() }}
-<link href="/assets/app.css" rel="stylesheet">
-<style>
-dl.app-check-your-answers + .govuk-heading-s {
-  margin-top: -40px;
-  margin-bottom: 20px;
-}
-.app-check-your-answers__answer p {
-  margin: 0;
-}
-.app-check-your-answers__answer p + p {
-  margin-top: 0.75rem;
-}
-</style>
-{% endblock %}
-
 {% block skipLink %}
 {{ super() }}
 {% block cookiesMessage %}
@@ -79,7 +62,7 @@ dl.app-check-your-answers + .govuk-heading-s {
 
 {% block pageContentBody %}
 {% if page.EDITMODE != 'edit' %}
-<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if page.encType %} enctype="multipart/form-data"{% endif %}>
+<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if page.encType %} enctype="multipart/form-data"{% endif %}{% if not page.autocomplete %} autocomplete="off"{% endif %}>
 {% if _csrf %}
 <input type="hidden" name="_csrf" value="{{ _csrf }}">
 {% endif %}
@@ -94,35 +77,12 @@ dl.app-check-your-answers + .govuk-heading-s {
 {% block pageContentComponents %}
 {{- callComponents(page, 'components') -}}
 {% endblock %}
-{# {% if page.nextpage %} #}
-{#
-button.continue.page.start
-button.continue.page.form
-button.continue.page.content
-button.continue.page.summary
-button.continue
-button.saveContinue
-button.invokeSaveContinue
-#}
+
 {% block pageContentAction %}
-{# {% set buttonHtml = 'Continue' %}
-{% if page._type === 'page.start' %}
-  {% set buttonHtml = 'Start' %}
-  {% set buttonClass = 'govuk-button--start' %}
-  {% if not page.steps.length %}
-    {% set buttonHref = '/edit' %}
-  {% endif %}
-{% endif %}
-{% if page._type === 'page.summary' %}
-{% if not page.summaryOf %}
-  {% set buttonHtml = 'Accept and send application' %}
-{% endif %}
-{% endif %} #}
 {% if page.buttonContinue %}
 {{ callBlock(page.buttonContinue) }}
 {% endif %}
 {% endblock %}
-{# {% endif %} #}
 {% if page.EDITMODE != 'edit' %}
 </form>
 {% endif %}
@@ -159,6 +119,7 @@ button.invokeSaveContinue
 }
 .govuk-button.fb-action-secondary {
   background: transparent;
+  border-bottom-color: transparent;
   color: 	#005ea5;
   box-shadow: none;
   padding-left: 0;

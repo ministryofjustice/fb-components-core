@@ -5,6 +5,7 @@
 {{ answers(block) }}
 {% endfor %}
 
+
 {% if not page.summaryOf %}
 <h2 class="fb-send-heading govuk-heading-m" data-block-id="{{ page._id }}" data-block-property="sendHeading">{{ page.sendHeading | safe }}</h2>
 <div class="fb-send-body" data-block-id="{{ page._id }}" data-block-property="sendBody">{{ page.sendBody | safe }}</div>
@@ -55,22 +56,8 @@ button.govuk-button.fb-action-secondary.fb-action--delete {
 <h{{ level }} class="govuk-heading-{{ classSuffix }}{% if block.repeatable %} fb-repeatable-heading{% endif %}">{{ block.heading | safe }}</h{{ level }}>
 {% endif %}
 {% if block.answers %}
-<dl class="app-check-your-answers app-check-your-answers--long">
-{% for question in block.answers %}
-  <div class="app-check-your-answers__contents">
-    <dt class="app-check-your-answers__question">
-      {{ question.question | safe }}
-    </dt>
-    <dd class="app-check-your-answers__answer">
-      {{ question.answer | safe }}
-    </dd>
-    <dd class="app-check-your-answers__change">
-      <a href="{{ question.changeUrl }}">
-        Change<span class="govuk-visually-hidden"> your answer for {{ question.question | safe }}</span>
-      </a>
-    </dd>
-  </div>
-{% endfor %}
-</dl>
+{{ callMacro('govukSummaryList', {
+  rows: block.answers
+}) }}
 {% endif %}
 {% endmacro %}
