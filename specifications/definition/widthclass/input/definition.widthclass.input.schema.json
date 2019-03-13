@@ -19,7 +19,8 @@
         "one-third": "One third",
         "one-half": "One half",
         "two-thirds": "Two thirds",
-        "three-quarters": "Three quarters"
+        "three-quarters": "Three quarters",
+        "full": "Full width"
       },
       "enum": [
         "2",
@@ -33,7 +34,8 @@
         "one-third",
         "one-half",
         "two-thirds",
-        "three-quarters"
+        "three-quarters",
+        "full"
       ],
       "category": [
         "htmlattributes"
