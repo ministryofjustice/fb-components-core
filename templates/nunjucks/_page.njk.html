@@ -33,6 +33,23 @@
 {% endif %}
 {% endblock %}
 
+{% block flashMessages %}
+{% if page.flashMessages %}
+{{ callMacro('flashmessages', {
+  messages: page.flashMessages
+})}}
+{# <div class="flashMessages">
+{% for message in page.flashMessages %}
+<p>{{ message.message | safe }}</p>
+{% endfor %}
+</div> #}
+{# {{ callMacro('govukErrorSummary', {
+  titleHtml: page.errorTitle,
+  errorList: page.errorList
+}) }} #}
+{% endif %}
+{% endblock %}
+
 {% block prePageContentHeading %}{% endblock %}
 
 <div class="govuk-main-wrapper fb-mode-{{page.EDITMODE}}" data-block-id="{{ page._id }}" data-block-type="page"{% if page.enableSteps or page.steps.length %} data-block-steps="yes"{% endif %} data-block-pagetype="{{ page._type }}">
@@ -81,6 +98,9 @@
 {% block pageContentAction %}
 {% if page.buttonContinue %}
 {{ callBlock(page.buttonContinue) }}
+{% if page.buttonContinue.reset %}
+<p class="govuk-visually-hidden"><input type="reset" value="{{ page.buttonContinue.reset}}"></p>
+{% endif %}
 {% endif %}
 {% endblock %}
 {% if page.EDITMODE != 'edit' %}
@@ -149,6 +169,12 @@
   font-size: 75%;
   padding: 0;
   width: auto;
+}
+.fb-info-summary {
+  border-color: #005ea5;
+}
+.fb-summary-list--file-key {
+  font-weight: normal;
 }
 </style>
 {% endblock %}
