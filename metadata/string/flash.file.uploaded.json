@@ -1,5 +1,5 @@
 {
-  "_id": "fileupload.flash.success",
+  "_id": "flash.file.uploaded",
   "_type": "string",
   "description": "Flash message displayed to when file successfully uploaded",
   "value": "Uploaded {filename}",
