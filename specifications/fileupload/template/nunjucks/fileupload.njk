@@ -46,12 +46,6 @@
   }) | indent(2) | trim }}
 {% endif %}
 
-{% if params.summaryList.length %}
-{{ callMacro('summaryListExtended', {
-    rows: params.summaryList
-  }) }}
-{% endif %}
-
 {% if params.slots %}
 <input type="hidden" name="{{params.name + '_slots'}}" value="{{params.slots}}">
 {% endif %}
@@ -65,16 +59,21 @@
 {% endfor %}
 {% endset %}
 {{ uploadSlots | safe }}
-{% if params.slots %}
-{% endif %}
 {% if params.addFile %}
 <p><button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">Add another file</button></p>
+{% endif %}
+
+{% if params.summaryList.length %}
+{{ callMacro('summaryListExtended', {
+  heading: params.summaryListHeading,
+  rows: params.summaryList
+  }) }}
 {% endif %}
 {% endset -%}
 {% endif %}
 
 {% if params.maxFiles > 1 %}
-<div class="govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
+<div class="fb-form-group--fileupload-multiple govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
   {% call govukFieldset({
     describedBy: describedBy,
     classes: params.fieldset.classes,
@@ -91,7 +90,8 @@
   hint: params.hint,
   describedBy: describedBy,
   id: params.name,
-  attributes: attributes
+  attributes: attributes,
+  classes: 'fb-form--fileupload-single'
 }) %}
 {{ govukFileUpload(uploadParams) }}
 {% else %}

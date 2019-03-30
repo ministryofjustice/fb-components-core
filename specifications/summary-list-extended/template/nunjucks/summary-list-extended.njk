@@ -17,7 +17,10 @@
 {% endmacro -%}
 
 {% macro summaryListExtended(params) %}
-<dl class="govuk-summary-list {%- if params.classes %} {{ params.classes }}{% endif %}"{% for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
+{% if params.heading %}
+<h2 class="fb-summary-list-extended--heading">{{ params.heading | safe }}</h2>
+{% endif %}
+<dl class="fb-summary-list-extended govuk-summary-list {%- if params.classes %} {{ params.classes }}{% endif %}"{% for attribute, value in params.attributes %} {{attribute}}="{{value}}"{% endfor %}>
   {% for row in params.rows %}
     <div class="govuk-summary-list__row">
       <dt class="govuk-summary-list__key {%- if row.key.classes %} {{ row.key.classes }}{% endif %}">

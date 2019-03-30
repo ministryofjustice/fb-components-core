@@ -144,6 +144,7 @@
   box-shadow: none;
   padding-left: 0;
   border-left: none;
+  margin-bottom: 0;
 }
 .fb-action-secondary:hover {
   background: transparent;
@@ -175,6 +176,64 @@
 }
 .fb-summary-list--file-key {
   font-weight: normal;
+}
+
+.govuk-hint p {
+  margin: 0 0 5px;
+}
+
+.govuk-file-upload {
+  width: 100%;
+}
+input[type=file].govuk-file-upload::-webkit-file-upload-button {
+  font-size: 1.25rem !important;
+}
+::-webkit-file-upload-button {
+  background: #dee0e2;
+  background: #f8f8f8;
+  font-family: 'GDS Transport', sans-serif;
+  border: 0;
+  border-radius: 0px;
+  xfont-size: 12px;
+  xline-height: 32px;
+  xheight: 32px;
+  xfont-weight: normal;
+  xtext-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 5px 10px;
+  box-shadow: 0 2px 0 #bfc1c3;
+  box-shadow: 0 2px 0 #dee0e2;
+}
+
+.fb-form-group--fileupload-multiple fieldset .govuk-form-group,
+.fb-form--fileupload-single.govuk-file-upload {
+  border: solid 1px #bfc1c3;
+  border-left: none;
+  border-right: none;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+.fb-form-group--fileupload-multiple fieldset .govuk-form-group + .govuk-form-group {
+  border-top: none;
+}
+.fb-form-group--fileupload-multiple .govuk-summary-list {
+  border-top: solid 1px #bfc1c3;
+}
+
+.govuk-summary-list__actions .govuk-button {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+fieldset .govuk-summary-list {
+  margin-bottom: 0;
+}
+
+.fb-form-group--fileupload-multiple .fb-summary-list-extended--heading {
+  font-size: 19px;
+  font-weight: bold;
 }
 </style>
 {% endblock %}
