@@ -56,11 +56,14 @@
 {% set upload = setObject(upload, {attributes:attributes}) %}
 {% endif %}
 {{ callMacro('govukFileUpload', upload) }}
+{% if upload.removeSlot %}
+<p class="fb-control--fileupload--remove"><button class="govuk-button fb-action-secondary fb-action--remove" name="removeSlot" value="{{ upload.name }}">{{ upload.removeSlot | safe }}</button></p>
+{% endif %}
 {% endfor %}
 {% endset %}
 {{ uploadSlots | safe }}
 {% if params.addFile %}
-<p><button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile }}</button></p>
+<p class="fb-control--fileupload--add"><button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button></p>
 {% endif %}
 
 {% if params.summaryList.length %}

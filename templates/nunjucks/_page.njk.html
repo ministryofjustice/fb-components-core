@@ -38,15 +38,6 @@
 {{ callMacro('flashmessages', {
   messages: page.flashMessages
 })}}
-{# <div class="flashMessages">
-{% for message in page.flashMessages %}
-<p>{{ message.message | safe }}</p>
-{% endfor %}
-</div> #}
-{# {{ callMacro('govukErrorSummary', {
-  titleHtml: page.errorTitle,
-  errorList: page.errorList
-}) }} #}
 {% endif %}
 {% endblock %}
 
@@ -174,6 +165,15 @@
 .fb-info-summary {
   border-color: #005ea5;
 }
+.fb-flash-summary {
+  border-color: #006435;
+}
+
+.fb-info-summary .govuk-list li:last-child,
+.fb-flash-summary .govuk-list li:last-child {
+  margin-bottom: 0;
+}
+
 .fb-summary-list--file-key {
   font-weight: normal;
 }
@@ -207,6 +207,9 @@ input[type=file].govuk-file-upload::-webkit-file-upload-button {
   box-shadow: 0 2px 0 #dee0e2;
 }
 
+.fb-form-group--fileupload-multiple {
+  position: relative;
+}
 .fb-form-group--fileupload-multiple fieldset .govuk-form-group,
 .fb-form--fileupload-single.govuk-file-upload {
   border: solid 1px #bfc1c3;
@@ -215,10 +218,12 @@ input[type=file].govuk-file-upload::-webkit-file-upload-button {
   padding: 10px 0;
   margin-bottom: 0;
 }
-.fb-form-group--fileupload-multiple fieldset .govuk-form-group + .govuk-form-group {
+.fb-form-group--fileupload-multiple fieldset .govuk-form-group + .govuk-form-group,
+.fb-form-group--fileupload-multiple fieldset .fb-control--fileupload--remove + .govuk-form-group {
   border-top: none;
 }
-.fb-form-group--fileupload-multiple .govuk-summary-list {
+
+.fb-block-fileupload .govuk-summary-list {
   border-top: solid 1px #bfc1c3;
 }
 
@@ -231,9 +236,26 @@ fieldset .govuk-summary-list {
   margin-bottom: 0;
 }
 
-.fb-form-group--fileupload-multiple .fb-summary-list-extended--heading {
+.fb-block-fileupload .fb-summary-list-extended--heading {
   font-size: 19px;
   font-weight: bold;
+}
+
+.fb-control--fileupload--remove {
+  position: absolute;
+  right: 0;
+  margin: -3rem 0 0;
+}
+.fb-control--fileupload--remove em {
+  position: absolute!important;
+  width: 1px!important;
+  height: 1px!important;
+  margin: 0!important;
+  overflow: hidden!important;
+  clip: rect(0 0 0 0)!important;
+  -webkit-clip-path: inset(50%)!important;
+  clip-path: inset(50%)!important;
+  white-space: nowrap!important;
 }
 </style>
 {% endblock %}
