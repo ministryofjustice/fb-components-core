@@ -60,7 +60,7 @@
 {% endset %}
 {{ uploadSlots | safe }}
 {% if params.addFile %}
-<p><button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">Add another file</button></p>
+<p><button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile }}</button></p>
 {% endif %}
 
 {% if params.summaryList.length %}
