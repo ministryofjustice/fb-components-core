@@ -87,11 +87,11 @@
 {% endblock %}
 
 {% block pageContentAction %}
+{% if page.buttonContinue.reset %}
+<p class="govuk-visually-hidden"><input class="govuk-button fb-action fb-action-secondary fb-action--reset" type="reset" value="{{ page.buttonContinue.reset}}"></p>
+{% endif %}
 {% if page.buttonContinue %}
 {{ callBlock(page.buttonContinue) }}
-{% if page.buttonContinue.reset %}
-<p class="govuk-visually-hidden"><input type="reset" value="{{ page.buttonContinue.reset}}"></p>
-{% endif %}
 {% endif %}
 {% endblock %}
 {% if page.EDITMODE != 'edit' %}
