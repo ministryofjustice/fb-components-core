@@ -1,6 +1,7 @@
 {
   "_id": "radios.yes-no",
   "_type": "radios",
+  "classes": "govuk-radios--inline",
   "items": [
     {
       "_id": "radios.yes-no--yes",
