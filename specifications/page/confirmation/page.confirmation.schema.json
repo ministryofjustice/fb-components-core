@@ -8,6 +8,11 @@
     "_type": {
       "const": "page.confirmation"
     },
+    "madeup": {
+      "title": "Madeup property",
+      "description": "TTotes made up property just for demo's sake",
+      "type": "boolean"
+    },
     "continue": {
       "const": "redundant",
       "category": [
