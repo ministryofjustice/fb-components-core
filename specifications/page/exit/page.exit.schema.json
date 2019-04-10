@@ -7,6 +7,11 @@
   "properties": {
     "_type": {
       "const": "page.exit"
+    },
+    "isConfirmation": {
+      "title": "Is confirmation",
+      "description": "Display as confirmation page",
+      "type": "boolean"
     }
   },
   "allOf": [
