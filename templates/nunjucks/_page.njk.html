@@ -129,6 +129,8 @@
   margin: 0;
 }
 .govuk-button.fb-action-secondary {
+  text-align: left;
+  text-decoration: underline;
   background: transparent;
   border-bottom-color: transparent;
   color: 	#005ea5;
@@ -194,11 +196,6 @@ input[type=file].govuk-file-upload::-webkit-file-upload-button {
   font-family: 'GDS Transport', sans-serif;
   border: 0;
   border-radius: 0px;
-  xfont-size: 12px;
-  xline-height: 32px;
-  xheight: 32px;
-  xfont-weight: normal;
-  xtext-align: center;
   vertical-align: middle;
   cursor: pointer;
   white-space: nowrap;
@@ -256,6 +253,23 @@ fieldset .govuk-summary-list {
   -webkit-clip-path: inset(50%)!important;
   clip-path: inset(50%)!important;
   white-space: nowrap!important;
+}
+
+.fb-summary-list--file-key {
+  padding-top: 5px;
+}
+.fb-summary-list--file-key em {
+  font-style: normal;
+  display: block;
+  white-space: nowrap;
+}
+@media (min-width:40.0625em) {
+  .fb-summary-list--file-key {
+    padding-top: 0;
+  }
+  .fb-summary-list--file-key em {
+    display: inline-block;
+  }
 }
 </style>
 {% endblock %}
