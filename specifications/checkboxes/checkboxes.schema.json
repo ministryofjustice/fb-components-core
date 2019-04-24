@@ -23,7 +23,7 @@
     }
   ],
   "transforms": {
-    "model": {
+    "namespace": {
       "propagation": "items[?(@._type === 'checkbox')]"
     }
   }
