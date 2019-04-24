@@ -2,7 +2,7 @@
   "_id": "componentId",
   "_type": "text",
   "name": "wibble",
-  "model": "sanu",
+  "namespace": "sanu",
   "label": "Labble dabble",
   "validation": {
     "required": {

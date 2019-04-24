@@ -51,7 +51,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/model"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/namespace"
     }
   ],
   "category": [
