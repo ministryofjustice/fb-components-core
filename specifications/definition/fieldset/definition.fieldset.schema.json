@@ -15,7 +15,7 @@
       "content": true
     },
     "legendSummary": {
-      "title": "Legend Summary",
+      "title": "Legend (Summary version)",
       "description": "The text used on the 'check your answers' page. Ideally a shorter version of the legend text",
       "type": "string",
       "content": true

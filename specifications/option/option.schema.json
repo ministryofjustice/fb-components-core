@@ -15,7 +15,7 @@
       "content": true
     },
     "textSummary": {
-      "title": "Text Summary for an option",
+      "title": "Option text (Summary version)",
       "description": "Text displayed to users on the 'check your answers' page. Ideally a simplified version of the option text",
       "type": "string",
       "content": true
