@@ -26,6 +26,24 @@
         "content"
       ]
     },
+    "sectionHeadingSummary": {
+      "title": "Section heading (Summary version)",
+      "description": "A condensed version of the section heading, for use on the 'check your answers' page",
+      "type": "string",
+      "content": true,
+      "category": [
+        "content"
+      ]
+    },
+    "headingSummary": {
+      "title": "Heading (Summary version)",
+      "description": "A condensed version of the page heading, for use on the 'check your answers' page",
+      "type": "string",
+      "content": true,
+      "category": [
+        "content"
+      ]
+    },
     "stepsHeading": {
       "title": "Steps heading",
       "description": "Name of section to use on step pages (if any)",
