@@ -17,8 +17,8 @@
       "multiline": true,
       "content": true
     },
-    "summaryLabel": {
-      "title": "Summary Label",
+    "labelSummary": {
+      "title": "Label Summary",
       "description": "The text used on the 'check your answers' page. Ideally a shorter version of the label text",
       "type": "string",
       "content": true

@@ -26,8 +26,8 @@
         "content"
       ]
     },
-    "summarySectionHeading": {
-      "title": "Summary section heading",
+    "sectionHeadingSummary": {
+      "title": "Section heading Summary",
       "description": "A condensed version of the section heading, for use on the 'check your answers' page",
       "type": "string",
       "content": true,
@@ -35,8 +35,8 @@
         "content"
       ]
     },
-    "summaryHeading": {
-      "title": "Summary heading",
+    "headingSummary": {
+      "title": "Heading Summary",
       "description": "A condensed version of the page heading, for use on the 'check your answers' page",
       "type": "string",
       "content": true,
