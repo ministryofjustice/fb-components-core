@@ -92,7 +92,9 @@
 {% endif %}
 {% if page.buttonContinue %}
 {{ callBlock(page.buttonContinue) }}
+{% if page.scope != 'savereturn' %}
 <input type="submit" name="setupReturn" value="Set up save and return">
+{% endif %}
 {% endif %}
 {% endblock %}
 {% if page.EDITMODE != 'edit' %}
