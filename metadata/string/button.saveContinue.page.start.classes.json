@@ -1,0 +1,6 @@
+{
+  "_id": "button.saveContinue.page.start.classes",
+  "_isa": "button.continue.page.start.classes",
+  "_type": "string",
+  "description": "Start and continue start button classes"
+}
