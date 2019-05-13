@@ -11,12 +11,17 @@
 
 {% block header %}
   {% block govHeader %}
-    {{ govukHeader({
+    {% set headerParams = {
       homepageUrl: page.service.homepageUrl,
       serviceName: page.service.name,
       serviceUrl: page.service.serviceUrl
-      })
-    }}
+    } %}
+
+    {% if page.headerNavigation %}
+      {% set headerParams = setObject(headerParams, {navigation: page.headerNavigation}) %}
+    {% endif %}
+
+    {{ govukHeader(headerParams) }}
   {% endblock %}
   {% block govPhase %}
   {% if page.service.phase !== 'none' %}
