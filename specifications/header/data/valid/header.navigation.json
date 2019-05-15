@@ -1,0 +1,24 @@
+{
+  "_id": "header.navigation",
+  "_isa": "another.header",
+  "_type": "header",
+  "homepageUrl": "homepageUrl",
+  "serviceName": "serviceName",
+  "serviceUrl": "serviceUrl",
+  "navigation": {
+    "_id": "header.navigation.items",
+    "_type": "header.navigation",
+    "xshow": {
+      "_id": "header.navigation.show",
+      "identifier": "authenticated",
+      "identifierType": "savereturn",
+      "operator": "isTrue"
+    },
+    "items": [{
+      "_id": "header.navigation.item",
+      "_type": "link",
+      "text": "link text",
+      "href": "link href"
+    }]
+  }
+}

@@ -17,7 +17,18 @@
       "title": "Link url",
       "description": "Page Id or absolute url",
       "type": "string",
+      "content": true,
       "url": true
+    },
+    "active": {
+      "title": "Active",
+      "description": "Whether link is active",
+      "type": "boolean"
+    },
+    "attributes": {
+      "title": "Link attributes",
+      "description": "Attributes to pass to link",
+      "type": "object"
     }
   },
   "required": [

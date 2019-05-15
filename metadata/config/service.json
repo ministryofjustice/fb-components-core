@@ -1,0 +1,9 @@
+{
+  "_id": "service",
+  "_type": "config.service",
+  "name": "Service name goes here",
+  "phase": "alpha",
+  "phaseText": "Service phase text goes here",
+  "serviceUrl": "[% service#homepageUrl %]",
+  "homepageUrl": "page.start"
+}
