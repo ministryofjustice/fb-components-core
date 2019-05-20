@@ -1,0 +1,36 @@
+{%- macro answers(data) %}
+
+<div data-block-id="{{ data._id }}">
+	{% macro answersMacro(block) %}
+	  {% if block.add %}
+	    <p class="fb-summary-repeatable-add"><button name="add" value="{{ block.add}}" type="submit" class="govuk-button fb-action-secondary fb-action--add">{{ block.repeatableAdd }}</button></p>
+	  {% endif %}
+
+	  {% if block.remove %}
+	    <p class="fb-summary-repeatable-delete"><button name="remove" value="{{ block.remove}}" type="submit" class="govuk-button fb-action-secondary fb-action--delete">{{ block.repeatableDelete }}</button></p>
+	  {% endif %}
+
+	  {% if block.heading %}
+	    {% set level = block.level %}
+	    {% set classSuffix = 'm' %}
+	    {% if level > 2 %}
+	      {% set classSuffix = 's' %}
+	    {% endif %}
+	    <h{{ level }} class="govuk-heading-{{ classSuffix }}{% if block.repeatable %} fb-repeatable-heading{% endif %}">
+	      {{ block.heading | safe }}
+	    </h{{ level }}>
+	  {% endif %}
+
+	  {% if block.answers %}
+	    {{ callMacro('govukSummaryList', {
+	      rows: block.answers
+	    }) }}
+	  {% endif %}
+	{% endmacro %}
+
+	{% for block in data.answers %}
+		{{ answersMacro(block) }}
+	{% endfor %}
+</div>
+
+{% endmacro -%}
