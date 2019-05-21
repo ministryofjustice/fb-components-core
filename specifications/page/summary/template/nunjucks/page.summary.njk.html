@@ -2,34 +2,14 @@
 
 {% block pageContentComponents %}
   {{super()}}
-{% endblock %}
 
-{% block bodyEnd %}
-  {{ super() }}
-  <style>
-    form {
-      position: relative;
-    }
-    .fb-repeatable-heading {
-      margin-top: 0;
-    }
-    .fb-repeatable-heading + .app-check-your-answers {
-      margin-bottom: 20px;
-    }
+  {% if not page.summaryOf %}
+    <h2 class="fb-send-heading govuk-heading-m" data-block-id="{{ page._id }}" data-block-property="sendHeading">
+      {{ page.sendHeading | safe }}
+    </h2>
 
-    @media (min-width: 40.0625em) {
-      .fb-summary-repeatable-add {
-        margin-top: 30px;
-      }
-    }
-    p.fb-summary-repeatable-delete {
-      position: absolute;
-      right: 0;
-      margin-top: -0.25rem;
-    }
-    button.govuk-button.fb-action-secondary.fb-action--delete {
-      padding-right: 0;
-      text-decoration: underline;
-    }
-  </style>
+    <div class="fb-send-body" data-block-id="{{ page._id }}" data-block-property="sendBody">
+      {{ page.sendBody | safe }}
+    </div>
+  {% endif %}
 {% endblock %}
