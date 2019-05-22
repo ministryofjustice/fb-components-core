@@ -1,63 +1,15 @@
 {% extends "page.njk.html" %}
 
 {% block pageContentComponents %}
-{% for block in page.answers %}
-{{ answers(block) }}
-{% endfor %}
+  {{super()}}
 
+  {% if not page.summaryOf %}
+    <h2 class="fb-send-heading govuk-heading-m" data-block-id="{{ page._id }}" data-block-property="sendHeading">
+      {{ page.sendHeading | safe }}
+    </h2>
 
-{% if not page.summaryOf %}
-<h2 class="fb-send-heading govuk-heading-m" data-block-id="{{ page._id }}" data-block-property="sendHeading">{{ page.sendHeading | safe }}</h2>
-<div class="fb-send-body" data-block-id="{{ page._id }}" data-block-property="sendBody">{{ page.sendBody | safe }}</div>
-{% endif %}
+    <div class="fb-send-body" data-block-id="{{ page._id }}" data-block-property="sendBody">
+      {{ page.sendBody | safe }}
+    </div>
+  {% endif %}
 {% endblock %}
-
-{% block bodyEnd %}
-{{ super() }}
-<style>
-form {
-  position: relative;
-}
-.fb-repeatable-heading {
-  margin-top: 0;
-}
-.fb-repeatable-heading + .app-check-your-answers {
-  margin-bottom: 20px;
-}
-
-@media (min-width: 40.0625em) {
-  .fb-summary-repeatable-add {
-    margin-top: 30px;
-  }
-}
-p.fb-summary-repeatable-delete {
-  position: absolute;
-  right: 0;
-  margin-top: -0.25rem;
-}
-button.govuk-button.fb-action-secondary.fb-action--delete {
-  padding-right: 0;
-  text-decoration: underline;
-}
-</style>
-{% endblock %}
-
-{% macro answers(block) %}
-{% if block.add %}
-<p class="fb-summary-repeatable-add"><button name="add" value="{{ block.add}}" type="submit" class="govuk-button fb-action-secondary fb-action--add">{{ block.repeatableAdd }}</button></p>
-{% endif %}
-{% if block.remove %}
-<p class="fb-summary-repeatable-delete"><button name="remove" value="{{ block.remove}}" type="submit" class="govuk-button fb-action-secondary fb-action--delete">{{ block.repeatableDelete }}</button></p>
-{% endif %}
-{% if block.heading %}
-{% set level = block.level %}
-{% set classSuffix = 'm' %}
-{% if level > 2 %}{% set classSuffix = 's' %}{% endif %}
-<h{{ level }} class="govuk-heading-{{ classSuffix }}{% if block.repeatable %} fb-repeatable-heading{% endif %}">{{ block.heading | safe }}</h{{ level }}>
-{% endif %}
-{% if block.answers %}
-{{ callMacro('govukSummaryList', {
-  rows: block.answers
-}) }}
-{% endif %}
-{% endmacro %}
