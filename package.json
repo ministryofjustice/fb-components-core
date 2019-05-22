@@ -6,14 +6,14 @@
       "condition"
     ]
   },
-  "version": "0.0.142",
+  "version": "0.0.143",
   "description": "Form Builder core components",
   "main": "index.js",
   "scripts": {
     "test": "test-specifications"
   },
   "dependencies": {
-    "govuk-frontend": "2.10.0"
+    "govuk-frontend": "2.11.0"
   },
   "devDependencies": {
     "@ministryofjustice/fb-specification": "^0.2.0",

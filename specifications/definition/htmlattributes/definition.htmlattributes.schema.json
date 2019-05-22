@@ -17,6 +17,7 @@
       "title": "Classes",
       "description": "Additional HTML classes to apply to instance - to add more than one, separate with a space",
       "type": "string",
+      "content": true,
       "category": [
         "htmlattributes"
       ]

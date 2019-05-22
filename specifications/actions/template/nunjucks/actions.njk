@@ -1,0 +1,6 @@
+{%- macro actions(data) %}
+{{ callMacro('govukButton', data.primary) }}
+{% for secondary in data.secondary.items %}
+{{ callBlock(secondary) }}
+{% endfor %}
+{% endmacro -%}

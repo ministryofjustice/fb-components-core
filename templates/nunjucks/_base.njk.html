@@ -11,7 +11,9 @@
 
 {% block header %}
   {% block govHeader %}
+    {% if page.header %}
     {{ callBlock(page.header) }}
+    {% endif %}
   {% endblock %}
   {% block govPhase %}
   {% if page.service.phase !== 'none' %}
