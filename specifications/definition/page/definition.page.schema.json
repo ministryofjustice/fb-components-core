@@ -74,7 +74,10 @@
       "title": "Back link text",
       "type": "string",
       "default": "[% link.back %]",
-      "content": true
+      "content": true,
+      "category": [
+        "additional"
+      ]
     }
   },
   "allOf": [
