@@ -38,7 +38,8 @@
     "href": {
       "title": "URL",
       "description": "Button URL",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "element": {
       "title": "Element",

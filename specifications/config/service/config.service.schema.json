@@ -79,6 +79,16 @@
       "title": "Form team email template",
       "type": "string",
       "multiline": true
+    },
+    "sessionDuration": {
+      "title": "Session duration",
+      "description": "How many minutes a user’s session should last",
+      "type": "number"
+    },
+    "dataRetentionDuration": {
+      "title": "User data retention duration",
+      "description": "How many days a user’s data should be kept for",
+      "type": "number"
     }
   },
   "allOf": [

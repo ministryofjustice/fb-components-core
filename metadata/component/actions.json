@@ -4,7 +4,7 @@
   "primary": {
     "_id": "actions.primary",
     "_type": "button",
-    "html": "[% button.{page@actionType}.{page@_type} || button.{page@actionType}%]",
+    "html": "[% button.{page@actionType}.{page@_type} || button.{page@actionType} || button.continue %]",
     "classes": "[% button.{page@actionType}.{page@_type}.classes || button.{page@actionType}.classes %]"
   }
 }

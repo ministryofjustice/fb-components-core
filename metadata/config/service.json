@@ -1,9 +1,12 @@
 {
   "_id": "service",
   "_type": "config.service",
+  "dataRetentionDuration": 28,
+  "homepageUrl": "page.start",
   "name": "Service name goes here",
   "phase": "alpha",
   "phaseText": "Service phase text goes here",
+  "serviceEmailAddress": "form-builder.no-reply@digital.justice.gov.uk",
   "serviceUrl": "[% service#homepageUrl %]",
-  "homepageUrl": "page.start"
+  "sessionDuration": 30
 }
