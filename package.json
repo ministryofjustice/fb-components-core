@@ -13,7 +13,7 @@
     "test": "test-specifications"
   },
   "dependencies": {
-    "govuk-frontend": "2.11.0"
+    "govuk-frontend": "2.12.0"
   },
   "devDependencies": {
     "@ministryofjustice/fb-specification": "^0.2.0",
