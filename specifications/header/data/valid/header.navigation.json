@@ -8,12 +8,6 @@
   "navigation": {
     "_id": "header.navigation.items",
     "_type": "header.navigation",
-    "xshow": {
-      "_id": "header.navigation.show",
-      "identifier": "authenticated",
-      "identifierType": "savereturn",
-      "operator": "isTrue"
-    },
     "items": [{
       "_id": "header.navigation.item",
       "_type": "link",
