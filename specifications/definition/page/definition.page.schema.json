@@ -48,8 +48,35 @@
       "description": "Set dynamically - exists here to enable formatting of value",
       "type": "string",
       "content": true,
+      "default": "[% cookie.message %]",
       "category": [
         "dynamic"
+      ]
+    },
+    "actionType": {
+      "title": "Primary action",
+      "description": "Text for primary action button",
+      "type": "string",
+      "enum": [
+        "continue",
+        "saveContinue",
+        "save",
+        "confirm",
+        "send.email",
+        "send.sms"
+      ],
+      "default": "continue",
+      "category": [
+        "additional"
+      ]
+    },
+    "backLink": {
+      "title": "Back link text",
+      "type": "string",
+      "default": "[% link.back %]",
+      "content": true,
+      "category": [
+        "additional"
       ]
     }
   },

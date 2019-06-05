@@ -1,0 +1,15 @@
+{
+  "$id": "http://gov.uk/schema/v1.0.0/buttonPrimary",
+  "_name": "buttonPrimary",
+  "title": "Primary button",
+  "description": "Component for a primary button",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/button"
+    }
+  ],
+  "category": [
+    "control"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "_id": "header.navigation",
+  "_isa": "another.header",
+  "_type": "header",
+  "homepageUrl": "homepageUrl",
+  "serviceName": "serviceName",
+  "serviceUrl": "serviceUrl",
+  "navigation": {
+    "_id": "header.navigation.items",
+    "_type": "header.navigation",
+    "items": [{
+      "_id": "header.navigation.item",
+      "_type": "link",
+      "text": "link text",
+      "href": "link href"
+    }]
+  }
+}

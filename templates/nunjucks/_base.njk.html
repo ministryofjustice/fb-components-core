@@ -11,12 +11,9 @@
 
 {% block header %}
   {% block govHeader %}
-    {{ govukHeader({
-      homepageUrl: page.service.homepageUrl,
-      serviceName: page.service.name,
-      serviceUrl: page.service.serviceUrl
-      })
-    }}
+    {% if page.header %}
+    {{ callBlock(page.header) }}
+    {% endif %}
   {% endblock %}
   {% block govPhase %}
   {% if page.service.phase !== 'none' %}

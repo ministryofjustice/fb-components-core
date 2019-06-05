@@ -13,22 +13,27 @@
       "title": "Homepage URL",
       "description": "The url of the homepage. Defaults to /",
       "type": "string",
-      "default": "/"
+      "content": true,
+      "url": true
     },
     "serviceName": {
       "title": "Service name",
       "description": "Header title that is placed next to GOV.UK. Used for product names (i.e. Pay, Verify)",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "serviceUrl": {
       "title": "Service URL",
       "description": "Url for the service name anchor",
-      "type": "string"
+      "type": "string",
+      "content": true,
+      "url": true
     },
     "productName": {
       "title": "Product name",
       "description": "Header title that is placed next to GOV.UK. Used for product names (i.e. Pay, Verify) - IS THIS NOT DUPLICATING serviceName???",
-      "type": "string"
+      "type": "string",
+      "content": true
     },
     "assetsPath": {
       "title": "Assets path",
@@ -37,23 +42,18 @@
       "default": "/assets/images"
     },
     "navigation": {
-      "title": "Navigation",
-      "description": "An array of navigation item objects",
-      "type": "array",
-      "items": {
+        "$id": "http://gov.uk/schema/v1.0.0/header/navigation",
+        "allOf": [{
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/linklist"
+        }],
         "properties": {
-          "text": {
-            "title": "Navigation text",
-            "description": "Text of the navigation item",
-            "type": "string"
+          "_type": {
+            "const": "header.navigation"
           },
-          "href": {
-            "title": "Navigation URL",
-            "description": "URL of the navigation item",
-            "type": "string"
+          "title": {
+            "type": "null"
           }
         }
-      }
     },
     "navigationClasses": {
       "title": "Navigation classes",
@@ -70,6 +70,11 @@
     {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
     }
+  ],
+  "required": [
+    "homepageUrl",
+    "serviceName",
+    "serviceUrl"
   ],
   "category": [
     "content"

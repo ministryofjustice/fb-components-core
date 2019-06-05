@@ -17,6 +17,14 @@
     }
   ],
   "properties": {
+    "redact": {
+      "title": "Redaction pattern",
+      "description": "Pattern specifying that user input should be redacted and how",
+      "type": "string",
+      "category": [
+        "userinput"
+      ]
+    },
     "disabled": {
       "title": "Disabled",
       "description": "Whether the control should be disabled",

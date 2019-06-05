@@ -1,7 +1,6 @@
 {
-  "_id": "cookies.message",
+  "_id": "cookie.message",
   "_type": "string",
-  "description": "Message displayed to user to notify them of the use of cookies",
-  "value": "We uses cookies to make the site simpler. [Find out more about cookies](/about/cookies)",
-  "value:cy": "Croeso mccookies to make the site simpler. [Find out more about cookies](/cy/about/cookies)"
+  "description": "Condition to determine whether to disply cookie message to user",
+  "value": "{req@newSession, select, other{[% cookie.message.value %]} undefined{}}"
 }

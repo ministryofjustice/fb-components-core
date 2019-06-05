@@ -5,7 +5,7 @@
   "type": "object",
   "properties": {
     "namespace": {
-      "title": "Namespace name",
+      "title": "Namespace",
       "description": "Namespace under which to store user inputs - combines with input names of child components",
       "type": "string",
       "category": [
