@@ -1,6 +1,14 @@
 {% extends "template.njk" %}
 
 {% block head %}
+<link rel="stylesheet" href="/assets/govuk-frontend-{{govuk_frontend_version}}.min.css">
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="/assets/govuk-frontend-ie8-{{govuk_frontend_version}}.min.css">
+<![endif]-->
+{% block styles %}{% endblock %}
+{% endblock %}
+
+{% block header %}
 {% if environmentDisplay %}
 <style>
 .environmentDisplay {
@@ -26,14 +34,6 @@
 {{ environmentDisplay }}
 </div>
 {% endif %}
-<link rel="stylesheet" href="/assets/govuk-frontend-{{govuk_frontend_version}}.min.css">
-<!--[if lt IE 9]>
-<link rel="stylesheet" href="/assets/govuk-frontend-ie8-{{govuk_frontend_version}}.min.css">
-<![endif]-->
-{% block styles %}{% endblock %}
-{% endblock %}
-
-{% block header %}
   {% block govHeader %}
     {% if page.header %}
     {{ callBlock(page.header) }}
