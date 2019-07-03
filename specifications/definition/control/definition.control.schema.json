@@ -25,6 +25,14 @@
         "userinput"
       ]
     },
+    "optionalText": {
+      "title": "Optional text",
+      "description": "Additional text to display if control is optional",
+      "type": "string",
+      "category": [
+        "content"
+      ]
+    },
     "disabled": {
       "title": "Disabled",
       "description": "Whether the control should be disabled",

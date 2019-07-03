@@ -2,6 +2,5 @@
   "_id": "button.continue.page.summary",
   "_type": "string",
   "description": "Continue button text for summary page",
-  "value": "{page@summaryOf, select, undefined{Accept and send application} other{}}",
-  "value:cy": "{page@summaryOf, select, undefined{Derbyn ac anfon cais} other{}}"
+  "value": "{page@summaryOf, select, undefined{[% continue.page.summary %]} other{}}"
 }
