@@ -2,5 +2,10 @@
 {% set params = setError(data) %}
 {% set params = setLabel(params) %}
 {% set params = setInputWidthClass(params) %}
-{{ callMacro('govukTextarea', params) }}
+{% set macroType = 'govukTextarea' %}
+{% if params.validation.maxLength %}
+{% set macroType = 'govukCharacterCount' %}
+{% set params = setObjectProperty(params, 'maxlength', params.validation.maxLength) %}
+{% endif %}
+{{ callMacro(macroType, params) }}
 {% endmacro -%}
