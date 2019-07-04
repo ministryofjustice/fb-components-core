@@ -7,6 +7,22 @@
   "properties": {
     "_type": {
       "const": "textarea"
+    },
+    "maxwords": {
+      "type": "number",
+      "title": "Maximum words",
+      "description": "Set a word limit",
+      "category": [
+        "userinput"
+      ]
+    },
+    "threshold": {
+      "type": "number",
+      "title": "Threshold percentage",
+      "description": "Display the message about maximum length or words after a user has entered a certain amount",
+      "category": [
+        "userinput"
+      ]
     }
   },
   "allOf": [
