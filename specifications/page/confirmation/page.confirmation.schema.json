@@ -8,11 +8,8 @@
     "_type": {
       "const": "page.confirmation"
     },
-    "continue": {
-      "const": "redundant",
-      "category": [
-        "additional"
-      ]
+    "lede": {
+      "multiline": true
     }
   },
   "allOf": [
