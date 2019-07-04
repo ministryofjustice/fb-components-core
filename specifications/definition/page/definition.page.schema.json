@@ -18,10 +18,11 @@
     },
     "title": {
       "title": "Title",
+      "description": "The text to use as the page’s title in the document title element - uses heading value by default",
       "type": "string",
       "content": true,
       "category": [
-        "additional"
+        "content"
       ]
     },
     "lede": {
