@@ -11,6 +11,9 @@
     "name": {
       "inputType": "date"
     },
+    "hint": {
+      "default": "[% hint.date %]"
+    },
     "dateType": {
       "title": "Date type",
       "description": "The format for entering dates",

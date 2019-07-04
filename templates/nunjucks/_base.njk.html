@@ -1,5 +1,7 @@
 {% extends "template.njk" %}
 
+{% block pageTitle %}{% if page.errorList %}Error: {% endif %}{% if page.heading %}{{ page.heading }}{% else %}{% if page.components[0].label.html %}{{ page.components[0].label.html }}{% else %}{{ page.components[0].legend.html }}{% endif %}{% endif %}{% if page._id != 'page.start' %} - {{ page.header.serviceName }}{% endif %} - GOV.UK{% endblock %}
+
 {% block head %}
 <link rel="stylesheet" href="/assets/govuk-frontend-{{govuk_frontend_version}}.min.css">
 <!--[if lt IE 9]>
