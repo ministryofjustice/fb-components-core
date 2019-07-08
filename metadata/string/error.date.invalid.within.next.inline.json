@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.within.next.inline",
-  "_type": "string.error",
-  "description": "Input (date) should be within next - inline",
-  "value": "Date should be within next {targetValue}"
-}

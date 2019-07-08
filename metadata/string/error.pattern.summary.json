@@ -1,6 +1,0 @@
-{
-  "_id": "error.pattern.summary",
-  "_type": "string.error",
-  "description": "Input (string) does not match pattern - summary",
-  "value": "Your answer for {control} does not match the pattern ({pattern})"
-}

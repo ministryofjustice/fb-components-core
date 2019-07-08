@@ -1,0 +1,6 @@
+{
+  "_id": "error.date.invalid.month",
+  "_type": "string.error",
+  "description": "Month input (date) is invalid",
+  "value": "Enter a valid month for {control}"
+}

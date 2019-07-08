@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.year.inline",
-  "_type": "string.error",
-  "description": "Year input (date) is invalid - inline",
-  "value": "Year must be 4 numbers"
-}

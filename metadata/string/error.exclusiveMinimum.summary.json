@@ -1,6 +1,0 @@
-{
-  "_id": "error.exclusiveMinimum.summary",
-  "_type": "string.error",
-  "description": "Input (number) is too small (exclusive minimum) - summary",
-  "value": "Your answer for {control} is less than the minimum allowed {minimum}"
-}

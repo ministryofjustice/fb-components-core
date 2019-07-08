@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.day.inline",
-  "_type": "string.error",
-  "description": "Day input (date) is invalid - inline",
-  "value": "Enter a valid day"
-}

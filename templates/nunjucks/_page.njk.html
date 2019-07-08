@@ -72,7 +72,7 @@
 {% if page.EDITMODE != 'edit' %}
 <form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if page.encType %} enctype="multipart/form-data"{% endif %}{% if not page.autocomplete %} autocomplete="off"{% endif %} novalidate>
 {# default submit control - ie. triggered if user hits return in a text input #}
-<p class="govuk-visually-hidden"><input type="submit"></p>
+<input type="submit" style="display: none">
 {% if _csrf %}
 <input type="hidden" name="_csrf" value="{{ _csrf }}">
 {% endif %}
@@ -125,6 +125,13 @@
 {% block bodyEnd %}
 {{ super() }}
 <style type="text/css">
+a:link {
+    color: #005ea5;
+}
+a:visited {
+  color: #4c2c92;
+}
+
 #global-cookie-message {
   background-color: #d5e8f3;
   padding: 10px 0;

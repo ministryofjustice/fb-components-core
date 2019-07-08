@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.within.last.inline",
-  "_type": "string.error",
-  "description": "Input (date) should be within last - inline",
-  "value": "Date should be within last {targetValue}"
-}

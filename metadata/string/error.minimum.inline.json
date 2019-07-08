@@ -1,6 +1,0 @@
-{
-  "_id": "error.minimum.inline",
-  "_type": "string.error",
-  "description": "Input (number) is too small - inline",
-  "value": "Your answer must be greater than or equal to {minimum}"
-}
