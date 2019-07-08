@@ -1,6 +1,0 @@
-{
-  "_id": "error.format.inline",
-  "_type": "string.error",
-  "description": "Input is not in the correct format - inline",
-  "value": "Your answer is not in the correct format"
-}

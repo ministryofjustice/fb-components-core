@@ -1,6 +1,0 @@
-{
-  "_id": "error.type.summary",
-  "_type": "string.error",
-  "description": "Input is not the correct type - summary",
-  "value": "Your answer for ‘{control}‘ is not the correct type - {errorType}"
-}

@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.after.summary",
-  "_type": "string.error",
-  "description": "Input (date) should be after - summary",
-  "value": "Your answer for {control} should be after {targetValue}"
-}

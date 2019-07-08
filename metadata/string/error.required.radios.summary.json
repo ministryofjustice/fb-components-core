@@ -1,7 +1,0 @@
-{
-  "_id": "error.required.radios.summary",
-  "_type": "string.error",
-  "description": "Input is required (radios) - summary",
-  "value": "Choose one of the answers for {control}",
-  "value:cy": "Dewiswch un o'r atebion ar gyfer {control}"
-}

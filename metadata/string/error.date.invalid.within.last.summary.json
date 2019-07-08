@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.within.last.summary",
-  "_type": "string.error",
-  "description": "Input (date) should be within last - summary",
-  "value": "Your answer for ‘{control}’ should be within last {targetValue}"
-}

@@ -1,6 +1,0 @@
-{
-  "_id": "error.maxLength.inline",
-  "_type": "string.error",
-  "description": "Input (string) is too long - inline",
-  "value": "Your answer must contain no more than {maxLength} characters"
-}

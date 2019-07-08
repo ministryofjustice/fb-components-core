@@ -1,6 +1,0 @@
-{
-  "_id": "error.type.inline",
-  "_type": "string.error",
-  "description": "Input is not the correct type - inline",
-  "value": "Your answer is not the correct type - {errorType}"
-}

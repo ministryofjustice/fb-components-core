@@ -1,6 +1,0 @@
-{
-  "_id": "error.minLength.summary",
-  "_type": "string.error",
-  "description": "Input (string) is too short - summary",
-  "value": "Your answer for {control} is too short ({minLength} characters at least)"
-}
