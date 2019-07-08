@@ -86,6 +86,19 @@
         }
       ]
     },
+    "format": {
+      "title": "Format to match string against",
+      "description": "Format used for validating users’ answers",
+      "type": "string"
+    },
+    "errorsFormat": {
+      "title": "Error messages for format",
+      "allOf": [
+        {
+          "$ref": "#/definitions/errorStrings"
+        }
+      ]
+    },
     "multipleOf": {
       "title": "Multiple of",
       "description": "Whether users must enter a multiple of another number",
@@ -280,6 +293,9 @@
             },
             "pattern": {
               "$ref": "#/definitions/pattern"
+            },
+            "format": {
+              "$ref": "#/definitions/format"
             }
           }
         },
@@ -293,6 +309,9 @@
             },
             "pattern": {
               "$ref": "#/definitions/errorsPattern"
+            },
+            "format": {
+              "$ref": "#/definitions/errorsFormat"
             }
           }
         }
