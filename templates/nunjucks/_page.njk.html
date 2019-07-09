@@ -59,9 +59,7 @@
 {%- endif %}
 {%- endif %}
 {% if page.heading -%}
-{% set headingClass = 'govuk-heading-l' %}
-{% if page._type === 'page.start' %}{% set headingClass = 'govuk-heading-xl' %}{% endif %}
-<h1 class="{{ headingClass }}" data-block-id="{{ page.$headingId or page._id }}" data-block-property="{{ page.$headingProperty or 'heading' }}">{{ page.heading | safe }}</h1>
+<h1 class="{{ page.headingClass }}" data-block-id="{{ page.$headingId or page._id }}" data-block-property="{{ page.$headingProperty or 'heading' }}">{{ page.heading | safe }}</h1>
 {% endif %}
 {% if page.lede -%}
 <p class="govuk-body-l" data-block-id="{{ page.$ledeId or page._id }}" data-block-property="{{ page.$ledeProperty or 'lede' }}">{{ page.lede | safe }}</p>
