@@ -6,7 +6,7 @@
       "condition"
     ]
   },
-  "version": "0.0.146-14",
+  "version": "0.0.146-15",
   "description": "Form Builder core components",
   "main": "index.js",
   "scripts": {
