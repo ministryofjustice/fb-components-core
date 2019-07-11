@@ -33,6 +33,14 @@
         "content"
       ]
     },
+    "autocomplete": {
+      "title": "Autocomplete",
+      "description": "Instructions how to suggest (or not) values",
+      "type": "string",
+      "category": [
+        "userinput"
+      ]
+    },
     "disabled": {
       "title": "Disabled",
       "description": "Whether the control should be disabled",
