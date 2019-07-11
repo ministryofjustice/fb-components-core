@@ -52,6 +52,18 @@
 <div class="govuk-grid-column-{{ columns }}">
 
 {% block pageContent %}
+{% if page.EDITMODE != 'edit' %}
+<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if page.encType %} enctype="multipart/form-data"{% endif %}{% if page.autocomplete %} autocomplete="{{ page.autocomplete }}"{% endif %} novalidate>
+{# default submit control - ie. triggered if user hits return in a text input #}
+<input type="submit" style="display: none">
+{% if _csrf %}
+<input type="hidden" name="_csrf" value="{{ _csrf }}">
+{% endif %}
+{% if page.changepage %}
+<input type="hidden" name="changepage" value="{{ page.changepage }}">
+{% endif %}
+{% endif %}
+
 {% block pageContentHeading %}
 {% if page._type !== 'page.start' -%}
 {% if page.sectionHeading -%}
@@ -67,17 +79,6 @@
 {% endblock %}
 
 {% block pageContentBody %}
-{% if page.EDITMODE != 'edit' %}
-<form method="post"{% if page.action %} action="{{ page.action }}"{% endif %}{% if page.encType %} enctype="multipart/form-data"{% endif %}{% if page.autocomplete %} autocomplete="{{ page.autocomplete }}"{% endif %} novalidate>
-{# default submit control - ie. triggered if user hits return in a text input #}
-<input type="submit" style="display: none">
-{% if _csrf %}
-<input type="hidden" name="_csrf" value="{{ _csrf }}">
-{% endif %}
-{% if page.changepage %}
-<input type="hidden" name="changepage" value="{{ page.changepage }}">
-{% endif %}
-{% endif %}
 {% if page.body -%}
 <div class="fb-body govuk-prose-scope" data-block-id="{{ page._id }}" data-block-property="body">{{ page.body | safe }}</div>
 {%- endif %}
@@ -101,13 +102,15 @@
 {% endif %}
 {% endif %}
 {% endblock %}
-{% if page.EDITMODE != 'edit' %}
-</form>
-{% endif %}
+
 {% if page.extraComponents %}
 {{- callComponents(page, 'extraComponents') -}}
 {% endif %}
 {% endblock %}
+
+{% if page.EDITMODE != 'edit' %}
+</form>
+{% endif %}
 {% endblock %}
 
 </div>
