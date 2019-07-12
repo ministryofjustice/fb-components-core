@@ -33,6 +33,26 @@
         "content"
       ]
     },
+    "autocomplete": {
+      "title": "Autocomplete",
+      "description": "Instructions how to suggest (or not) values",
+      "type": "string",
+      "category": [
+        "userinput"
+      ]
+    },
+    "spellcheck": {
+      "title": "Spellcheck",
+      "description": "Whether the element may be checked for spelling errors",
+      "type": "string",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "category": [
+        "userinput"
+      ]
+    },
     "disabled": {
       "title": "Disabled",
       "description": "Whether the control should be disabled",
