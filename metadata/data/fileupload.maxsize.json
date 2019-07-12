@@ -2,5 +2,5 @@
   "_id": "fileupload.maxsize",
   "_type": "data",
   "description": "Default maximum size for uploaded files",
-  "value": "5Mb"
+  "value": "7Mb"
 }
