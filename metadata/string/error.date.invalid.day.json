@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.day",
-  "_type": "string.error",
-  "description": "Day input (date) is invalid",
-  "value": "Enter a valid day for {control}"
-}
