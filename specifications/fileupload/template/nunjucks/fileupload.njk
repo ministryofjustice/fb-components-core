@@ -52,6 +52,13 @@
 {% set uploadSlots %}
 {% for upload in params.fileUploads %}
 {% set upload = setLabel(upload) %}
+{% if not upload.id %}
+{% set upload = setObjectProperty(upload, 'id', upload.name) %}
+{% endif %}
+{% if params.fileUploads.length === 1 %}
+{% set label = setObjectProperty(upload.label, 'classes', 'govuk-visually-hidden') %}
+{% set upload = setObjectProperty(upload, 'label', label) %}
+{% endif %}
 {% if attributes %}
 {% set upload = setObject(upload, {attributes:attributes}) %}
 {% endif %}
