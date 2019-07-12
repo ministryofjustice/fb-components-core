@@ -2,5 +2,5 @@
   "_type": "classname",
   "_id": "sizeClass.legend.multiple",
   "desciption": "Default legend size class when used on multiple question page",
-  "value": "govuk-fieldset__legend--s"
+  "value": "govuk-fieldset__legend--m"
 }
