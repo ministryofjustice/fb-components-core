@@ -1,6 +1,0 @@
-{
-  "_id": "error.date.invalid.year",
-  "_type": "string.error",
-  "description": "Year input (date) is invalid",
-  "value": "Enter a valid year for {control} - it should be 4 digits"
-}
