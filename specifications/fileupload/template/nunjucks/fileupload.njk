@@ -14,7 +14,7 @@
   {% if params.maxFiles > 1 or not params.slots %}
     {#- If an id 'prefix' is not passed, fall back to using the name attribute
    instead. We need this for error messages and hints as well -#}
-    {% set idPrefix = params.idPrefix if params.idPrefix else
+    {% set idPrefix = params.idPrefix if params.idPrefix else 
       params.name %}
 
     {#- a record of other elements that we need to associate with the input using
@@ -25,19 +25,19 @@
     {% set innerHtml %}
     {% if params.hint %}
       {% set hintId = idPrefix + '-hint' %}
-      {% set describedBy = describedBy + ' ' + hintId if describedBy else
+      {% set describedBy = describedBy + ' ' + hintId if describedBy else 
         hintId %}
       {{ govukHint({
-    id: hintId,
-    classes: params.hint.classes,
-    attributes: params.hint.attributes,
-    html: params.hint.html,
-    text: params.hint.text
-  }) | indent(2) | trim }}
+        id: hintId,
+        classes: params.hint.classes,
+        attributes: params.hint.attributes,
+        html: params.hint.html,
+        text: params.hint.text
+      }) | indent(2) | trim }}
     {% endif %}
     {% if params.errorMessage %}
       {% set errorId = idPrefix + '-error' %}
-      {% set describedBy = describedBy + ' ' + errorId if describedBy else
+      {% set describedBy = describedBy + ' ' + errorId if describedBy else 
         errorId %}
       {{ govukErrorMessage({
         id: errorId,
@@ -74,21 +74,11 @@
     {% endfor %}
     {% endset %}
     {{ uploadSlots | safe }}
-    {% if params.addFile %}
-      <p class="fb-control--fileupload--add">
-        <button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button>
-      </p>
-    {% endif %}
-    {% if params.summaryList.length %}
-      {{ callMacro('summaryListExtended', {
-        heading: params.summaryListHeading,
-        rows: params.summaryList
-      }) }}
-    {% endif %}
+    {{ uploadAdditonalParts(params) }}
     {% endset -%}
   {% endif %}
 
-  {% if params.maxFiles > 1  and params.slots > 1 %}
+  {% if params.maxFiles > 1 and params.slots > 1 %}
     <div class="fb-form-group--fileupload-multiple govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
       {% call govukFieldset({describedBy: describedBy, classes: params.fieldset.classes, attributes: params.fieldset.attributes, legend: params.fieldset.legend}) %}
       {{ innerHtml | trim | safe }}
@@ -97,25 +87,16 @@
   {% else %}
     {% if params.slots %}
       {% set uploadParams = setObject(params.fileUploads[0], {
-        label: params.label,
-        hint: params.hint,
-        describedBy: describedBy,
-        id: params.name,
-        attributes: attributes,
-        classes: 'fb-form--fileupload-single'
-      }) %}
+          label: params.label,
+          hint: params.hint,
+          describedBy: describedBy,
+          id: params.name,
+          attributes: attributes,
+          classes: 'fb-form--fileupload-single'
+        })
+      %}
       {{ govukFileUpload(uploadParams) }}
-      {% if params.addFile %}
-        <p class="fb-control--fileupload--add">
-          <button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button>
-        </p>
-      {% endif %}
-      {% if params.summaryList.length %}
-        {{ callMacro('summaryListExtended', {
-          heading: params.summaryListHeading,
-          rows: params.summaryList
-        }) }}
-      {% endif %}
+      {{ uploadAdditonalParts(params) }}
     {% else %}
       <div class="govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
         {{ govukLabel(params.label) }}
@@ -130,4 +111,20 @@
   <div class="govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
     {{ caller() }}
   </div>
+{% endmacro %}
+
+{% macro uploadAdditonalParts(params) %}
+  {% if params.addFile %}
+    <p class="fb-control--fileupload--add">
+      <button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button>
+    </p>
+  {% endif %}
+  {% if params.summaryList.length %}
+    {{
+      callMacro('summaryListExtended', {
+          heading: params.summaryListHeading,
+          rows: params.summaryList
+        })
+    }}
+  {% endif %}
 {% endmacro %}
