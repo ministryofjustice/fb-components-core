@@ -79,7 +79,6 @@
         <button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button>
       </p>
     {% endif %}
-
     {% if params.summaryList.length %}
       {{ callMacro('summaryListExtended', {
   heading: params.summaryListHeading,
@@ -89,7 +88,7 @@
     {% endset -%}
   {% endif %}
 
-  {% if params.maxFiles > 1 %}
+  {% if params.maxFiles > 1  and params.slots > 1 %}
     <div class="fb-form-group--fileupload-multiple govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
       {% call govukFieldset({describedBy: describedBy, classes: params.fieldset.classes, attributes: params.fieldset.attributes, legend: params.fieldset.legend}) %}
       {{ innerHtml | trim | safe }}
@@ -106,6 +105,17 @@
   classes: 'fb-form--fileupload-single'
 }) %}
       {{ govukFileUpload(uploadParams) }}
+      {% if params.addFile %}
+        <p class="fb-control--fileupload--add">
+          <button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button>
+        </p>
+      {% endif %}
+      {% if params.summaryList.length %}
+        {{ callMacro('summaryListExtended', {
+    heading: params.summaryListHeading,
+    rows: params.summaryList
+    }) }}
+      {% endif %}
     {% else %}
       <div class="govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
         {{ govukLabel(params.label) }}
