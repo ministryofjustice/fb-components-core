@@ -294,11 +294,25 @@ fieldset .govuk-summary-list {
   font-weight: bold;
 }
 
-.fb-control--fileupload--remove {
-  position: absolute;
-  right: 0;
-  margin: -3rem 0 0;
+@media (min-width: 40.0625em) {
+  .govuk-file-upload {
+    width: 65%;
+  }
 }
+@media (min-width: 55em) {
+  .govuk-file-upload {
+    width: auto;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .fb-control--fileupload--remove {
+    position: absolute;
+    right: 0;
+    margin: -3rem 0 0;
+  }
+}
+
 .fb-control--fileupload--remove em {
   position: absolute!important;
   width: 1px!important;
