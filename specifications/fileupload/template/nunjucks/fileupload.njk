@@ -55,6 +55,12 @@
     {% set uploadSlots %}
     {% for upload in params.fileUploads %}
       {% set upload = setLabel(upload) %}
+      {% if not upload.errorMessage %}
+        {% set upload = setObjectProperty(upload, 'errorMessage', params.errorMessage) %}
+      {% endif %}
+      {% if not upload.describedBy %}
+        {% set upload = setObjectProperty(upload, 'describedBy', describedBy) %}
+      {% endif %}
       {% if not upload.id %}
         {% set upload = setObjectProperty(upload, 'id', upload.name) %}
       {% endif %}
@@ -68,7 +74,7 @@
       {{ callMacro('govukFileUpload', upload) }}
       {% if upload.removeSlot %}
         <p class="fb-control--fileupload--remove">
-          <button class="govuk-button fb-action-secondary fb-action--remove" name="removeSlot" value="{{ upload.name }}">{{ upload.removeSlot | safe }}</button>
+          <button class="govuk-button govuk-button--secondary fb-action--remove" name="removeSlot" value="{{ upload.name }}">{{ upload.removeSlot | safe }}</button>
         </p>
       {% endif %}
     {% endfor %}
@@ -80,7 +86,7 @@
 
   {% if params.maxFiles > 1 and params.slots > 1 %}
     <div class="fb-form-group--fileupload-multiple govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
-      {% call govukFieldset({describedBy: describedBy, classes: params.fieldset.classes, attributes: params.fieldset.attributes, legend: params.fieldset.legend}) %}
+      {% call govukFieldset({classes: params.fieldset.classes, attributes: params.fieldset.attributes, legend: params.fieldset.legend}) %}
       {{ innerHtml | trim | safe }}
       {% endcall %}
     </div>
@@ -89,13 +95,14 @@
       {% set uploadParams = setObject(params.fileUploads[0], {
           label: params.label,
           hint: params.hint,
-          describedBy: describedBy,
-          id: params.name,
-          attributes: attributes,
-          classes: 'fb-form--fileupload-single'
+          id: params.fileUploads[0].name,
+          errorMessage: params.errorMessage,
+          attributes: attributes
         })
       %}
+      <div class="fb-form--fileupload-single">
       {{ govukFileUpload(uploadParams) }}
+      </div>
       {{ uploadAdditonalParts(params) }}
     {% else %}
       <div class="govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
@@ -116,7 +123,7 @@
 {% macro uploadAdditonalParts(params) %}
   {% if params.addFile %}
     <p class="fb-control--fileupload--add">
-      <button class="govuk-button fb-action-secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button>
+      <button class="govuk-button govuk-button--secondary fb-action--add" name="addFile" value="{{ params.name }}">{{ params.addFile | safe }}</button>
     </p>
   {% endif %}
   {% if params.summaryList.length %}
