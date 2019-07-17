@@ -89,6 +89,7 @@
       {{ innerHtml | trim | safe }}
       {% endcall %}
     </div>
+    {{ uploadAdditonalParts(params) }}
   {% else %}
     {% if params.slots %}
       {% set uploadParams = setObject(params.fileUploads[0], {
