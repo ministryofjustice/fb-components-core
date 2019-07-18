@@ -103,13 +103,14 @@
       <div class="fb-form--fileupload-single">
       {{ govukFileUpload(uploadParams) }}
       </div>
-      {{ uploadAdditonalParts(params) }}
+      
     {% else %}
       <div class="govuk-form-group {%- if params.errorMessage %} govuk-form-group--error{% endif %} {%- if params.formGroup.classes %} {{ params.formGroup.classes }}{% endif %}">
         {{ govukLabel(params.label) }}
         {{ innerHtml | trim | safe }}
       </div>
     {% endif %}
+    {{ uploadAdditonalParts(params) }}
   {% endif %}
 
 {% endmacro -%}
