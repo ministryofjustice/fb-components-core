@@ -2,6 +2,6 @@
   "_id": "fileupload.file.button.remove",
   "_type": "string",
   "description": "Text displayed to allow user to remove an uploaded file",
-  "value": "Delete",
+  "value": "Remove",
   "value:cy": "Dileu"
 }
