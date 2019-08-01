@@ -137,10 +137,12 @@ a:visited {
   color: #4c2c92;
 }
 a:focus {
+  outline: 3px solid transparent;
   color: #0b0c0c;
-  outline: 3px solid #ffbf47;
-  outline-offset: 0;
-  background-color: #ffbf47;
+  background-color: #fd0;
+  -webkit-box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+  box-shadow: 0 -2px #fd0, 0 4px #0b0c0c;
+  text-decoration: none;
 }
 
 table th,
@@ -193,7 +195,6 @@ table td {
   top: 0.25rem;
   right: 0;
   font-size: 75%;
-  padding: 0;
   width: auto;
 }
 .fb-info-summary {
