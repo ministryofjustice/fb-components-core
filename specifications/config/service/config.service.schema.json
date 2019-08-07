@@ -62,6 +62,11 @@
       "description": "Name of input used as email address to send user a copy of submission details",
       "type": "string"
     },
+    "attachUserSubmission": {
+      "title": "Attach confirmation of submission to user email",
+      "type": "boolean",
+      "default": false
+    },
     "emailSubjectUser": {
       "title": "CC email subject",
       "type": "string"
