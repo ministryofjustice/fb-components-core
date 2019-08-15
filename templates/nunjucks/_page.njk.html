@@ -357,6 +357,37 @@ fieldset .govuk-summary-list {
   }
 }
 </style>
+
+<link rel="stylesheet" href="https://alphagov.github.io/accessible-autocomplete/dist/accessible-autocomplete.min.css">
+<script type="text/javascript" src="https://alphagov.github.io/accessible-autocomplete/dist/accessible-autocomplete.min.js"></script>
+<script type="text/javascript">
+(function () {
+  var $autocompleteEls = document.querySelectorAll('.fb-autocomplete')
+  $autocompleteEls.forEach(function($autocompleteEl) {
+    function getBooleanValue (prop) {
+      return !($autocompleteEl.getAttribute('data-autocomplete-' + prop) === 'false')
+    }
+    var minLength = Number($autocompleteEl.getAttribute('data-autocomplete-minLength'))
+    var autoselect = getBooleanValue('autoselect')
+    var confirmOnBlur = getBooleanValue('confirmOnBlur')
+    var displayMenu = $autocompleteEl.getAttribute('data-autocomplete-displayMenu')
+    var showAllValues = getBooleanValue('showAllValues')
+    var showNoOptionsFound = getBooleanValue('showNoOptionsFound')
+
+    accessibleAutocomplete.enhanceSelectElement({
+      minLength: minLength,
+      autoselect: autoselect,
+      confirmOnBlur: confirmOnBlur,
+      displayMenu: displayMenu,
+      showAllValues: showAllValues,
+      showNoOptionsFound: showNoOptionsFound,
+      defaultValue: '',
+      selectElement: $autocompleteEl
+    })
+  })
+})()
+</script>
+
 {% endblock %}
 
 {% block footer %}
