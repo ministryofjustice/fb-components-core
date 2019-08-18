@@ -15,8 +15,5 @@
 {% set params = setObjectProperty(params, 'attributes', attributes) %}
 {# check for classes first #}
 {% set params = setObjectProperty(params, 'classes', 'fb-autocomplete') %}
-<pre>
-{{ JSON(dataAttributes, null, 2) }}
-</pre>
 {{ callMacro('govukSelect', params) }}
 {% endmacro -%}
