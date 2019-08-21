@@ -47,6 +47,12 @@
       "type": "string",
       "enum": ["button", "a", "input"]
     },
+    "preventDoubleClick": {
+      "title": "Prevent double click",
+      "description": "Stop users from accidentally sending information more than once",
+      "type": "boolean",
+      "default": true
+    },
     "disabled": {
       "title": "Disabled",
       "oneOf": [
