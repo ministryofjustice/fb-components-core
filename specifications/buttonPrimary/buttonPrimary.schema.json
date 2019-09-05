@@ -4,6 +4,11 @@
   "title": "Primary button",
   "description": "Component for a primary button",
   "type": "object",
+  "properties": {
+    "_type": {
+      "const": "buttonPrimary"
+    }
+  },
   "allOf": [
     {
       "$ref": "http://gov.uk/schema/v1.0.0/button"
