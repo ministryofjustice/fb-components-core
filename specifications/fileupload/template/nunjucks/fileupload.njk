@@ -7,9 +7,6 @@
   {% set params = setInputWidthClass(params) %}
 
   {% set attributes = params.attributes %}
-  {% if params.accept %}
-    {% set attributes = setObject(attributes, {accept: params.accept}) %}
-  {% endif %}
 
   {% if params.maxFiles > 1 or not params.slots %}
     {#- If an id 'prefix' is not passed, fall back to using the name attribute
