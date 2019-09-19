@@ -7,14 +7,33 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install
+          name: npm install
           command: npm install
       - run:
-          name: Runs ESLint and test
+          name: Run ESLint and tests
           command: npm run test
-
+  publish_to_npm:
+    docker:
+      - image: circleci/node:12.4.0
+    steps:
+      - checkout
+      - run:
+          name: npm install
+          command: npm install
+      - run:
+          name: authenticate with npm
+          command: 'echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc'
+      - run:
+          name: publish to npm
+          command: 'npm publish'
 
 workflows:
   commit-workflow:
     jobs:
       - lint_and_test
+      - publish_to_npm:
+          requires:
+            - lint_and_test
+          filters:
+            branches:
+              only: master
