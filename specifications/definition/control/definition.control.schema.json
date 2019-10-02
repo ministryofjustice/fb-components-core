@@ -31,7 +31,8 @@
       "type": "string",
       "category": [
         "content"
-      ]
+      ],
+      "acceptsEmptyString": true
     },
     "autocomplete": {
       "title": "Autocomplete",
