@@ -32,7 +32,8 @@
       "category": [
         "content"
       ],
-      "acceptsEmptyString": true
+      "acceptsEmptyString": true,
+      "default": "(optional)"
     },
     "autocomplete": {
       "title": "Autocomplete",
