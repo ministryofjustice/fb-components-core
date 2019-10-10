@@ -45,6 +45,22 @@
         }
       ]
     },
+    "errorsAccept": {
+      "title": "Error messages for ‘Accept’",
+      "allOf": [
+        {
+          "$ref": "#/definitions/errorStrings"
+        }
+      ]
+    },
+    "errorsMaxSize": {
+      "title": "Error messages for ‘Max Size’",
+      "allOf": [
+        {
+          "$ref": "#/definitions/errorStrings"
+        }
+      ]
+    },
     "minLength": {
       "title": "Minimum length",
       "description": "The minimum characters users must enter",
@@ -276,6 +292,43 @@
           "properties": {
             "required": {
               "$ref": "#/definitions/errorsRequired"
+            }
+          }
+        }
+      }
+    },
+    "uploadBundle": {
+      "properties": {
+        "validation": {
+          "title": "Validation",
+          "description": "Values for default validation",
+          "role": "validation",
+          "properties": {
+            "accept": {
+              "title": "Accepted types",
+              "description": "Which file types to accept",
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "maxSize": {
+              "title": "Maximum size",
+              "description": "Maximum file size as human readable string or bytes",
+              "type": "string"
+            }
+          }
+        },
+        "errors": {
+          "title": "Errors",
+          "description": "Strings to override for default error messages",
+          "role": "errorStrings",
+          "properties": {
+            "accept": {
+              "$ref": "#/definitions/errorsAccept"
+            },
+            "maxSize": {
+              "$ref": "#/definitions/errorsMaxSize"
             }
           }
         }
