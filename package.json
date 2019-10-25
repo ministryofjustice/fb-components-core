@@ -1,17 +1,15 @@
 {
   "name": "@ministryofjustice/fb-components-core",
-  "specifications": {
-    "$idRoot": "http://gov.uk/schema/v1.0.0",
-    "protected": [
-      "condition"
-    ]
-  },
   "version": "3.1.0-8",
   "description": "Form Builder core components",
   "scripts": {
     "test": "test-specifications"
   },
   "author": "Form Builder Team <form-builder-team@digital.justice.gov.uk>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ministryofjustice/fb-components-core.git"
+  },
   "license": "MIT",
   "dependencies": {
     "govuk-frontend": "3.1.0"
@@ -19,8 +17,10 @@
   "devDependencies": {
     "@ministryofjustice/fb-specification": "^0.3.3"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ministryofjustice/fb-components-core.git"
+  "specifications": {
+    "$idRoot": "http://gov.uk/schema/v1.0.0",
+    "protected": [
+      "condition"
+    ]
   }
 }
