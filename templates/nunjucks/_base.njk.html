@@ -3,9 +3,9 @@
 {% block pageTitle %}{% if page.errorList %}Error: {% endif %}{% if page.heading %}{{ page.heading }}{% else %}{% if page.components[0].label.html %}{{ page.components[0].label.html }}{% else %}{{ page.components[0].legend.html }}{% endif %}{% endif %}{% if page._id != 'page.start' %} - {{ page.header.serviceName }}{% endif %} - GOV.UK{% endblock %}
 
 {% block head %}
-<link rel="stylesheet" href="/assets/govuk-frontend-{{govuk_frontend_version}}.min.css">
+<link rel="stylesheet" href="/assets/govuk-frontend-3.3.0.min.css">
 <!--[if lt IE 9]>
-<link rel="stylesheet" href="/assets/govuk-frontend-ie8-{{govuk_frontend_version}}.min.css">
+<link rel="stylesheet" href="/assets/govuk-frontend-ie8-3.3.0.min.css">
 <![endif]-->
 {% block styles %}{% endblock %}
 {% endblock %}
@@ -80,7 +80,7 @@
 {% endif %}
 {% endif %}
 {% endblock %}
-<script src="/assets/govuk-frontend-{{govuk_frontend_version}}.min.js"></script>
+<script src="/assets/govuk-frontend-3.3.0.min.js"></script>
 <script>window.GOVUKFrontend.initAll()</script>
 {% block scripts %}{% endblock %}
 {% endblock %}
