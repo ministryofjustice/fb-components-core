@@ -1,10 +1,10 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/field",
-  "_name": "definition.field",
-  "title": "Field definition",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/fields",
+  "_name": "definition.fields",
+  "title": "Composite field definition",
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/label"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/legend"
     },
     {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/control"
@@ -18,9 +18,9 @@
   ],
   "required": [
     "name",
-    "label"
+    "legend"
   ],
   "category": [
-    "field"
+    "fields"
   ]
 }
