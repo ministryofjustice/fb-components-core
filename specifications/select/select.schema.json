@@ -7,13 +7,6 @@
   "allOf": [
     {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/select"
-    },
-    {
-      "properties": {
-        "_type": {
-          "const": "select"
-        }
-      }
     }
   ],
   "properties": {
