@@ -1,7 +1,7 @@
 {
   "_id": "date sample",
   "_type": "date",
-  "label": "Date label",
+  "legend": "Date legend",
   "name": "dob",
   "dateType": "day-month-year",
   "validation": {

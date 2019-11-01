@@ -4,16 +4,23 @@
   "title": "Secondary button",
   "description": "Component for a secondary button",
   "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/button"
+    },
+    {
+      "properties": {
+        "_type": {
+          "const": "buttonSecondary"
+        }
+      }
+    }
+  ],
   "properties": {
     "_type": {
       "const": "buttonSecondary"
     }
   },
-  "allOf": [
-    {
-      "$ref": "http://gov.uk/schema/v1.0.0/button"
-    }
-  ],
   "category": [
     "control"
   ]

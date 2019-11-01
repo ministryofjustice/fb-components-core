@@ -4,16 +4,23 @@
   "title": "Primary button",
   "description": "Component for a primary button",
   "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/button"
+    },
+    {
+      "properties": {
+        "_type": {
+          "const": "buttonPrimary"
+        }
+      }
+    }
+  ],
   "properties": {
     "_type": {
       "const": "buttonPrimary"
     }
   },
-  "allOf": [
-    {
-      "$ref": "http://gov.uk/schema/v1.0.0/button"
-    }
-  ],
   "category": [
     "control"
   ]
