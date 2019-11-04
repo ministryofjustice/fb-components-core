@@ -4,6 +4,11 @@
   "title": "Autocomplete",
   "description": "Let users select one option from an auto-completing list",
   "type": "object",
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/select"
+    }
+  ],
   "properties": {
     "_type": {
       "const": "autocomplete"
@@ -48,12 +53,5 @@
       "type": "boolean",
       "default": true
     }
-  },
-  "allOf": [
-    {
-      "$ref": "http://gov.uk/schema/v1.0.0/select"
-    }
-  ],
-  "required": [
-  ]
+  }
 }

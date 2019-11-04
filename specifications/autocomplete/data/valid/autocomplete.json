@@ -1,17 +1,17 @@
 {
-  "_id": "selectAB",
+  "_id": "autocompleteId",
   "_type": "autocomplete",
-  "label": "Which type do you want?",
-  "name": "select-ab",
+  "label": "Autocomplete label",
+  "name": "autocomplete-component",
   "items": [
     {
-      "_id": "select-ab--a",
+      "_id": "autocomplete-component--a",
       "_type": "option",
       "value": "a",
       "text": "A"
     },
     {
-      "_id": "select-ab--b",
+      "_id": "autocomplete-component--b",
       "_type": "option",
       "value": "b",
       "text": "B"

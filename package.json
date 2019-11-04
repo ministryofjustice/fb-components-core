@@ -3,7 +3,8 @@
   "version": "3.3.0",
   "description": "Form Builder core components",
   "scripts": {
-    "test": "test-specifications"
+    "test": "test-specifications",
+    "lint": "eslint . --ext .json"
   },
   "author": "Form Builder Team <form-builder-team@digital.justice.gov.uk>",
   "repository": {
@@ -15,7 +16,9 @@
     "govuk-frontend": "^3.3.0"
   },
   "devDependencies": {
-    "@ministryofjustice/fb-specification": "^0.3.4"
+    "@ministryofjustice/fb-specification": "^0.3.4",
+    "eslint": "^6.6.0",
+    "eslint-plugin-json": "^2.0.1"
   },
   "specifications": {
     "$idRoot": "http://gov.uk/schema/v1.0.0",
