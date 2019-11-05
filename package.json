@@ -18,7 +18,9 @@
   "devDependencies": {
     "@ministryofjustice/fb-specification": "^0.3.4",
     "eslint": "^6.6.0",
-    "eslint-plugin-json": "^2.0.1"
+    "eslint-plugin-json": "^2.0.1",
+    "tap": "^14.9.1",
+    "tape": "^4.11.0"
   },
   "specifications": {
     "$idRoot": "http://gov.uk/schema/v1.0.0",
