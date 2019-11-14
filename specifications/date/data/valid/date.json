@@ -1,8 +1,0 @@
-{
-  "_id": "dateId",
-  "_type": "date",
-  "legend": "Date legend",
-  "name": "dob",
-  "dateType": "day-month-year",
-  "$comment": "Document this data"
-}
