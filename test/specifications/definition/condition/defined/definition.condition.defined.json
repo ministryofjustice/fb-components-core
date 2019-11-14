@@ -1,0 +1,6 @@
+{
+  "_id": "definitionConditionDefinedId",
+  "_type": "definition.condition.defined",
+  "identifier": "Condition defined identiifier",
+  "operator": "defined"
+}

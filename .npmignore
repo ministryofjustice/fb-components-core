@@ -5,3 +5,10 @@
 .nvmrc
 .eslintignore
 .eslintrc
+
+.nyc_output
+
+./*.sh
+
+scripts
+test

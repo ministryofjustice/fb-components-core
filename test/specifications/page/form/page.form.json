@@ -1,0 +1,7 @@
+{
+  "_id": "formId",
+  "_type": "page.form",
+  "heading": "Page heading",
+  "lede": "Page lede",
+  "url": "/page-url"
+}

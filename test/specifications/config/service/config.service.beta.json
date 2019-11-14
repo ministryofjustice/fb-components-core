@@ -1,0 +1,7 @@
+{
+  "_id": "configServiceId",
+  "_type": "config.service",
+  "name": "config-service-component",
+  "phase": "beta",
+  "phaseText": "Config service phase text"
+}

@@ -1,0 +1,5 @@
+{
+  "_id": "conditionsAnyId",
+  "_type": "definition.conditions.any",
+  "exactly": []
+}

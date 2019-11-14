@@ -1,0 +1,8 @@
+{
+  "_id": "exitId",
+  "_type": "page.exit",
+  "heading": "Page heading",
+  "isConfirmation": true,
+  "lede": "Page lede",
+  "url": "/page-url"
+}

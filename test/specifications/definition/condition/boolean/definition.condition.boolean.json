@@ -1,0 +1,6 @@
+{
+  "_id": "definitionConditionBooleanId",
+  "_type": "definition.condition.boolean",
+  "identifier": "Condition boolean identiifier",
+  "operator": "isTrue"
+}
