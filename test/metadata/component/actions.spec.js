@@ -4,6 +4,6 @@ const {
   expect
 } = require('chai')
 
-const json = require('~/metadata/component/actions.json')
+const dataObject = require('~/metadata/component/actions.json')
 
-describe('~/metadata/component/actions.json', () => it('exists', () => expect(json).to.exist))
+describe('~/metadata/component/actions.json', () => it('exists', () => expect(dataObject).to.exist))

@@ -4,6 +4,6 @@ const {
   expect
 } = require('chai')
 
-const json = require('~/metadata/data/filetype.powerpoint.json')
+const dataObject = require('~/metadata/data/filetype.powerpoint.json')
 
-describe('~/metadata/data/filetype.powerpoint.json', () => it('exists', () => expect(json).to.exist))
+describe('~/metadata/data/filetype.powerpoint.json', () => it('exists', () => expect(dataObject).to.exist))

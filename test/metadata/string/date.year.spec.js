@@ -1,9 +1,22 @@
 require('module-alias/register')
 
+const Ajv = require('ajv')
+
 const {
   expect
 } = require('chai')
 
-const json = require('~/metadata/string/date.year.json')
+const schemas = require('~/test/schemas')
 
-describe('~/metadata/string/date.year.json', () => it('exists', () => expect(json).to.exist))
+const dataObject = require('~/metadata/string/date.year.json')
+const jsonSchema = require('~/specifications/string/string.schema.json')
+
+const ajv = new Ajv({schemas})
+
+const validator = ajv.compile(jsonSchema)
+
+describe('~/metadata/string/date.year.json', () => {
+  it('has properties', () => expect(dataObject).not.to.be.empty)
+
+  it('validates', () => expect(validator(dataObject)).to.be.true)
+})
