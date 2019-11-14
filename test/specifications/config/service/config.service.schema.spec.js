@@ -18,7 +18,7 @@ const ajv = new Ajv({schemas})
 
 const validator = ajv.compile(jsonSchema)
 
-xdescribe('~/specifications/config/service/config.service.schema.json', () => {
+describe('~/specifications/config/service/config.service.schema.json', () => {
   describe('The data object', () => {
     it('has properties for `alpha`', () => expect(dataObjectForAlpha).not.to.be.empty)
 
