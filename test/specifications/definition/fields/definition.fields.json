@@ -1,5 +1,5 @@
 {
-  "_id": "fieldsId",
+  "_id": "definitionFieldsId",
   "_type": "definition.fields",
   "name": "fields-component",
   "legend": "Fields legend"

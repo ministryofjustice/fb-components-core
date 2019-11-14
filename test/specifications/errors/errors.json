@@ -1,4 +1,4 @@
 {
-  "_id": "errorId",
-  "_type": "error"
+  "_id": "errorsId",
+  "_type": "errors"
 }

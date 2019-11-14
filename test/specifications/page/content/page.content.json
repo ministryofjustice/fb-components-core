@@ -1,5 +1,5 @@
 {
-  "_id": "contentId",
+  "_id": "pageContentId",
   "_type": "page.content",
   "heading": "Page heading",
   "lede": "Page lede",

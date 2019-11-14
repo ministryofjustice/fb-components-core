@@ -1,5 +1,5 @@
 {
-  "_id": "optionId",
+  "_id": "definitionOptionId",
   "_type": "definition.option",
   "name": "definition-option-component",
   "value": "Definition option value"

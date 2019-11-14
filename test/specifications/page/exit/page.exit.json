@@ -1,5 +1,5 @@
 {
-  "_id": "exitId",
+  "_id": "pageExitId",
   "_type": "page.exit",
   "heading": "Page heading",
   "isConfirmation": true,

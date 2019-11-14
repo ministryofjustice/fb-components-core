@@ -1,5 +1,5 @@
 {
-  "_id": "singlequestionId",
+  "_id": "pageSinglequestionId",
   "_type": "page.singlequestion",
   "url": "/page-url",
   "components": [{

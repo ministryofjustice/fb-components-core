@@ -1,5 +1,5 @@
 {
-  "_id": "formId",
+  "_id": "pageFormId",
   "_type": "page.form",
   "heading": "Page heading",
   "lede": "Page lede",

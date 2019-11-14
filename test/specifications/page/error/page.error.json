@@ -1,5 +1,5 @@
 {
-  "_id": "errorId",
+  "_id": "pageErrorId",
   "_type": "page.error",
   "heading": "Page heading",
   "lede": "Page lede",
