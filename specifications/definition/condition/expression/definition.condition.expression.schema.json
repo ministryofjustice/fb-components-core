@@ -4,16 +4,16 @@
   "title": "Single expression condition properties",
   "oneOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/defined"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/defined/definition.condition.defined.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/text"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/text/definition.condition.text.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/number"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/number/definition.condition.number.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/boolean"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/boolean/definition.condition.boolean.schema.json"
     }
   ],
   "category": [

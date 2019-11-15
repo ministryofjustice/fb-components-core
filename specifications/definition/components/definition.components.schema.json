@@ -8,7 +8,7 @@
       "description": "The form or content elements used on the page",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+        "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
       }
     }
   }

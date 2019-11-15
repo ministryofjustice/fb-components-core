@@ -6,7 +6,7 @@ const {
   expect
 } = require('chai')
 
-const schemas = require('~/test/schemas')
+const dereference = require('~/test/dereference')
 
 const dataObjectForAll = require('~/test/specifications/condition/condition.all.json')
 const dataObjectForAny = require('~/test/specifications/condition/condition.any.json')
@@ -17,9 +17,7 @@ const dataObjectForText = require('~/test/specifications/condition/condition.tex
 
 const jsonSchema = require('~/specifications/condition/condition.schema.json')
 
-const ajv = new Ajv({schemas})
-
-const validator = ajv.compile(jsonSchema)
+const ajv = new Ajv()
 
 describe('~/specifications/condition/condition.schema.json', () => {
   describe('The data object', () => {
@@ -36,7 +34,9 @@ describe('~/specifications/condition/condition.schema.json', () => {
     it('has properties for `text`', () => expect(dataObjectForText).not.to.be.empty)
   })
 
-  describe('The json schema', () => {
+  describe('The json schema', async () => {
+    const validator = ajv.compile(await dereference(jsonSchema))
+
     it('validates the data object for `all`', () => expect(validator(dataObjectForAll)).to.be.true)
 
     it('validates the data object for `any`', () => expect(validator(dataObjectForAny)).to.be.true)

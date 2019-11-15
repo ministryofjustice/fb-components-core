@@ -11,7 +11,7 @@
       "type": "boolean"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/condition"
+      "$ref": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"
     }
   ],
   "category": [

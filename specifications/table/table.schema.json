@@ -35,10 +35,10 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes/definition.htmlattributes.schema.json"
     }
   ],
   "required": [

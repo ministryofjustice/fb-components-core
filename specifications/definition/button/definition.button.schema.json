@@ -4,13 +4,13 @@
   "title": "Button component definition",
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes/definition.htmlattributes.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/validations#/definitions/requiredBundle"
+      "$ref": "http://gov.uk/schema/v1.0.0/validations/validations.schema.json#/definitions/requiredBundle"
     }
   ],
   "properties": {
@@ -52,7 +52,7 @@
       "title": "Disabled",
       "oneOf": [
         {
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean"
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean/definition.conditional.boolean.schema.json"
         }
       ],
       "default": false

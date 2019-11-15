@@ -7,7 +7,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/linklist"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/linklist/definition.linklist.schema.json"
     }
   ],
   "properties": {

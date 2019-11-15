@@ -18,7 +18,7 @@
                 "type": "string"
               },
               "condition": {
-                "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean"
+                "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean/definition.conditional.boolean.schema.json"
               }
             },
             "required": [

@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/select"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/select/definition.select.schema.json"
     }
   ],
   "properties": {

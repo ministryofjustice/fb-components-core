@@ -11,13 +11,13 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/name"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/name/definition.name.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/namespace"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/namespace/definition.namespace.schema.json"
     }
   ],
   "validation": {

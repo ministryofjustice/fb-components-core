@@ -8,7 +8,7 @@
       "description": "Components following continue button",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+        "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
       },
       "accepts": [
         "content"
@@ -73,21 +73,21 @@
       "description": "Whether to show or hide the page’s steps",
       "oneOf": [
         {
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean"
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean/definition.conditional.boolean.schema.json"
         }
       ],
       "default": true
     },
     "nextPage": {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/nextpage"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/nextpage/definition.nextpage.schema.json"
     }
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/page"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/page/definition.page.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/repeatable"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/repeatable/definition.repeatable.schema.json"
     }
   ],
   "category": [

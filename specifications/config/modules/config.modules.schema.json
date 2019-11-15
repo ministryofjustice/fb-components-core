@@ -13,7 +13,7 @@
       "description": "List of modules to enable/disable",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/config/module"
+        "$ref": "http://gov.uk/schema/v1.0.0/config/module/config.module.schema.json"
       }
     }
   },

@@ -11,7 +11,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/page"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/page/definition.page.schema.json"
     }
   ],
   "required": [

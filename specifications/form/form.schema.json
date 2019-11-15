@@ -23,7 +23,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/grouping"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/grouping/definition.grouping.schema.json"
     }
   ]
 }

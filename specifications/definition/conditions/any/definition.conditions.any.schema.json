@@ -7,7 +7,7 @@
       "title": "At least X conditions met",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/condition"
+        "$ref": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"
       }
     },
     "conditionsMet": {

@@ -33,7 +33,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/page/form"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/page/form/definition.page.form.schema.json"
     }
   ]
 }

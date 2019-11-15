@@ -13,13 +13,13 @@
       "description": "Items that users can select",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/checkbox"
+        "$ref": "http://gov.uk/schema/v1.0.0/checkbox/checkbox.schema.json"
       }
     }
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/fieldset"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/fieldset/definition.fieldset.schema.json"
     }
   ],
   "transforms": {

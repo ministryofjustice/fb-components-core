@@ -98,7 +98,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/data"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/data/definition.data.schema.json"
     }
   ],
   "category": [
