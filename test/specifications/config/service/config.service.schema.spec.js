@@ -28,10 +28,10 @@ describe('~/specifications/config/service/config.service.schema.json', () => {
   })
 
   describe('The json schema', () => {
-    it('validates for `alpha`', () => expect(validator(dataObjectForAlpha)).to.be.true)
+    it('validates the data object for `alpha`', () => expect(validator(dataObjectForAlpha)).to.be.true)
 
-    it('validates for `beta`', () => expect(validator(dataObjectForBeta)).to.be.true)
+    it('validates the data object for `beta`', () => expect(validator(dataObjectForBeta)).to.be.true)
 
-    it('validates for `none`', () => expect(validator(dataObjectForNone)).to.be.true)
+    it('validates the data object for `none`', () => expect(validator(dataObjectForNone)).to.be.true)
   })
 })

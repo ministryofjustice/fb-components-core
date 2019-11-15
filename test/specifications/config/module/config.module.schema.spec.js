@@ -22,8 +22,8 @@ describe('~/specifications/config/module/config.module.schema.json', () => {
   describe('The data object for `off`', () => it('has properties', () => expect(dataObjectForOff).not.to.be.empty))
 
   describe('The json schema', () => {
-    it('validates for `on`', () => expect(validator(dataObjectForOn)).to.be.true)
+    it('validates the data object for `on`', () => expect(validator(dataObjectForOn)).to.be.true)
 
-    it('validates for `off`', () => expect(validator(dataObjectForOff)).to.be.true)
+    it('validates the data object for `off`', () => expect(validator(dataObjectForOff)).to.be.true)
   })
 })

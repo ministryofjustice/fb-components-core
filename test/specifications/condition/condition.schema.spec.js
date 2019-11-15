@@ -37,16 +37,16 @@ describe('~/specifications/condition/condition.schema.json', () => {
   })
 
   describe('The json schema', () => {
-    it('validates for `all`', () => expect(validator(dataObjectForAll)).to.be.true)
+    it('validates the data object for `all`', () => expect(validator(dataObjectForAll)).to.be.true)
 
-    it('validates for `any`', () => expect(validator(dataObjectForAny)).to.be.true)
+    it('validates the data object for `any`', () => expect(validator(dataObjectForAny)).to.be.true)
 
-    it('validates for `boolean`', () => expect(validator(dataObjectForBoolean)).to.be.true)
+    it('validates the data object for `boolean`', () => expect(validator(dataObjectForBoolean)).to.be.true)
 
-    it('validates for `defined`', () => expect(validator(dataObjectForDefined)).to.be.true)
+    it('validates the data object for `defined`', () => expect(validator(dataObjectForDefined)).to.be.true)
 
-    it('validates for `number`', () => expect(validator(dataObjectForNumber)).to.be.true)
+    it('validates the data object for `number`', () => expect(validator(dataObjectForNumber)).to.be.true)
 
-    it('validates for `text`', () => expect(validator(dataObjectForText)).to.be.true)
+    it('validates the data object for `text`', () => expect(validator(dataObjectForText)).to.be.true)
   })
 })
