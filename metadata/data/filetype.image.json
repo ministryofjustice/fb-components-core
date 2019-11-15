@@ -1,5 +1,5 @@
 {
-  "_type": "filetype",
+  "_type": "data.filetype",
   "_id": "filetype.image",
   "types": [
     "image/*"
