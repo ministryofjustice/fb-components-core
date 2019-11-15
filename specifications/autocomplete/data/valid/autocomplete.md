@@ -1,1 +1,0 @@
-Basic autocomplete example

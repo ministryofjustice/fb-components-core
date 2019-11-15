@@ -1,6 +1,0 @@
-{
-  "_id": "componentId",
-  "_type": "textarea",
-  "name": "situation",
-  "label": "Describe your situation"
-}
