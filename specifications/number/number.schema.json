@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/number",
+  "$id": "http://gov.uk/schema/v1.0.0/number/number.schema.json",
   "_name": "number",
   "title": "Number",
   "description": "Let users enter a number",
@@ -17,13 +17,13 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/field"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/field/definition.field.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/validations#/definitions/numberBundle"
+      "$ref": "http://gov.uk/schema/v1.0.0/validations/validations.schema.json#/definitions/numberBundle"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/widthclass/input"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/widthclass/input/definition.widthclass.input.schema.json"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/namespace",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/namespace/definition.namespace.schema.json",
   "_name": "definition.namespace",
   "title": "Namespace definition",
   "type": "object",

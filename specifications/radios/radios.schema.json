@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/radios",
+  "$id": "http://gov.uk/schema/v1.0.0/radios/radios.schema.json",
   "_name": "radios",
   "title": "Radios",
   "description": "Let users select one option from a list",
@@ -13,16 +13,16 @@
       "description": "Items that users can select",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/radio"
+        "$ref": "http://gov.uk/schema/v1.0.0/radio/radio.schema.json"
       }
     }
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/fieldset"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/fieldset/definition.fieldset.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/name"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/name/definition.name.schema.json"
     }
   ],
   "transforms": {

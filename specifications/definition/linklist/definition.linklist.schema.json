@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/linklist",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/linklist/definition.linklist.schema.json",
   "_name": "definition.linklist",
   "title": "Link list definition",
   "type": "object",
@@ -15,13 +15,13 @@
       "description": "Items that make up list",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/link"
+        "$ref": "http://gov.uk/schema/v1.0.0/link/link.schema.json"
       }
     }
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/block"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/block/definition.block.schema.json"
     }
   ],
   "category": [

@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/conditional/boolean/definition.conditional.boolean.schema.json",
   "_name": "definition.conditional.boolean",
   "title": "Boolean or condition",
   "type": [
@@ -11,7 +11,7 @@
       "type": "boolean"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/condition"
+      "$ref": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"
     }
   ],
   "category": [

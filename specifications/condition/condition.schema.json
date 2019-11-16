@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/condition",
+  "$id": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json",
   "_name": "condition",
   "title": "Condition",
   "type": "object",
@@ -24,22 +24,6 @@
           "type": "boolean"
         }
       }
-    },
-    {
-      "oneOf": [
-        {
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/expression"
-        },
-        {
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/all"
-        },
-        {
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/any"
-        },
-        {
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/exactly"
-        }
-      ]
     }
   ],
   "category": [

@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/table",
+  "$id": "http://gov.uk/schema/v1.0.0/table/table.schema.json",
   "_name": "table",
   "title": "Table",
   "description": "Display information in rows and columns",
@@ -35,10 +35,10 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes/definition.htmlattributes.schema.json"
     }
   ],
   "required": [

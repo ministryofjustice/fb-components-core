@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/string",
+  "$id": "http://gov.uk/schema/v1.0.0/string/string.schema.json",
   "_name": "string",
   "idSeed": "_id",
   "title": "String",
@@ -17,7 +17,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/string"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/string/definition.string.schema.json"
     }
   ]
 }

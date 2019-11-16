@@ -1,19 +1,19 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/grouping",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/grouping/definition.grouping.schema.json",
   "_name": "definition.grouping",
   "title": "Grouping definition",
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/components"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/components/definition.components.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/namespace"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/namespace/definition.namespace.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/htmlattributes/definition.htmlattributes.schema.json"
     }
   ],
   "category": [

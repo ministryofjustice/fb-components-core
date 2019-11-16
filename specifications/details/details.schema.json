@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/details",
+  "$id": "http://gov.uk/schema/v1.0.0/details/details.schema.json",
   "_name": "details",
   "title": "Hide/reveal",
   "description": "Let users reveal more information only if they need it (it‘s also known as ‘Details’ in the Design System)",
@@ -30,7 +30,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
     }
   ],
   "category": [

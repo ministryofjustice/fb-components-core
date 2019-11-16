@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/textarea",
+  "$id": "http://gov.uk/schema/v1.0.0/textarea/textarea.schema.json",
   "_name": "textarea",
   "title": "Textarea",
   "description": "Let users enter text that can be longer than a single line",
@@ -27,10 +27,10 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/field"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/field/definition.field.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/validations#/definitions/stringBundle"
+      "$ref": "http://gov.uk/schema/v1.0.0/validations/validations.schema.json#/definitions/stringBundle"
     }
   ]
 }

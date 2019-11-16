@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/fileupload",
+  "$id": "http://gov.uk/schema/v1.0.0/fileupload/fileupload.schema.json",
   "_name": "fileupload",
   "title": "File upload",
   "description": "Let users select and upload one or more files",
@@ -22,13 +22,13 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/field"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/field/definition.field.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/widthclass/input"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/widthclass/input/definition.widthclass.input.schema.json"
     },
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/validations#/definitions/uploadBundle"
+      "$ref": "http://gov.uk/schema/v1.0.0/validations/validations.schema.json#/definitions/uploadBundle"
     }
   ]
 }

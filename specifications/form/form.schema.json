@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/form",
+  "$id": "http://gov.uk/schema/v1.0.0/form/form.schema.json",
   "_name": "form",
   "title": "Form",
   "description": "Component for a form",
@@ -23,7 +23,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/grouping"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/grouping/definition.grouping.schema.json"
     }
   ]
 }

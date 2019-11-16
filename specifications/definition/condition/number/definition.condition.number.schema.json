@@ -1,10 +1,10 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/condition/number",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/condition/number/definition.condition.number.schema.json",
   "_name": "definition.condition.number",
   "title": "Number condition properties",
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/base"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/base/definition.condition.base.schema.json"
     }
   ],
   "properties": {
@@ -28,7 +28,7 @@
     "required": ["valueType"]
   },
   "then": {
-    "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/valuetype"
+    "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/valuetype/definition.condition.valuetype.schema.json"
   },
   "else": {
     "properties": {

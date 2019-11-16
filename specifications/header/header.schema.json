@@ -1,8 +1,8 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/header",
+  "$id": "http://gov.uk/schema/v1.0.0/header/header.schema.json",
   "_name": "header",
   "title": "Header",
-  "description": "Component that outputs header",
+  "description": "Header component",
   "usage": "Use the header component to provide a GOV.UK style header",
   "type": "object",
   "properties": {
@@ -42,18 +42,7 @@
       "default": "/assets/images"
     },
     "navigation": {
-        "$id": "http://gov.uk/schema/v1.0.0/header/navigation",
-        "allOf": [{
-          "$ref": "http://gov.uk/schema/v1.0.0/definition/linklist"
-        }],
-        "properties": {
-          "_type": {
-            "const": "header.navigation"
-          },
-          "title": {
-            "type": "null"
-          }
-        }
+      "$ref": "http://gov.uk/schema/v1.0.0/header/navigation/header.navigation.schema.json"
     },
     "navigationClasses": {
       "title": "Navigation classes",
@@ -68,7 +57,7 @@
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/component"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/component/definition.component.schema.json"
     }
   ],
   "required": [

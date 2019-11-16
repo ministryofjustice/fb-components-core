@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/blocks",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/blocks/definition.blocks.schema.json",
   "_name": "definition.blocks",
   "title": "Blocks definition",
   "properties": {
@@ -7,7 +7,7 @@
       "title": "Blocks",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/definition/block"
+        "$ref": "http://gov.uk/schema/v1.0.0/definition/block/definition.block.schema.json"
       }
     }
   }

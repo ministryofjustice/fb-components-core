@@ -1,12 +1,12 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/buttonSecondary",
+  "$id": "http://gov.uk/schema/v1.0.0/buttonSecondary/buttonSecondary.schema.json",
   "_name": "buttonSecondary",
   "title": "Secondary button",
   "description": "Component for a secondary button",
   "type": "object",
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/button"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/button/definition.button.schema.json"
     }
   ],
   "properties": {

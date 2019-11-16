@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/radio",
+  "$id": "http://gov.uk/schema/v1.0.0/radio/radio.schema.json",
   "_name": "radio",
   "idSeed": "value",
   "title": "Radio option",
@@ -16,12 +16,12 @@
       "content": true
     },
     "conditionalComponent": {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/conditionalcomponent"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/conditionalcomponent/definition.conditionalcomponent.schema.json"
     }
   },
   "allOf": [
     {
-      "$ref": "http://gov.uk/schema/v1.0.0/definition/option"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/option/definition.option.schema.json"
     }
   ],
   "required": [
