@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/button",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/button/definition.button.schema.json",
   "_name": "definition.button",
   "title": "Button component definition",
   "allOf": [

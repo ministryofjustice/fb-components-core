@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/radio",
+  "$id": "http://gov.uk/schema/v1.0.0/radio/radio.schema.json",
   "_name": "radio",
   "idSeed": "value",
   "title": "Radio option",

@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/condition/number",
+  "$id": "http://gov.uk/schema/v1.0.0/condition/number/condition.number.schema.json",
   "_name": "condition.number",
   "title": "Number condition properties",
   "allOf": [

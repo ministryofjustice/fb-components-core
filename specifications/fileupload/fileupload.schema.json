@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/fileupload",
+  "$id": "http://gov.uk/schema/v1.0.0/fileupload/fileupload.schema.json",
   "_name": "fileupload",
   "title": "File upload",
   "description": "Let users select and upload one or more files",

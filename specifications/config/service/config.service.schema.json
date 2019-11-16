@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/config/service",
+  "$id": "http://gov.uk/schema/v1.0.0/config/service/config.service.schema.json",
   "title": "Form configuration",
   "_name": "config.service",
   "description": "Form configuration",

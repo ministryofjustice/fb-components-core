@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/condition/expression",
+  "$id": "http://gov.uk/schema/v1.0.0/condition/expression/condition.expression.schema.json",
   "_name": "condition.expression",
   "title": "Single expression condition properties",
   "allOf": [

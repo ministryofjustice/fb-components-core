@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/select",
+  "$id": "http://gov.uk/schema/v1.0.0/select/select.schema.json",
   "_name": "select",
   "title": "Select",
   "description": "Let users select one option from a list (only use as a last resort, as some users find selects difficult to use)",

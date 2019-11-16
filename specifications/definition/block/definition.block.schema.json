@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/block",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/block/definition.block.schema.json",
   "_name": "definition.block",
   "title": "Block definition",
   "allOf": [

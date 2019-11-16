@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/page/confirmation",
+  "$id": "http://gov.uk/schema/v1.0.0/page/confirmation/page.confirmation.schema.json",
   "_name": "page.confirmation",
   "title": "Confirmation",
   "description": "Let users know they’ve completed a transaction",

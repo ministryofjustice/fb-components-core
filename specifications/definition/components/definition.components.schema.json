@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/components",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/components/definition.components.schema.json",
   "_name": "definition.components",
   "title": "Components definition",
   "properties": {

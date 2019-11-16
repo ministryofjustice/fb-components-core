@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/widthclass/input",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/widthclass/input/definition.widthclass.input.schema.json",
   "_name": "definition.widthclass.input",
   "title": "Input width class definition",
   "properties": {

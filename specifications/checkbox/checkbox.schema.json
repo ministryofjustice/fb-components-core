@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/checkbox",
+  "$id": "http://gov.uk/schema/v1.0.0/checkbox/checkbox.schema.json",
   "_name": "checkbox",
   "title": "Checkbox item",
   "description": "Component that provides a checkbox item",

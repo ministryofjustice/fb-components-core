@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/control",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/control/definition.control.schema.json",
   "_name": "definition.control",
   "title": "Control definition",
   "allOf": [

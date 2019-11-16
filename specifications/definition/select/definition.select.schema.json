@@ -1,5 +1,5 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/definition/select",
+  "$id": "http://gov.uk/schema/v1.0.0/definition/select/definition.select.schema.json",
   "_name": "definition.select",
   "title": "Select component definition",
   "allOf": [
