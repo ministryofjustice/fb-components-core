@@ -2,12 +2,37 @@
   "$id": "http://gov.uk/schema/v1.0.0/definition/conditions/exactly",
   "_name": "definition.conditions.exactly",
   "title": "Exactly conditions met properties",
+  "definitions": {
+    "exactly": {
+      "allOf": [
+          {
+            "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/definition.condition.schema.json"
+          },
+          {
+            "oneOf": [
+              {
+                "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/expression/definition.condition.expression.schema.json"
+              },
+              {
+                "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/all/definition.conditions.all.schema.json"
+              },
+              {
+                "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/any/definition.conditions.any.schema.json"
+              },
+              {
+                "$ref": "#/definitions/exactly"
+              }
+            ]
+          }
+        ]
+    }
+  },
   "properties": {
     "exactly": {
-      "title": "Exactly X conditions met",
+      "title": "Exactly conditions met",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"
+        "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/definition.condition.schema.json"
       }
     },
     "conditionsMet": {
@@ -22,5 +47,6 @@
   ],
   "category": [
     "definition"
-  ]
+  ],
+  "$comment": "Contains a circular reference/recursion https://json-schema.org/understanding-json-schema/structuring.html"
 }

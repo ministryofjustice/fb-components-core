@@ -1,0 +1,10 @@
+{
+  "$id": "http://gov.uk/schema/v1.0.0/condition/boolean",
+  "_name": "condition.boolean",
+  "title": "Boolean condition properties",
+  "allOf": [
+    {
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/boolean/definition.condition.boolean.schema.json"
+    }
+  ]
+}

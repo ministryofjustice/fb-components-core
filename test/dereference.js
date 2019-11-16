@@ -11,5 +11,8 @@ module.exports = async (jsonSchema) => $RefParser.dereference(jsonSchema, {
         return require(file.url.replace(/^http:\/\/gov.uk\/schema\/v1\.0\.0/, '~/specifications'))
       }
     }
+  },
+  dereference: {
+    circular: 'ignore'
   }
 })

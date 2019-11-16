@@ -1,13 +1,38 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/definition/conditions/any",
   "_name": "definition.conditions.any",
-  "title": "At least conditions met properties",
+  "title": "Any conditions met properties",
+  "definitions": {
+    "any": {
+      "allOf": [
+          {
+            "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/definition.condition.schema.json"
+          },
+          {
+            "oneOf": [
+              {
+                "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/expression/definition.condition.expression.schema.json"
+              },
+              {
+                "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/all/definition.conditions.all.schema.json"
+              },
+              {
+                "$ref": "#/definitions/any"
+              },
+              {
+                "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/exactly/definition.conditions.exactly.schema.json"
+              }
+            ]
+          }
+        ]
+    }
+  },
   "properties": {
     "any": {
-      "title": "At least X conditions met",
+      "title": "Any conditions met",
       "type": "array",
       "items": {
-        "$ref": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"
+        "$ref": "#/definitions/any"
       }
     },
     "conditionsMet": {
@@ -22,5 +47,6 @@
   ],
   "category": [
     "definition"
-  ]
+  ],
+  "$comment": "Contains a circular reference/recursion https://json-schema.org/understanding-json-schema/structuring.html"
 }

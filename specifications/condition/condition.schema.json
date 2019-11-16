@@ -2,33 +2,26 @@
   "$id": "http://gov.uk/schema/v1.0.0/condition",
   "_name": "condition",
   "title": "Condition",
-  "type": "object",
   "allOf": [
     {
-      "properties": {
-        "_id": {
-          "title": "Condition ID",
-          "type": "string"
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/definition.condition.schema.json"
+    },
+    {
+      "oneOf": [
+        {
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/expression/definition.condition.expression.schema.json"
         },
-        "_type": {
-          "title": "Type",
-          "type": "string",
-          "const": "condition"
+        {
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/all/definition.conditions.all.schema.json"
         },
-        "description": {
-          "title": "Description",
-          "type": "string"
+        {
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/any/definition.conditions.any.schema.json"
         },
-        "negated": {
-          "title": "Negated",
-          "type": "boolean"
+        {
+          "$ref": "http://gov.uk/schema/v1.0.0/definition/conditions/exactly/definition.conditions.exactly.schema.json"
         }
-      }
+      ]
     }
-  ],
-  "xrequired": [
-    "_id",
-    "_type"
   ],
   "category": [
     "definition"

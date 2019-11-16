@@ -1,0 +1,11 @@
+{
+  "_id": "conditionExactlyId",
+  "_type": "condition",
+  "exactly": [
+    {
+      "identifier": "one",
+      "operator": "is",
+      "value": "One"
+    }
+  ]
+}

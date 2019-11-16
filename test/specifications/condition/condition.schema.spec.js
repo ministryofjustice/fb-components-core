@@ -10,10 +10,11 @@ const dereference = require('~/test/dereference')
 
 const dataObjectForAll = require('~/test/specifications/condition/condition.all.json')
 const dataObjectForAny = require('~/test/specifications/condition/condition.any.json')
-const dataObjectForBoolean = require('~/test/specifications/condition/condition.boolean.json')
-const dataObjectForDefined = require('~/test/specifications/condition/condition.defined.json')
-const dataObjectForNumber = require('~/test/specifications/condition/condition.number.json')
-const dataObjectForText = require('~/test/specifications/condition/condition.text.json')
+const dataObjectForExactly = require('~/test/specifications/condition/condition.exactly.json')
+const dataObjectForBoolean = require('~/test/specifications/condition/boolean/condition.boolean.json')
+const dataObjectForDefined = require('~/test/specifications/condition/defined/condition.defined.json')
+const dataObjectForNumber = require('~/test/specifications/condition/number/condition.number.json')
+const dataObjectForText = require('~/test/specifications/condition/text/condition.text.json')
 
 const jsonSchema = require('~/specifications/condition/condition.schema.json')
 
@@ -24,6 +25,8 @@ describe('~/specifications/condition/condition.schema.json', () => {
     it('has properties for `all`', () => expect(dataObjectForAll).not.to.be.empty)
 
     it('has properties for `any`', () => expect(dataObjectForAny).not.to.be.empty)
+
+    it('has properties for `exactly`', () => expect(dataObjectForExactly).not.to.be.empty)
 
     it('has properties for `boolean`', () => expect(dataObjectForBoolean).not.to.be.empty)
 
@@ -40,6 +43,8 @@ describe('~/specifications/condition/condition.schema.json', () => {
     it('validates the data object for `all`', () => expect(validator(dataObjectForAll)).to.be.true)
 
     it('validates the data object for `any`', () => expect(validator(dataObjectForAny)).to.be.true)
+
+    it('validates the data object for `exactly`', () => expect(validator(dataObjectForExactly)).to.be.true)
 
     it('validates the data object for `boolean`', () => expect(validator(dataObjectForBoolean)).to.be.true)
 

@@ -1,0 +1,6 @@
+{
+  "_id": "conditionExpressionId",
+  "_type": "condition",
+  "identifier": "Condition expression identiifier",
+  "operator": "isTrue"
+}

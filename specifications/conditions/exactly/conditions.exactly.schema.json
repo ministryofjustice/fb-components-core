@@ -1,0 +1,26 @@
+{
+  "$id": "http://gov.uk/schema/v1.0.0/conditions/exactly",
+  "_name": "conditions.exactly",
+  "title": "Exactly conditions met properties",
+  "properties": {
+    "exactly": {
+      "title": "Exactly conditions met",
+      "type": "array",
+      "items": {
+        "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/definition.condition.schema.json"
+      }
+    },
+    "conditionsMet": {
+      "title": "Number of conditions to meet",
+      "type": "number",
+      "minimum": 1,
+      "default": 1
+    }
+  },
+  "required": [
+    "exactly"
+  ],
+  "category": [
+    "definition"
+  ]
+}

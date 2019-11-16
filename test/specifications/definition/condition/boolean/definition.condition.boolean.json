@@ -1,6 +1,6 @@
 {
   "_id": "definitionConditionBooleanId",
-  "_type": "definition.condition.boolean",
+  "_type": "condition",
   "identifier": "Condition boolean identiifier",
   "operator": "isTrue"
 }
