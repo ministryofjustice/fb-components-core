@@ -1,5 +1,5 @@
 {
   "_id": "definitionConditionValuetypeId",
-  "_type": "definition.condition.valuetype",
+  "_type": "condition",
   "valueType": "input"
 }

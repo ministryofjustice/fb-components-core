@@ -1,6 +1,6 @@
 {
   "_id": "definitionConditionTextId",
-  "_type": "definition.condition.text",
+  "_type": "condition",
   "identifier": "Condition text identifier",
   "operator": "is",
   "value": "Condition text value"
