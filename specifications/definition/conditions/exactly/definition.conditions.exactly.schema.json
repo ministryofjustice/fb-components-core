@@ -4,7 +4,7 @@
   "title": "Exactly conditions met properties",
   "properties": {
     "exactly": {
-      "title": "Exactly X conditions met",
+      "title": "Exactly conditions met",
       "type": "array",
       "items": {
         "$ref": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"

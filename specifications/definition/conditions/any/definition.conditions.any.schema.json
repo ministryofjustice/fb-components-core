@@ -1,10 +1,10 @@
 {
   "$id": "http://gov.uk/schema/v1.0.0/definition/conditions/any/definition.conditions.any.schema.json",
   "_name": "definition.conditions.any",
-  "title": "At least conditions met properties",
+  "title": "Any conditions met properties",
   "properties": {
     "any": {
-      "title": "At least X conditions met",
+      "title": "Any conditions met",
       "type": "array",
       "items": {
         "$ref": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"

@@ -2,7 +2,7 @@
   "$id": "http://gov.uk/schema/v1.0.0/config/module/config.module.schema.json",
   "_name": "config.module",
   "title": "Module configuration",
-  "description": "Module configuration details for a module",
+  "description": "Module configuration details",
   "type": "object",
   "properties": {
     "_type": {
