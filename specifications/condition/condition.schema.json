@@ -5,28 +5,11 @@
   "type": "object",
   "allOf": [
     {
-      "properties": {
-        "_id": {
-          "title": "Condition ID",
-          "type": "string"
-        },
-        "_type": {
-          "title": "Type",
-          "type": "string",
-          "const": "condition"
-        },
-        "description": {
-          "title": "Description",
-          "type": "string"
-        },
-        "negated": {
-          "title": "Negated",
-          "type": "boolean"
-        }
-      }
+      "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/definition.condition.schema.json"
     }
   ],
   "category": [
     "definition"
   ]
 }
+
