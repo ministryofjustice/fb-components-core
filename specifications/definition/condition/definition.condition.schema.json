@@ -3,25 +3,29 @@
   "_name": "definition.condition",
   "title": "Condition",
   "type": "object",
-  "properties": {
-    "_id": {
-      "title": "Condition ID",
-      "type": "string"
-    },
-    "_type": {
-      "title": "Type",
-      "type": "string",
-      "const": "condition"
-    },
-    "description": {
-      "title": "Description",
-      "type": "string"
-    },
-    "negated": {
-      "title": "Negated",
-      "type": "boolean"
+  "allOf": [
+    {
+      "properties": {
+        "_id": {
+          "title": "Condition ID",
+          "type": "string"
+        },
+        "_type": {
+          "title": "Type",
+          "type": "string",
+          "const": "condition"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "negated": {
+          "title": "Negated",
+          "type": "boolean"
+        }
+      }
     }
-  },
+  ],
   "oneOf": [
     {
       "$ref": "http://gov.uk/schema/v1.0.0/definition/condition/expression/definition.condition.expression.schema.json"
@@ -38,5 +42,6 @@
   ],
   "category": [
     "definition"
-  ]
+  ],
+  "$comment": "http://gov.uk/schema/v1.0.0/condition/condition.schema.json"
 }
