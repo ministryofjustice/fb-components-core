@@ -1,12 +1,10 @@
 require('module-alias/register')
 
-const Ajv = require('ajv')
+const chai = require('chai')
+const asPromised = require('chai-as-promised')
 
-const {
-  expect
-} = require('chai')
-
-const schemas = require('~/test/schemas')
+const compile = require('~/test/validate')
+const dereference = require('~/test/dereference')
 
 const dataObjectForAlpha = require('~/test/specifications/config/service/config.service.alpha.json')
 const dataObjectForBeta = require('~/test/specifications/config/service/config.service.beta.json')
@@ -14,9 +12,13 @@ const dataObjectForNone = require('~/test/specifications/config/service/config.s
 
 const jsonSchema = require('~/specifications/config/service/config.service.schema.json')
 
-const ajv = new Ajv({schemas})
+const {
+  expect
+} = chai
 
-const validator = ajv.compile(jsonSchema)
+chai.use(asPromised)
+
+const validator = compile(jsonSchema)
 
 describe('~/specifications/config/service/config.service.schema.json', () => {
   describe('The data object', () => {
@@ -28,10 +30,14 @@ describe('~/specifications/config/service/config.service.schema.json', () => {
   })
 
   describe('The json schema', () => {
-    it('validates the data object for `alpha`', () => expect(validator(dataObjectForAlpha)).to.be.true)
+    describe('Dereferencing', () => it('dereferences the json schema', () => expect(dereference(jsonSchema)).not.to.be.rejected))
 
-    it('validates the data object for `beta`', () => expect(validator(dataObjectForBeta)).to.be.true)
+    describe('Validating', () => {
+      it('validates the data object for `alpha`', () => expect(validator(dataObjectForAlpha)).to.be.true)
 
-    it('validates the data object for `none`', () => expect(validator(dataObjectForNone)).to.be.true)
+      it('validates the data object for `beta`', () => expect(validator(dataObjectForBeta)).to.be.true)
+
+      it('validates the data object for `none`', () => expect(validator(dataObjectForNone)).to.be.true)
+    })
   })
 })
