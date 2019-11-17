@@ -1,5 +1,5 @@
 {
-  "_type": "data.filetype",
+  "_type": "filetype",
   "_id": "filetype.csv",
   "types": [
     "text/csv"

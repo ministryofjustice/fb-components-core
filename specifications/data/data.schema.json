@@ -1,9 +1,0 @@
-{
-  "$id": "http://gov.uk/schema/v1.0.0/data/data.schema.json",
-  "_name": "definition.data",
-  "title": "Data definition",
-  "type": "object",
-  "category": [
-    "definition"
-  ]
-}

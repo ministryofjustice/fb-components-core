@@ -1,10 +1,10 @@
 {
-  "$id": "http://gov.uk/schema/v1.0.0/data/filetype/data.filetype.schema.json",
+  "$id": "http://gov.uk/schema/v1.0.0/filetype/filetype.schema.json",
   "_name": "data.filetype",
   "title": "Data filetype",
   "properties": {
     "_type": {
-      "const": "data.filetype"
+      "const": "filetype"
     },
     "types": {
       "title": "MIME types",
