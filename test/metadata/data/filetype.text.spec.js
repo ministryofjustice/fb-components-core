@@ -9,7 +9,7 @@ const {
 const schemas = require('~/test/schemas')
 
 const dataObject = require('~/metadata/data/filetype.text.json')
-const jsonSchema = require('~/specifications/data/filetype/data.filetype.schema.json')
+const jsonSchema = require('~/specifications/filetype/filetype.schema.json')
 
 const ajv = new Ajv({schemas})
 

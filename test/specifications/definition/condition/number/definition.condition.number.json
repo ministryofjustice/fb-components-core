@@ -1,6 +1,6 @@
 {
   "_id": "definitionConditionNumberId",
-  "_type": "definition.condition.number",
+  "_type": "condition",
   "identifier": "Condition number identifier",
   "operator": "equals",
   "value": 1

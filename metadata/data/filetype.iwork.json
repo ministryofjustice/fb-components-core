@@ -1,5 +1,5 @@
 {
-  "_type": "data.filetype",
+  "_type": "filetype",
   "_id": "filetype.iwork",
   "types": [
     "application/x-iwork-pages-sffpages"

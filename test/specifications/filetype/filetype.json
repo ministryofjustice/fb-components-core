@@ -1,7 +1,7 @@
 {
   "_type": "filetype",
-  "_id": "filetype.image",
+  "_id": "filetypeId",
   "types": [
-    "image/*"
+    "MIME type"
   ]
 }

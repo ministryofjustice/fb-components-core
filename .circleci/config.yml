@@ -10,7 +10,10 @@ jobs:
           name: npm install
           command: npm install
       - run:
-          name: Run ESLint and tests
+          name: Lints
+          command: npm run lint
+      - run:
+          name: Tests
           command: npm run test
   publish_to_npm:
     docker:

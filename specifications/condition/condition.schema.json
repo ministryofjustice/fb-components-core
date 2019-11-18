@@ -42,10 +42,6 @@
       ]
     }
   ],
-  "xrequired": [
-    "_id",
-    "_type"
-  ],
   "category": [
     "definition"
   ]
